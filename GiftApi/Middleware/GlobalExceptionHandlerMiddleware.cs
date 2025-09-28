@@ -8,9 +8,9 @@ namespace GiftApi.Middleware
 
     public class GlobalExceptionHandlerMiddleware
     {
-        private readonly RequestDelegate _next;
-        private readonly ILogger<GlobalExceptionHandlerMiddleware> _logger;
-        private readonly IHostEnvironment _env;
+        readonly RequestDelegate _next;
+        readonly ILogger<GlobalExceptionHandlerMiddleware> _logger;
+        readonly IHostEnvironment _env;
 
         public GlobalExceptionHandlerMiddleware(RequestDelegate next, ILogger<GlobalExceptionHandlerMiddleware> logger, IHostEnvironment env)
         {

@@ -1,4 +1,6 @@
 using FluentValidation;
+using GiftApi.Application.Manage.Queries.Get;
+using GiftApi.Application.Manage.Queries.GetUsers;
 using GiftApi.Application.User.Commands.Register;
 using GiftApi.Infrastructure.Data;
 using GiftApi.Middleware;
@@ -15,7 +17,11 @@ builder.Services.AddControllers();
 
 builder.Services.AddValidatorsFromAssembly(typeof(RegisterUserCommand).Assembly);
 builder.Services.AddMediatR(cfg =>
-    cfg.RegisterServicesFromAssembly(typeof(RegisterUserHandler).Assembly));
+{
+    cfg.RegisterServicesFromAssembly(typeof(RegisterUserHandler).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(GetUsersHandler).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(GetUserHandler).Assembly);
+});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

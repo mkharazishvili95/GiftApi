@@ -7,7 +7,7 @@ namespace GiftApi.Application.User.Commands.Logout
 {
     public class LogoutUserHandler : IRequestHandler<LogoutUserCommand, BaseResponse>
     {
-        private readonly ApplicationDbContext _db;
+        readonly ApplicationDbContext _db;
 
         public LogoutUserHandler(ApplicationDbContext db)
         {

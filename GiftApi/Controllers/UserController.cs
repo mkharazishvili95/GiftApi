@@ -11,7 +11,7 @@ namespace GiftApi.Controllers
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
-        private readonly IMediator _mediator;
+        readonly IMediator _mediator;
 
         public UserController(IMediator mediator)
         {
