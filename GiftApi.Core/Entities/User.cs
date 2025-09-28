@@ -16,5 +16,8 @@ namespace GiftApi.Core.Entities
         public Gender? Gender { get; set; }
         public decimal Balance { get; set; }
         public UserType Type { get; set; }
+        public DateTime RegisterDate { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime? RefreshTokenExpiry { get; set; }
     }
 }
