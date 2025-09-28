@@ -25,5 +25,9 @@
 		<ProjectReference Include="..\GiftApi.Common\GiftApi.Common.csproj" />
 		<ProjectReference Include="..\GiftApi.Core\GiftApi.Core.csproj" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Migrations\" />
+	</ItemGroup>
 	
 </Project>

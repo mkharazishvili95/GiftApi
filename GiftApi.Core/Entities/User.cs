@@ -15,5 +15,6 @@ namespace GiftApi.Core.Entities
         public string Password { get; set; }
         public Gender? Gender { get; set; }
         public decimal Balance { get; set; }
+        public UserType Type { get; set; }
     }
 }
