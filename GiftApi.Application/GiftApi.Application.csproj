@@ -21,6 +21,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Brand\Commands\" />
+	  <Folder Include="Brand\Queries\GetAll\" />
 	  <Folder Include="User\Queries\" />
 	</ItemGroup>
 	

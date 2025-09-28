@@ -28,7 +28,7 @@ namespace GiftApi.Application.Manage.Commands.CreateBrand
             if (!categoryExists)
                 return new CreateBrandResponse { StatusCode = 404, Success = false,  UserMessage = "Category not found."  };
 
-            var brand = new Brand
+            var brand = new Core.Entities.Brand
             {
                 Name = request.Name,
                 Description = request.Description,

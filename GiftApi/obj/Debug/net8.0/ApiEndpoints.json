@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "GiftApi.Controllers.BrandController",
+    "Method": "GetBrand",
+    "RelativePath": "api/Brand",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Brand.Queries.Get.GetBrandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "DeleteBrand",
     "RelativePath": "api/Manage/brand",
