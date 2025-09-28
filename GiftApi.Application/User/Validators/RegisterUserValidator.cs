@@ -53,6 +53,13 @@ namespace GiftApi.Application.User.Validators
             RuleFor(x => x.DateOfBirth)
                 .NotEmpty().WithMessage("Date of birth is required.")
                 .Must(BeAtLeast18YearsOld).WithMessage("User must be at least 18 years old.");
+
+            RuleFor(x => x.IdentificationNumber)
+            .NotEmpty().WithMessage("Identification number is required.")
+            .Matches(@"^\d{11}$").WithMessage("Identification number must be 11 digits.")
+            .MustAsync(async (id, ct) => !await _db.Users.AnyAsync(u => u.IdentificationNumber == id, ct))
+            .WithMessage("Identification number already exists.");
+
         }
 
         private bool IsValidPhoneNumber(string phoneNumber)
