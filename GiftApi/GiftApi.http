@@ -1,0 +1,6 @@
+@GiftApi_HostAddress = http://localhost:5211
+
+GET {{GiftApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

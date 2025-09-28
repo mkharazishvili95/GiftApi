@@ -1,0 +1,15 @@
+D:\SS\repos\GiftApi\GiftApi.Core\bin\Debug\net8.0\GiftApi.Core.deps.json
+D:\SS\repos\GiftApi\GiftApi.Core\bin\Debug\net8.0\GiftApi.Core.dll
+D:\SS\repos\GiftApi\GiftApi.Core\bin\Debug\net8.0\GiftApi.Core.pdb
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi.Core.AssemblyInfoInputs.cache
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi.Core.AssemblyInfo.cs
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi.Core.csproj.CoreCompileInputs.cache
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi.Core.dll
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\refint\GiftApi.Core.dll
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi.Core.pdb
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\ref\GiftApi.Core.dll
+D:\SS\repos\GiftApi\GiftApi.Core\bin\Debug\net8.0\GiftApi.Common.dll
+D:\SS\repos\GiftApi\GiftApi.Core\bin\Debug\net8.0\GiftApi.Common.pdb
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi.Core.csproj.AssemblyReference.cache
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi..98AF50EA.Up2Date

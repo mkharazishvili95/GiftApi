@@ -1,0 +1,143 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "GiftApi.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GiftApi.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GiftApi.Common.dll": {}
+        }
+      },
+      "GiftApi.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GiftApi.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GiftApi.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GiftApi.Core.dll": {}
+        }
+      },
+      "GiftApi.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GiftApi.Common": "1.0.0",
+          "GiftApi.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GiftApi.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GiftApi.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GiftApi.Common/1.0.0": {
+      "type": "project",
+      "path": "../GiftApi.Common/GiftApi.Common.csproj",
+      "msbuildProject": "../GiftApi.Common/GiftApi.Common.csproj"
+    },
+    "GiftApi.Core/1.0.0": {
+      "type": "project",
+      "path": "../GiftApi.Core/GiftApi.Core.csproj",
+      "msbuildProject": "../GiftApi.Core/GiftApi.Core.csproj"
+    },
+    "GiftApi.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../GiftApi.Infrastructure/GiftApi.Infrastructure.csproj",
+      "msbuildProject": "../GiftApi.Infrastructure/GiftApi.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "GiftApi.Common >= 1.0.0",
+      "GiftApi.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\SS\\repos\\GiftApi\\GiftApi.Application\\GiftApi.Application.csproj",
+      "projectName": "GiftApi.Application",
+      "projectPath": "D:\\SS\\repos\\GiftApi\\GiftApi.Application\\GiftApi.Application.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\SS\\repos\\GiftApi\\GiftApi.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\SS\\repos\\GiftApi\\GiftApi.Common\\GiftApi.Common.csproj": {
+              "projectPath": "D:\\SS\\repos\\GiftApi\\GiftApi.Common\\GiftApi.Common.csproj"
+            },
+            "D:\\SS\\repos\\GiftApi\\GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj": {
+              "projectPath": "D:\\SS\\repos\\GiftApi\\GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
