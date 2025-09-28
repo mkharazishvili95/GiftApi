@@ -1,6 +1,110 @@
 [
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Manage/category",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Manage.Commands.DeleteCategory.DeleteCategoryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/Manage/create-category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Manage.Commands.CreateCategory.CreateCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Manage.Commands.CreateCategory.CreateCategoryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "RestoreCategory",
+    "RelativePath": "api/Manage/restore-category",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Manage.Commands.RestoreCategory.RestoreCategoryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/Manage/update-category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Manage.Commands.EditCategory.UpdateCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Manage.Commands.UpdateCategory.UpdateCategoryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "GetUser",
     "RelativePath": "api/Manage/user",
     "HttpMethod": "GET",
