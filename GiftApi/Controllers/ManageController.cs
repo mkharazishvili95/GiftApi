@@ -1,7 +1,11 @@
-﻿using GiftApi.Application.Manage.Commands.CreateCategory;
+﻿using GiftApi.Application.Manage.Commands.CreateBrand;
+using GiftApi.Application.Manage.Commands.CreateCategory;
+using GiftApi.Application.Manage.Commands.DeleteBrand;
 using GiftApi.Application.Manage.Commands.DeleteCategory;
 using GiftApi.Application.Manage.Commands.EditCategory;
+using GiftApi.Application.Manage.Commands.RestoreBrand;
 using GiftApi.Application.Manage.Commands.RestoreCategory;
+using GiftApi.Application.Manage.Commands.UpdateBrand;
 using GiftApi.Application.Manage.Commands.UpdateCategory;
 using GiftApi.Application.Manage.Queries.Get;
 using GiftApi.Application.Manage.Queries.GetUsers;
@@ -37,5 +41,17 @@ namespace GiftApi.Controllers
 
         [HttpPut("restore-category")]
         public async Task<RestoreCategoryResponse> RestoreCategory([FromQuery] RestoreCategoryCommand request) => await _mediator.Send(request);
+
+        [HttpPost("create-brand")]
+        public async Task<CreateBrandResponse> CreateBrand([FromBody] CreateBrandCommand request) => await _mediator.Send(request);
+
+        [HttpPost("update-brand")]
+        public async Task<UpdateBrandResponse> EditBrand([FromBody] UpdateBrandCommand request) => await _mediator.Send(request);
+
+        [HttpDelete("brand")]
+        public async Task<DeleteBrandResponse> DeleteBrand([FromQuery] DeleteBrandCommand request) => await _mediator.Send(request);
+
+        [HttpPut("restore-brand")]
+        public async Task<RestoreBrandResponse> RestoreBrand([FromQuery] RestoreBrandCommand request) => await _mediator.Send(request);
     }
 }

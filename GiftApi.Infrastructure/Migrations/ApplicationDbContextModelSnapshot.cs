@@ -30,7 +30,7 @@ namespace GiftApi.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("CategoryId")
+                    b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreateDate")
@@ -162,9 +162,13 @@ namespace GiftApi.Infrastructure.Migrations
 
             modelBuilder.Entity("GiftApi.Core.Entities.Brand", b =>
                 {
-                    b.HasOne("GiftApi.Core.Entities.Category", null)
+                    b.HasOne("GiftApi.Core.Entities.Category", "Category")
                         .WithMany("Brands")
-                        .HasForeignKey("CategoryId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("GiftApi.Core.Entities.Category", b =>

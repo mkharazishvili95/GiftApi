@@ -11,5 +11,7 @@
         public DateTime? DeleteDate { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime? UpdateDate { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }
