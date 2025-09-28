@@ -15,3 +15,6 @@ D:\SS\repos\GiftApi\GiftApi.Infrastructure\bin\Debug\net8.0\GiftApi.Common.pdb
 D:\SS\repos\GiftApi\GiftApi.Infrastructure\bin\Debug\net8.0\GiftApi.Core.pdb
 D:\SS\repos\GiftApi\GiftApi.Infrastructure\obj\Debug\net8.0\GiftApi.Infrastructure.csproj.AssemblyReference.cache
 D:\SS\repos\GiftApi\GiftApi.Infrastructure\obj\Debug\net8.0\GiftApi..84B3CB7C.Up2Date
+D:\SS\repos\GiftApi\GiftApi.Infrastructure\obj\Debug\net8.0\GiftApi.Infrastructure.sourcelink.json
+D:\SS\repos\GiftApi\GiftApi.Infrastructure\bin\Debug\net8.0\GiftApi.Infrastructure.runtimeconfig.json
+D:\SS\repos\GiftApi\GiftApi.Infrastructure\obj\Debug\net8.0\GiftApi.Infrastructure.genruntimeconfig.cache

@@ -13,3 +13,4 @@ D:\SS\repos\GiftApi\GiftApi.Core\bin\Debug\net8.0\GiftApi.Common.dll
 D:\SS\repos\GiftApi\GiftApi.Core\bin\Debug\net8.0\GiftApi.Common.pdb
 D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi.Core.csproj.AssemblyReference.cache
 D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi..98AF50EA.Up2Date
+D:\SS\repos\GiftApi\GiftApi.Core\obj\Debug\net8.0\GiftApi.Core.sourcelink.json

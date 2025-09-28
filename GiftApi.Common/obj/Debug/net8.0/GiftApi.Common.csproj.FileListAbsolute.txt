@@ -9,3 +9,5 @@ D:\SS\repos\GiftApi\GiftApi.Common\obj\Debug\net8.0\GiftApi.Common.dll
 D:\SS\repos\GiftApi\GiftApi.Common\obj\Debug\net8.0\refint\GiftApi.Common.dll
 D:\SS\repos\GiftApi\GiftApi.Common\obj\Debug\net8.0\GiftApi.Common.pdb
 D:\SS\repos\GiftApi\GiftApi.Common\obj\Debug\net8.0\ref\GiftApi.Common.dll
+D:\SS\repos\GiftApi\GiftApi.Common\obj\Debug\net8.0\GiftApi.Common.sourcelink.json
+D:\SS\repos\GiftApi\GiftApi.Common\obj\Debug\net8.0\GiftApi.Common.csproj.AssemblyReference.cache
