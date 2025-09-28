@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36429.23 d17.14
+VisualStudioVersion = 17.14.36429.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftApi", "GiftApi\GiftApi.csproj", "{57FB5836-569A-4E37-A684-FE0682369A28}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftApi.Application", "GiftApi.Application\GiftApi.Application.csproj", "{43BABDFD-E580-4FCF-B1C7-AF9308AEF29F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftApi.Infrastructure", "GiftApi.Infrastructure\GiftApi.Infrastructure.csproj", "{6553039E-1CB7-4D15-84EF-41A62C55E2A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftApi.Tests", "GiftApi.Tests\GiftApi.Tests.csproj", "{FFED029B-4B98-4293-BD85-108B8BF4878F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{6553039E-1CB7-4D15-84EF-41A62C55E2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6553039E-1CB7-4D15-84EF-41A62C55E2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6553039E-1CB7-4D15-84EF-41A62C55E2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFED029B-4B98-4293-BD85-108B8BF4878F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFED029B-4B98-4293-BD85-108B8BF4878F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFED029B-4B98-4293-BD85-108B8BF4878F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFED029B-4B98-4293-BD85-108B8BF4878F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

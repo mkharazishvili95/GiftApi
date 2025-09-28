@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="FluentAssertions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="NUnit" Version="4.4.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="5.1.0" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\GiftApi.Application\GiftApi.Application.csproj" />
+		<ProjectReference Include="..\GiftApi.Core\GiftApi.Core.csproj" />
+		<ProjectReference Include="..\GiftApi.Infrastructure\GiftApi.Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+    <Using Include="NUnit.Framework" />
+  </ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Brand\" />
+	  <Folder Include="Category\" />
+	</ItemGroup>
+
+</Project>
