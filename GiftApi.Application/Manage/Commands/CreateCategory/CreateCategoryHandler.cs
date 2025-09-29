@@ -17,7 +17,7 @@ namespace GiftApi.Application.Manage.Commands.CreateCategory
             if(string.IsNullOrWhiteSpace(request.Name))
                 return new CreateCategoryResponse { Success = false, UserMessage = "Category name is required.", StatusCode = 400 };
 
-            var category = new Category
+            var category = new GiftApi.Core.Entities.Category
             {
                 Name = request.Name,
                 Description = request.Description,

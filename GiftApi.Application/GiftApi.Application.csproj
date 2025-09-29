@@ -24,6 +24,8 @@
 	<ItemGroup>
 	  <Folder Include="Brand\Commands\" />
 	  <Folder Include="Brand\Queries\GetAll\" />
+	  <Folder Include="Category\Commands\" />
+	  <Folder Include="Category\Queries\GetAll\" />
 	  <Folder Include="File\Queries\" />
 	</ItemGroup>
 	

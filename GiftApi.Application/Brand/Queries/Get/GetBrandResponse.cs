@@ -13,6 +13,6 @@ namespace GiftApi.Application.Brand.Queries.Get
         public DateTime? CreateDate { get; set; }
         public DateTime? UpdateDate { get; set; }
         public int? CategoryId { get; set; }
-        public Category? Category { get; set; }
+        public GiftApi.Core.Entities.Category? Category { get; set; }
     }
 }
