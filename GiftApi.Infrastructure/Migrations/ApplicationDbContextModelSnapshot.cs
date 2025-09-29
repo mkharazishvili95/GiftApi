@@ -197,6 +197,104 @@ namespace GiftApi.Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("GiftApi.Core.Entities.Voucher", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("BrandId")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("Code")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPercentage")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Redeemed")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Unlimited")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ValidMonths")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
+
+                    b.ToTable("Vouchers");
+                });
+
+            modelBuilder.Entity("GiftApi.Core.Entities.VoucherDeliveryInfo", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RecipientAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RecipientCity")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RecipientEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RecipientName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RecipientPhone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SenderName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("VoucherId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("VoucherId");
+
+                    b.ToTable("VoucherDeliveryInfos");
+                });
+
             modelBuilder.Entity("GiftApi.Core.Entities.Brand", b =>
                 {
                     b.HasOne("GiftApi.Core.Entities.Category", "Category")
@@ -206,6 +304,26 @@ namespace GiftApi.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("GiftApi.Core.Entities.Voucher", b =>
+                {
+                    b.HasOne("GiftApi.Core.Entities.Brand", "Brand")
+                        .WithMany()
+                        .HasForeignKey("BrandId");
+
+                    b.Navigation("Brand");
+                });
+
+            modelBuilder.Entity("GiftApi.Core.Entities.VoucherDeliveryInfo", b =>
+                {
+                    b.HasOne("GiftApi.Core.Entities.Voucher", "Voucher")
+                        .WithMany()
+                        .HasForeignKey("VoucherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Voucher");
                 });
 
             modelBuilder.Entity("GiftApi.Core.Entities.Category", b =>

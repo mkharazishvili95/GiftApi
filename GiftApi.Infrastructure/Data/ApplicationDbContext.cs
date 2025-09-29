@@ -14,12 +14,18 @@ namespace GiftApi.Infrastructure.Data
             modelBuilder.Entity<User>()
                 .Property(u => u.Balance)
                 .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Voucher>()
+                .Property(v => v.Amount)
+                .HasColumnType("decimal(18,2)");
         }
 
         public DbSet<User> Users { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Core.Entities.File> Files { get; set; }
+        public DbSet<Voucher> Vouchers { get; set; }
+        public DbSet<VoucherDeliveryInfo> VoucherDeliveryInfos { get; set; }
 
     }
 }
