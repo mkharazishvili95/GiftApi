@@ -19,6 +19,7 @@ namespace GiftApi.Infrastructure.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Brand> Brands { get; set; }
+        public DbSet<Core.Entities.File> Files { get; set; }
 
-        }
+    }
 }

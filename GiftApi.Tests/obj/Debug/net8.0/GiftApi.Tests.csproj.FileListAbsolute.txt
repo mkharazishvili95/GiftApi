@@ -231,3 +231,4 @@ D:\SS\repos\GiftApi\GiftApi.Tests\obj\Debug\net8.0\refint\GiftApi.Tests.dll
 D:\SS\repos\GiftApi\GiftApi.Tests\obj\Debug\net8.0\GiftApi.Tests.pdb
 D:\SS\repos\GiftApi\GiftApi.Tests\obj\Debug\net8.0\GiftApi.Tests.genruntimeconfig.cache
 D:\SS\repos\GiftApi\GiftApi.Tests\obj\Debug\net8.0\ref\GiftApi.Tests.dll
+D:\SS\repos\GiftApi\GiftApi.Tests\bin\Debug\net8.0\Imagekit.dll

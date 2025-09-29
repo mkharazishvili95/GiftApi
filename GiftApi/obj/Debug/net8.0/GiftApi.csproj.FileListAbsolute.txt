@@ -16,7 +16,6 @@ D:\SS\repos\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.GeneratedMSBuildEditorConfi
 D:\SS\repos\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.AssemblyInfoInputs.cache
 D:\SS\repos\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.AssemblyInfo.cs
 D:\SS\repos\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.csproj.CoreCompileInputs.cache
-D:\SS\repos\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.MvcApplicationPartsAssemblyInfo.cs
 D:\SS\repos\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.MvcApplicationPartsAssemblyInfo.cache
 D:\SS\repos\GiftApi\GiftApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\SS\repos\GiftApi\GiftApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
@@ -155,3 +154,6 @@ D:\SS\repos\GiftApi\GiftApi\bin\Debug\net8.0\FluentValidation.dll
 D:\SS\repos\GiftApi\GiftApi\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 D:\SS\repos\GiftApi\GiftApi\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\SS\repos\GiftApi\GiftApi\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\SS\repos\GiftApi\GiftApi\bin\Debug\net8.0\Imagekit.dll
+D:\SS\repos\GiftApi\GiftApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\SS\repos\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.MvcApplicationPartsAssemblyInfo.cs
