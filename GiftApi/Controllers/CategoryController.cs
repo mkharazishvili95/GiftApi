@@ -15,7 +15,7 @@ namespace GiftApi.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("details")]
         public async Task<GetCategoryResponse> GetCategory([FromQuery] GetCategoryQuery request) => await _mediator.Send(request);
 
         [HttpPost("all")]

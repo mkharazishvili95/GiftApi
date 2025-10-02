@@ -1,37 +1,6 @@
 [
   {
     "ContainingType": "GiftApi.Controllers.BrandController",
-    "Method": "GetBrand",
-    "RelativePath": "api/Brand/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "id",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "GiftApi.Application.Brand.Queries.Get.GetBrandResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "GiftApi.Controllers.BrandController",
     "Method": "GetAllBrands",
     "RelativePath": "api/Brand/all",
     "HttpMethod": "POST",
@@ -57,9 +26,9 @@
     ]
   },
   {
-    "ContainingType": "GiftApi.Controllers.CategoryController",
-    "Method": "GetCategory",
-    "RelativePath": "api/Category/{id}",
+    "ContainingType": "GiftApi.Controllers.BrandController",
+    "Method": "GetBrand",
+    "RelativePath": "api/Brand/details",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -68,16 +37,11 @@
         "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": false
-      },
-      {
-        "Name": "id",
-        "Type": "",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "GiftApi.Application.Category.Queries.Get.GetCategoryResponse",
+        "Type": "GiftApi.Application.Brand.Queries.Get.GetBrandResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -114,9 +78,35 @@
     ]
   },
   {
+    "ContainingType": "GiftApi.Controllers.CategoryController",
+    "Method": "GetCategory",
+    "RelativePath": "api/Category/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Category.Queries.Get.GetCategoryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GiftApi.Controllers.FileController",
     "Method": "FileDelete",
-    "RelativePath": "api/File",
+    "RelativePath": "api/File/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -125,6 +115,11 @@
         "Name": "request",
         "Type": "GiftApi.Application.File.Commands.Delete.FileDeleteCommand",
         "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -297,6 +292,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "CreateVoucher",
+    "RelativePath": "api/Manage/create-voucher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Manage.Commands.CreateVoucher.CreateVoucherCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Manage.Commands.CreateVoucher.CreateVoucherResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "RestoreBrand",
     "RelativePath": "api/Manage/restore-brand",
     "HttpMethod": "PUT",
@@ -390,6 +411,32 @@
     "ReturnTypes": [
       {
         "Type": "GiftApi.Application.Manage.Commands.UpdateCategory.UpdateCategoryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "UpdateVoucher",
+    "RelativePath": "api/Manage/update-voucher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Manage.Commands.EditVoucher.UpdateVoucherCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Manage.Commands.UpdateVoucher.UpdateVoucherResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -15,7 +15,7 @@ namespace GiftApi.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("details")]
         public async Task<GetBrandResponse> GetBrand([FromQuery] GetBrandQuery request) => await _mediator.Send(request);
 
         [HttpPost("all")]

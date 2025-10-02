@@ -19,7 +19,7 @@ namespace GiftApi.Controllers
         [HttpPost("upload")]
         public async Task<FileUploadResponse> FileUpload(FileUploadCommand request) => await _mediator.Send(request);
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<FileDeleteResponse> FileDelete([FromQuery] FileDeleteCommand request) => await _mediator.Send(request);
 
         [HttpPost("set-as-main")]
