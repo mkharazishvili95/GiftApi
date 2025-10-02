@@ -1,4 +1,5 @@
 ﻿using GiftApi.Application.Brand.Queries.Get;
+using GiftApi.Application.Brand.Queries.GetAll;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +15,10 @@ namespace GiftApi.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<GetBrandResponse> GetBrand([FromQuery] GetBrandQuery request) => await _mediator.Send(request);
+
+        [HttpPost("all")]
+        public async Task<GetAllBrandsResponse> GetAllBrands([FromBody] GetAllBrandsQuery request) => await _mediator.Send(request);
     }
 }

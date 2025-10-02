@@ -1,0 +1,10 @@
+﻿using GiftApi.Common.Models;
+using MediatR;
+
+namespace GiftApi.Application.Brand.Queries.GetAll
+{
+    public class GetAllBrandsQuery : IRequest<GetAllBrandsResponse>
+    {
+        public PaginationModel Pagination { get; set; } = new PaginationModel();
+    }
+}

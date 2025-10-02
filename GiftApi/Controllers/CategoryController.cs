@@ -1,4 +1,5 @@
 ﻿using GiftApi.Application.Category.Queries.Get;
+using GiftApi.Application.Category.Queries.GetAll;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +15,10 @@ namespace GiftApi.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<GetCategoryResponse> GetCategory([FromQuery] GetCategoryQuery request) => await _mediator.Send(request);
+
+        [HttpPost("all")]
+        public async Task<GetAllCategoriesResponse> GetAllCategories([FromBody] GetAllCategoriesQuery request) => await _mediator.Send(request);
     }
 }

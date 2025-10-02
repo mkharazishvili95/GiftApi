@@ -2,7 +2,7 @@
   {
     "ContainingType": "GiftApi.Controllers.BrandController",
     "Method": "GetBrand",
-    "RelativePath": "api/Brand",
+    "RelativePath": "api/Brand/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -11,6 +11,11 @@
         "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -26,9 +31,35 @@
     ]
   },
   {
+    "ContainingType": "GiftApi.Controllers.BrandController",
+    "Method": "GetAllBrands",
+    "RelativePath": "api/Brand/all",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Brand.Queries.GetAll.GetAllBrandsQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Brand.Queries.GetAll.GetAllBrandsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GiftApi.Controllers.CategoryController",
     "Method": "GetCategory",
-    "RelativePath": "api/Category",
+    "RelativePath": "api/Category/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -37,11 +68,42 @@
         "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
         "Type": "GiftApi.Application.Category.Queries.Get.GetCategoryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.CategoryController",
+    "Method": "GetAllCategories",
+    "RelativePath": "api/Category/all",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Category.Queries.GetAll.GetAllCategoriesQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Category.Queries.GetAll.GetAllCategoriesResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
