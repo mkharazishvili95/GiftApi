@@ -499,6 +499,37 @@
     ]
   },
   {
+    "ContainingType": "GiftApi.Controllers.PaymentController",
+    "Method": "TopUpBalance",
+    "RelativePath": "api/Payment/to-pup-balance",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Amount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Payment.Commands.TopUp.TopUpBalanceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GiftApi.Controllers.UserController",
     "Method": "Login",
     "RelativePath": "api/User/login",
@@ -545,5 +576,57 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.VoucherController",
+    "Method": "GetAllVouchers",
+    "RelativePath": "api/Voucher/all",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Voucher.Queries.GetAll.GetAllVouchersQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Voucher.Queries.GetAll.GetAllVouchersResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.VoucherController",
+    "Method": "GetVoucher",
+    "RelativePath": "api/Voucher/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Voucher.Queries.Get.GetVoucherResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

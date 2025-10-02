@@ -25,6 +25,8 @@
 	  <Folder Include="Brand\Commands\" />
 	  <Folder Include="Category\Commands\" />
 	  <Folder Include="File\Queries\" />
+	  <Folder Include="Payment\Queries\" />
+	  <Folder Include="Voucher\Commands\" />
 	</ItemGroup>
 	
 </Project>

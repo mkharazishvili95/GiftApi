@@ -222,6 +222,9 @@ namespace GiftApi.Infrastructure.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsPercentage")
                         .HasColumnType("bit");
 

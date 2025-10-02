@@ -27,7 +27,7 @@ namespace GiftApi.Application.Manage.Commands.CreateVoucher
                 
             }
 
-            var voucher = new Voucher
+            var voucher = new GiftApi.Core.Entities.Voucher
             {
                 Id = Guid.NewGuid(),
                 Title = request.Title,
