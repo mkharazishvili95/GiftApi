@@ -1,3 +1,4 @@
+using GiftApi.Application.Features.User.Commands.Register;
 using GiftApi.Application.Interfaces;
 using GiftApi.Infrastructure.Data;
 using GiftApi.Infrastructure.Repositories;
@@ -20,7 +21,9 @@ builder.Services.AddDbContext<ApplicationDbContext>
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<RegisterUserValidator>();
 
+builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<RegisterUserCommand>());
 builder.Services.AddHttpClient();
 
 builder.Services.AddDistributedMemoryCache();

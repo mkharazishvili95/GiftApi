@@ -147,3 +147,7 @@ D:\G\GiftApi\GiftApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Ext
 D:\G\GiftApi\GiftApi\bin\Debug\net8.0\MediatR.dll
 D:\G\GiftApi\GiftApi\bin\Debug\net8.0\MediatR.Contracts.dll
 D:\G\GiftApi\GiftApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\G\GiftApi\GiftApi\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\G\GiftApi\GiftApi\bin\Debug\net8.0\FluentValidation.dll
+D:\G\GiftApi\GiftApi\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+D:\G\GiftApi\GiftApi\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

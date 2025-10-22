@@ -22,8 +22,4 @@
 		<ProjectReference Include="..\GiftApi.Infrastructure\GiftApi.Infrastructure.csproj" />
 	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
