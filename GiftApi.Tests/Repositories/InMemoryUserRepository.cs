@@ -31,6 +31,21 @@ namespace GiftApi.Tests.Repositories
             await _db.SaveChangesAsync();
             return user;
         }
+
+        public Task<Domain.Entities.User?> GetByUserNameAsync(string userName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task UpdateRefreshTokenAsync(Domain.Entities.User user, string refreshToken, DateTime expiry)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Domain.Entities.User?> GetByIdAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

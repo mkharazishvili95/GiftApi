@@ -1,3 +1,5 @@
+using FluentValidation;
+using GiftApi.Application.Features.User.Commands.Login;
 using GiftApi.Application.Features.User.Commands.Register;
 using GiftApi.Application.Interfaces;
 using GiftApi.Infrastructure.Data;
@@ -24,6 +26,10 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<RegisterUserValidator>();
 
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<RegisterUserCommand>());
+builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<LoginUserHandler>());
+
+builder.Services.AddValidatorsFromAssemblyContaining<LoginUserValidator>();
+
 builder.Services.AddHttpClient();
 
 builder.Services.AddDistributedMemoryCache();

@@ -1,4 +1,5 @@
 ﻿using GiftApi.Application.Interfaces;
+using GiftApi.Domain.Entities;
 using GiftApi.Domain.Enums.User;
 using MediatR;
 
@@ -45,7 +46,7 @@ namespace GiftApi.Application.Features.User.Commands.Register
                 IdentificationNumber = request.IdentificationNumber,
                 DateOfBirth = request.DateOfBirth,
                 PhoneNumber = request.PhoneNumber,
-                Password = hashedPassword,
+                Password = BCrypt.Net.BCrypt.HashPassword(request.Password),
                 UserName = userName,
                 Gender = request.Gender,
                 RegisterDate = DateTime.UtcNow.AddHours(4),

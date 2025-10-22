@@ -151,3 +151,4 @@ D:\G\GiftApi\GiftApi.Tests\obj\Debug\net8.0\GiftApi.Tests.genruntimeconfig.cache
 D:\G\GiftApi\GiftApi.Tests\obj\Debug\net8.0\ref\GiftApi.Tests.dll
 D:\G\GiftApi\GiftApi.Tests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 D:\G\GiftApi\GiftApi.Tests\bin\Debug\net8.0\FluentAssertions.dll
+D:\G\GiftApi\GiftApi.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

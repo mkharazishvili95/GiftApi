@@ -1,4 +1,6 @@
-﻿using GiftApi.Application.Features.User.Commands.Register;
+﻿using GiftApi.Application.Features.User.Commands.Login;
+using GiftApi.Application.Features.User.Commands.Login.RefreshToken;
+using GiftApi.Application.Features.User.Commands.Register;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,5 +18,11 @@ namespace GiftApi.Controllers
 
         [HttpPost("register")]
         public async Task<RegisterUserResponse> Register([FromBody] RegisterUserCommand request) => await _mediator.Send(request);
+
+        [HttpPost("login")]
+        public async Task<LoginUserResponse> Login([FromBody] LoginUserCommand request) => await _mediator.Send(request);
+
+        [HttpPost("refresh-token")]
+        public async Task<RefreshTokenResponse> RefreshToken([FromBody] RefreshTokenCommand command) => await _mediator.Send(command);
     }
 }

@@ -954,7 +954,9 @@
           "BCrypt.Net-Next": "4.0.3",
           "FluentValidation.AspNetCore": "11.3.1",
           "GiftApi.Domain": "1.0.0",
-          "MediatR": "13.0.0"
+          "MediatR": "13.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
+          "System.IdentityModel.Tokens.Jwt": "8.14.0"
         },
         "runtime": {
           "GiftApi.Application.dll": {

@@ -14,6 +14,13 @@ namespace GiftApi.Infrastructure.Repositories
             _db = db;
         }
 
+        public async Task<User?> GetByIdAsync(Guid id)
+        {
+            return await _db.Users
+                .AsNoTracking()
+                .FirstOrDefaultAsync(u => u.Id == id);
+        }
+
         public async Task<bool> EmailExists(string email)
         {
             return await _db.Users.AnyAsync(u => u.Email.ToUpper() == email.ToUpper());
@@ -43,7 +50,7 @@ namespace GiftApi.Infrastructure.Repositories
                     IdentificationNumber = user.IdentificationNumber,
                     Email = user.Email,
                     PhoneNumber = user.PhoneNumber,
-                    Password = BCrypt.Net.BCrypt.HashPassword(user.Password),
+                    Password = user.Password,
                     DateOfBirth = user.DateOfBirth,
                     Gender = user.Gender,
                     UserName = user.UserName,
@@ -62,6 +69,19 @@ namespace GiftApi.Infrastructure.Repositories
                 Console.WriteLine($"Error: {ex.Message}");
                 throw;
             }
+        }
+        public async Task<User?> GetByUserNameAsync(string userName)
+        {
+            return await _db.Users
+                .FirstOrDefaultAsync(u => u.UserName.ToUpper() == userName.ToUpper());
+        }
+
+        public async Task UpdateRefreshTokenAsync(User user, string refreshToken, DateTime expiry)
+        {
+            user.RefreshToken = refreshToken;
+            user.RefreshTokenExpiry = expiry;
+            _db.Users.Update(user);
+            await _db.SaveChangesAsync();
         }
     }
 }
