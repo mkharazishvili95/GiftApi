@@ -1,0 +1,11 @@
+D:\G\GiftApi\GiftApi.Domain\bin\Debug\net8.0\GiftApi.Domain.deps.json
+D:\G\GiftApi\GiftApi.Domain\bin\Debug\net8.0\GiftApi.Domain.dll
+D:\G\GiftApi\GiftApi.Domain\bin\Debug\net8.0\GiftApi.Domain.pdb
+D:\G\GiftApi\GiftApi.Domain\obj\Debug\net8.0\GiftApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\G\GiftApi\GiftApi.Domain\obj\Debug\net8.0\GiftApi.Domain.AssemblyInfoInputs.cache
+D:\G\GiftApi\GiftApi.Domain\obj\Debug\net8.0\GiftApi.Domain.AssemblyInfo.cs
+D:\G\GiftApi\GiftApi.Domain\obj\Debug\net8.0\GiftApi.Domain.csproj.CoreCompileInputs.cache
+D:\G\GiftApi\GiftApi.Domain\obj\Debug\net8.0\GiftApi.Domain.dll
+D:\G\GiftApi\GiftApi.Domain\obj\Debug\net8.0\refint\GiftApi.Domain.dll
+D:\G\GiftApi\GiftApi.Domain\obj\Debug\net8.0\GiftApi.Domain.pdb
+D:\G\GiftApi\GiftApi.Domain\obj\Debug\net8.0\ref\GiftApi.Domain.dll
