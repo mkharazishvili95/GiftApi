@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\G\\GiftApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\G\\GiftApi\\GiftApi.Infrastructure\\Migrations\\20251022163837_AddedEntityModels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GiftApi.Infrastructure\\Migrations\\20251022163837_AddedEntityModels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|d:\\g\\giftapi\\giftapi.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|solutionrelative:giftapi.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A46FA0FB-EA3B-4BC3-8BA0-718EB9D0FE1A}|GiftApi.Domain\\GiftApi.Domain.csproj|d:\\g\\giftapi\\giftapi.domain\\entities\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A46FA0FB-EA3B-4BC3-8BA0-718EB9D0FE1A}|GiftApi.Domain\\GiftApi.Domain.csproj|solutionrelative:giftapi.domain\\entities\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\giftapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\giftapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A46FA0FB-EA3B-4BC3-8BA0-718EB9D0FE1A}|GiftApi.Domain\\GiftApi.Domain.csproj|d:\\g\\giftapi\\giftapi.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|solutionrelative:giftapi.infrastructure\\giftapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\giftapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\giftapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\giftapi.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\giftapi.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -66,11 +82,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20251022163837_AddedEntityModels.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Migrations\\20251022163837_AddedEntityModels.cs",
+              "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Migrations\\20251022163837_AddedEntityModels.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Migrations\\20251022163837_AddedEntityModels.cs",
+              "RelativeToolTip": "GiftApi.Infrastructure\\Migrations\\20251022163837_AddedEntityModels.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAgwLAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:38:37.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Program.cs",
+              "RelativeDocumentMoniker": "GiftApi\\Program.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\Program.cs",
+              "RelativeToolTip": "GiftApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:37:29.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\appsettings.json",
+              "RelativeDocumentMoniker": "GiftApi\\appsettings.json",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\appsettings.json",
+              "RelativeToolTip": "GiftApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-22T16:36:33.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "GiftApi.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:35:05.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "VoucherValidityType.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Enums\\Voucher\\VoucherValidityType.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Enums\\Voucher\\VoucherValidityType.cs",
@@ -83,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "UserType.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Enums\\User\\UserType.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Enums\\User\\UserType.cs",
@@ -96,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "LoginIdentifierType.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Enums\\User\\LoginIdentifierType.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Enums\\User\\LoginIdentifierType.cs",
@@ -109,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Gender.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Enums\\User\\Gender.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Enums\\User\\Gender.cs",
@@ -122,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "FileType.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Enums\\File\\FileType.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Enums\\File\\FileType.cs",
@@ -135,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "VoucherDeliveryInfo.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\VoucherDeliveryInfo.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\VoucherDeliveryInfo.cs",
@@ -148,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Voucher.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\Voucher.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\Voucher.cs",
@@ -161,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\User.cs",
@@ -174,20 +242,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "File.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\File.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\File.cs",
               "ToolTip": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\File.cs",
               "RelativeToolTip": "GiftApi.Domain\\Entities\\File.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T16:27:12.273Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\Category.cs",
@@ -200,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Brand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\Brand.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\Brand.cs",
@@ -213,33 +281,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "GiftApi.Infrastructure.csproj",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj",
               "ToolTip": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj",
               "RelativeToolTip": "GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-22T16:20:00.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "GiftApi.csproj",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\GiftApi.csproj",
               "RelativeDocumentMoniker": "GiftApi\\GiftApi.csproj",
               "ToolTip": "D:\\G\\GiftApi\\GiftApi\\GiftApi.csproj",
               "RelativeToolTip": "GiftApi\\GiftApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-22T16:18:25.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "GiftApi.Application.csproj",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\GiftApi.Application.csproj",
               "RelativeDocumentMoniker": "GiftApi.Application\\GiftApi.Application.csproj",
