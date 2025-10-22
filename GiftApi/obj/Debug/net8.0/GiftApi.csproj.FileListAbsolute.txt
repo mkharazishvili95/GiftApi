@@ -20,7 +20,6 @@ D:\G\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.GeneratedMSBuildEditorConfig.edito
 D:\G\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.AssemblyInfoInputs.cache
 D:\G\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.AssemblyInfo.cs
 D:\G\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.csproj.CoreCompileInputs.cache
-D:\G\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.MvcApplicationPartsAssemblyInfo.cs
 D:\G\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.MvcApplicationPartsAssemblyInfo.cache
 D:\G\GiftApi\GiftApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\G\GiftApi\GiftApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
@@ -39,3 +38,5 @@ D:\G\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.genruntimeconfig.cache
 D:\G\GiftApi\GiftApi\obj\Debug\net8.0\ref\GiftApi.dll
 D:\G\GiftApi\GiftApi\bin\Debug\net8.0\GiftApi.Domain.dll
 D:\G\GiftApi\GiftApi\bin\Debug\net8.0\GiftApi.Domain.pdb
+D:\G\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.sourcelink.json
+D:\G\GiftApi\GiftApi\obj\Debug\net8.0\GiftApi.MvcApplicationPartsAssemblyInfo.cs
