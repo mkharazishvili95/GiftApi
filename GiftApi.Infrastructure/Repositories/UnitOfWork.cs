@@ -12,9 +12,6 @@ namespace GiftApi.Infrastructure.Repositories
             _db = db;
         }
 
-        public async Task<int> SaveChangesAsync()
-        {
-            return await _db.SaveChangesAsync();
-        }
+        public async Task<int> SaveChangesAsync() => await _db.SaveChangesAsync();
     }
 }
