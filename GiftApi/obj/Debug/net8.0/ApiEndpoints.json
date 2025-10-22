@@ -15,7 +15,33 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "GiftApi.Application.Features.Manage.Queries.Get.GetUserResponse",
+        "Type": "GiftApi.Application.Features.Manage.Queries.GetUser.GetUserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "GetAllUsersResponse",
+    "RelativePath": "api/manage/all-users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Manage.Queries.GetAllUsers.GetAllUsersQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Queries.GetAllUsers.GetAllUsersResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

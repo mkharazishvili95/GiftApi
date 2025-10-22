@@ -12,5 +12,6 @@ namespace GiftApi.Application.Interfaces
         Task<bool> IdentificationNumberExists(string idNumber);
         Task<User?> GetByUserNameAsync(string userName);
         Task UpdateRefreshTokenAsync(User user, string refreshToken, DateTime expiry);
+        IQueryable<User> GetAllUsers();
     }
 }

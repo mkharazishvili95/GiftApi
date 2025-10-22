@@ -46,6 +46,11 @@ namespace GiftApi.Tests.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public IQueryable<Domain.Entities.User> GetAllUsers()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

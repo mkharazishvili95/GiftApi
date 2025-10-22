@@ -1,7 +1,7 @@
 ﻿using GiftApi.Application.Interfaces;
 using MediatR;
 
-namespace GiftApi.Application.Features.Manage.Queries.Get
+namespace GiftApi.Application.Features.Manage.Queries.GetUser
 {
     public class GetUserHandler : IRequestHandler<GetUserQuery, GetUserResponse>
     {

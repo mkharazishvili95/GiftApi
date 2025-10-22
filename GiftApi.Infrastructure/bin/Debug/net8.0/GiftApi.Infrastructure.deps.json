@@ -914,6 +914,7 @@
           "GiftApi.Domain": "1.0.0",
           "MediatR": "13.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.14.0"
         },
         "runtime": {

@@ -83,5 +83,10 @@ namespace GiftApi.Infrastructure.Repositories
             _db.Users.Update(user);
             await _db.SaveChangesAsync();
         }
+
+        public IQueryable<User> GetAllUsers()
+        {
+            return _db.Users.AsNoTracking();
+        }
     }
 }
