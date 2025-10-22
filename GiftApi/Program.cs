@@ -23,12 +23,13 @@ builder.Services.AddDbContext<ApplicationDbContext>
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<RegisterUserValidator>();
+builder.Services.AddScoped<IManageRepository, ManageRepository>();
 
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<RegisterUserCommand>());
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<LoginUserHandler>());
 
 builder.Services.AddValidatorsFromAssemblyContaining<LoginUserValidator>();
+builder.Services.AddScoped<RegisterUserValidator>();
 
 builder.Services.AddHttpClient();
 

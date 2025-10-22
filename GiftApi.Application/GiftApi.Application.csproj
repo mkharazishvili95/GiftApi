@@ -19,7 +19,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Features\User\Handlers\" />
+	  <Folder Include="Features\Manage\Commands\" />
+	  <Folder Include="Features\User\Queries\" />
 	</ItemGroup>
 
 </Project>

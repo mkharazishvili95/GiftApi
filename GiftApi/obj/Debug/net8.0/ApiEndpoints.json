@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "Get",
+    "RelativePath": "api/manage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Queries.Get.GetUserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GiftApi.Controllers.UserController",
     "Method": "Login",
     "RelativePath": "api/user/login",
