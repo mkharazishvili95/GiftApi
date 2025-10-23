@@ -87,13 +87,65 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "GiftApi.Application.Features.Manage.Queries.GetAllUsers.GetAllUsersQuery",
+        "Type": "GiftApi.Application.Features.Manage.User.Queries.GetAllUsers.GetAllUsersQuery",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "GiftApi.Application.Features.Manage.Queries.GetAllUsers.GetAllUsersResponse",
+        "Type": "GiftApi.Application.Features.Manage.User.Queries.GetAllUsers.GetAllUsersResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/manage/create-category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Manage.Category.Commands.Create.CreateCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Category.Commands.Create.CreateCategoryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "EditCategory",
+    "RelativePath": "api/manage/edit-category",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Manage.Category.Commands.Edit.EditCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Category.Commands.Edit.EditCategoryResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -119,7 +171,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "GiftApi.Application.Features.Manage.Queries.GetUser.GetUserResponse",
+        "Type": "GiftApi.Application.Features.Manage.User.Queries.GetUser.GetUserResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

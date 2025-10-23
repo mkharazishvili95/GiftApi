@@ -1,0 +1,12 @@
+﻿using GiftApi.Application.Common.Models;
+
+namespace GiftApi.Application.Features.Manage.Category.Commands.Edit
+{
+    public class EditCategoryResponse : BaseResponse 
+    {
+        public int? Id { get; set; }
+        public string Name { get; set; }
+        public string? Description { get; set; }
+        public string? Logo { get; set; }
+    }
+}

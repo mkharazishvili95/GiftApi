@@ -2,7 +2,7 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace GiftApi.Application.Features.Manage.Queries.GetAllUsers
+namespace GiftApi.Application.Features.Manage.User.Queries.GetAllUsers
 {
     public class GetAllUsersHandler : IRequestHandler<GetAllUsersQuery, GetAllUsersResponse>
     {

@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using GiftApi.Application.Features.Manage.Queries.GetUser;
+using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using GiftApi.Application.Interfaces;
 using GiftApi.Infrastructure.Data;
 using GiftApi.Infrastructure.Repositories;

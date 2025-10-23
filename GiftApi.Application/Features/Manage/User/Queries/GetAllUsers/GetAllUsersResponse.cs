@@ -1,7 +1,7 @@
 ﻿using GiftApi.Application.Common.Models;
 using GiftApi.Domain.Enums.User;
 
-namespace GiftApi.Application.Features.Manage.Queries.GetAllUsers
+namespace GiftApi.Application.Features.Manage.User.Queries.GetAllUsers
 {
     public class GetAllUsersResponse : BaseResponse
     {

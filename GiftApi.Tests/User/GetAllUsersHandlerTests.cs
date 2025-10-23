@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
 using GiftApi.Application.Common.Models;
-using GiftApi.Application.Features.Manage.Queries.GetAllUsers;
+using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Interfaces;
 using GiftApi.Domain.Enums.User;
 using GiftApi.Infrastructure.Data;

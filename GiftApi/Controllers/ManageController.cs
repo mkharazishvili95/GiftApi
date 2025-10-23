@@ -1,5 +1,7 @@
-﻿using GiftApi.Application.Features.Manage.Queries.GetAllUsers;
-using GiftApi.Application.Features.Manage.Queries.GetUser;
+﻿using GiftApi.Application.Features.Manage.Category.Commands.Create;
+using GiftApi.Application.Features.Manage.Category.Commands.Edit;
+using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
+using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,5 +22,11 @@ namespace GiftApi.Controllers
 
         [HttpPost("all-users")]
         public async Task<GetAllUsersResponse> GetAllUsersResponse([FromBody] GetAllUsersQuery request) => await _mediator.Send(request);
+
+        [HttpPost("create-category")]
+        public async Task<CreateCategoryResponse> CreateCategory([FromBody] CreateCategoryCommand request) => await _mediator.Send(request);
+
+        [HttpPut("edit-category")]
+        public async Task<EditCategoryResponse> EditCategory([FromBody] EditCategoryCommand request) => await _mediator.Send(request);
     }
 }
