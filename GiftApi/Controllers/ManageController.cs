@@ -1,4 +1,5 @@
 ﻿using GiftApi.Application.Features.Manage.Category.Commands.Create;
+using GiftApi.Application.Features.Manage.Category.Commands.Delete;
 using GiftApi.Application.Features.Manage.Category.Commands.Edit;
 using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Features.Manage.User.Queries.GetUser;
@@ -28,5 +29,8 @@ namespace GiftApi.Controllers
 
         [HttpPut("edit-category")]
         public async Task<EditCategoryResponse> EditCategory([FromBody] EditCategoryCommand request) => await _mediator.Send(request);
+
+        [HttpDelete("category")]
+        public async Task<DeleteCategoryResponse> DeleteCategory([FromQuery] DeleteCategoryCommand request) => await _mediator.Send(request);
     }
 }

@@ -1,5 +1,4 @@
-﻿using GiftApi.Application.DTOs;
-using GiftApi.Application.Interfaces;
+﻿using GiftApi.Application.Interfaces;
 using GiftApi.Domain.Entities;
 using GiftApi.Infrastructure.Data;
 
@@ -43,7 +42,7 @@ namespace GiftApi.Infrastructure.Repositories
             if (existingCategory == null)
                 return null;
 
-            if(existingCategory.IsDeleted)
+            if (existingCategory.IsDeleted)
                 return null;
 
             existingCategory.Name = category.Name;
@@ -53,6 +52,23 @@ namespace GiftApi.Infrastructure.Repositories
 
             _db.Categories.Update(existingCategory);
             return existingCategory;
+        }
+
+        public async Task<bool> Delete(int id)
+        {
+            var category = await _db.Categories.FindAsync(id);
+
+            if (category == null)
+                return false;
+
+            if (category.IsDeleted)
+                return false;
+
+            category.IsDeleted = true;
+            category.DeleteDate = DateTime.UtcNow.AddHours(4);
+            _db.Categories.Update(category);
+
+            return true;
         }
     }
 }
