@@ -25,6 +25,7 @@ builder.Services.AddDbContext<ApplicationDbContext>
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IManageRepository, ManageRepository>();
+builder.Services.AddScoped<IFileRepository, FileRepository>();
 
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<RegisterUserCommand>());
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<LoginUserHandler>());
@@ -80,6 +81,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -21,6 +21,13 @@ namespace GiftApi.Infrastructure.Repositories
                 .FirstOrDefaultAsync(u => u.Id == id);
         }
 
+        public async Task<User?> GetCurrentUserAsync(Guid userId)
+        {
+            return await _db.Users
+                .AsNoTracking()
+                .FirstOrDefaultAsync(u => u.Id == userId);
+        }
+
         public async Task<bool> EmailExists(string email)
         {
             return await _db.Users.AnyAsync(u => u.Email.ToUpper() == email.ToUpper());

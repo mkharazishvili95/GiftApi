@@ -1,21 +1,21 @@
 [
   {
-    "ContainingType": "GiftApi.Controllers.ManageController",
-    "Method": "Get",
-    "RelativePath": "api/manage",
-    "HttpMethod": "GET",
+    "ContainingType": "GiftApi.Controllers.FileController",
+    "Method": "Upload",
+    "RelativePath": "api/file/upload",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Guid",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.File.Commands.Upload.UploadFileCommand",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "GiftApi.Application.Features.Manage.Queries.GetUser.GetUserResponse",
+        "Type": "GiftApi.Application.Features.File.Commands.Upload.UploadFileResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -42,6 +42,32 @@
     "ReturnTypes": [
       {
         "Type": "GiftApi.Application.Features.Manage.Queries.GetAllUsers.GetAllUsersResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "Get",
+    "RelativePath": "api/manage/user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Queries.GetUser.GetUserResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

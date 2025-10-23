@@ -51,6 +51,11 @@ namespace GiftApi.Tests.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public Task<Domain.Entities.User?> GetCurrentUserAsync(Guid userId)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

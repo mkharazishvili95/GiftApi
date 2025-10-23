@@ -70,7 +70,7 @@ namespace GiftApi.Tests.User
             result.StatusCode.Should().Be(200);
             result.TotalCount.Should().Be(10);
             result.Items.Count.Should().Be(5);
-            result.Items.First().RegisterDate.Should().BeBefore(result.Items.Last().RegisterDate);
+            result.Items.First().RegisterDate.Should().BeAfter(result.Items.Last().RegisterDate);
         }
 
         [Test]

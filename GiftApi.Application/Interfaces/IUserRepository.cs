@@ -13,5 +13,7 @@ namespace GiftApi.Application.Interfaces
         Task<User?> GetByUserNameAsync(string userName);
         Task UpdateRefreshTokenAsync(User user, string refreshToken, DateTime expiry);
         IQueryable<User> GetAllUsers();
+
+        Task<User?> GetCurrentUserAsync(Guid userId);
     }
 }
