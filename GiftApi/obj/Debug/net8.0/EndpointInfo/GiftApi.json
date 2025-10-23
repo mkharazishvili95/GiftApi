@@ -484,6 +484,7 @@
           },
           "userId": {
             "type": "string",
+            "format": "uuid",
             "nullable": true
           },
           "mainImage": {
