@@ -7,11 +7,33 @@ namespace GiftApi.Infrastructure.Repositories
 {
     public class FileRepository : IFileRepository
     {
-        private readonly ApplicationDbContext _db;
+        readonly ApplicationDbContext _db;
 
         public FileRepository(ApplicationDbContext db)
         {
             _db = db;
+        }
+
+        public async Task<bool> DeleteFileAsync(int fileId)
+        {
+            var file = await GetFileAsync(fileId);
+
+            if (file == null)
+                return false;
+
+            if(file.IsDeleted)
+                return false;
+
+            file.IsDeleted = true;
+            file.DeleteDate = DateTime.UtcNow.AddHours(4);
+
+            _db.Files.Update(file);
+            return true;
+        }
+
+        public async Task<Domain.Entities.File?> GetFileAsync(int id)
+        {
+            return await _db.Files.FindAsync(id);
         }
 
         public async Task<FileDto> UploadFileAsync(string? fileName, string? fileUrl, FileType? fileType)

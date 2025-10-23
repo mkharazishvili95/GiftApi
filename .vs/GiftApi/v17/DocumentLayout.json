@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "D:\\G\\GiftApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\file\\commands\\delete\\deletefilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\file\\commands\\delete\\deletefilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\file\\commands\\delete\\deletefilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\file\\commands\\delete\\deletefilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\file\\commands\\delete\\deletefileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\file\\commands\\delete\\deletefileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\interfaces\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\interfaces\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|d:\\g\\giftapi\\giftapi.infrastructure\\repositories\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|solutionrelative:giftapi.infrastructure\\repositories\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|d:\\g\\giftapi\\giftapi.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|solutionrelative:giftapi.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\user\\commands\\register\\registeruserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\user\\commands\\register\\registeruserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|d:\\g\\giftapi\\giftapi.tests\\user\\getallusershandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|solutionrelative:giftapi.tests\\user\\getallusershandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\file\\commands\\upload\\uploadfilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\file\\commands\\upload\\uploadfilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|d:\\g\\giftapi\\giftapi.infrastructure\\repositories\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|solutionrelative:giftapi.infrastructure\\repositories\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\interfaces\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\interfaces\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|d:\\g\\giftapi\\giftapi.tests\\repositories\\inmemoryuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,20 +63,12 @@
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\file\\commands\\upload\\uploadfilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|d:\\g\\giftapi\\giftapi.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|solutionrelative:giftapi.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\file\\commands\\upload\\uploadfileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,10 +129,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\interfaces\\imanagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\interfaces\\imanagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\user\\commands\\register\\registeruserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\user\\commands\\register\\registeruserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\user\\commands\\register\\registeruserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -186,50 +198,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IUnitOfWork.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IUnitOfWork.cs",
-              "RelativeToolTip": "GiftApi.Application\\Interfaces\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DeleteFileHandler.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileHandler.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileHandler.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileHandler.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T18:48:51.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginUserHandler.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserHandler.cs",
-              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserHandler.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserHandler.cs",
-              "RelativeToolTip": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserHandler.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAuwCMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T19:26:24.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InMemoryUserRepository.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Repositories\\InMemoryUserRepository.cs",
-              "RelativeDocumentMoniker": "GiftApi.Tests\\Repositories\\InMemoryUserRepository.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\Repositories\\InMemoryUserRepository.cs",
-              "RelativeToolTip": "GiftApi.Tests\\Repositories\\InMemoryUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T19:05:39.713Z",
+              "WhenOpened": "2025-10-23T19:26:05.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DeleteFileCommand.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileCommand.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileCommand.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileCommand.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T19:25:54.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UploadFileHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileHandler.cs",
@@ -248,14 +247,14 @@
               "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IFileRepository.cs",
               "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IFileRepository.cs",
               "RelativeToolTip": "GiftApi.Application\\Interfaces\\IFileRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T18:33:34.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "GetAllUsersHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetAllUsersHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\GetAllUsersHandlerTests.cs",
@@ -268,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IUserRepository.cs",
@@ -276,12 +275,11 @@
               "RelativeToolTip": "GiftApi.Application\\Interfaces\\IUserRepository.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAADwvxAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:46:34.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T18:46:34.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "GetAllUsersHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Queries\\GetAllUsers\\GetAllUsersHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Queries\\GetAllUsers\\GetAllUsersHandler.cs",
@@ -289,12 +287,113 @@
               "RelativeToolTip": "GiftApi.Application\\Features\\Manage\\Queries\\GetAllUsers\\GetAllUsersHandler.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAUwBsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T20:38:50.229Z",
+              "WhenOpened": "2025-10-22T20:38:50.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "GiftApi\\Controllers\\FileController.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\Controllers\\FileController.cs",
+              "RelativeToolTip": "GiftApi\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T18:32:45.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeleteFileResponse.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileResponse.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileResponse.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileResponse.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T19:25:59.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "RegisterUserHandler.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserHandler.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserHandler.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserHandler.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserHandler.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwDQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T18:48:34.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "GiftApi.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwDoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T18:45:04.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FileRepository.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\FileRepository.cs",
+              "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\FileRepository.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\FileRepository.cs",
+              "RelativeToolTip": "GiftApi.Infrastructure\\Repositories\\FileRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T18:33:27.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InMemoryUserRepository.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Repositories\\InMemoryUserRepository.cs",
+              "RelativeDocumentMoniker": "GiftApi.Tests\\Repositories\\InMemoryUserRepository.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\Repositories\\InMemoryUserRepository.cs",
+              "RelativeToolTip": "GiftApi.Tests\\Repositories\\InMemoryUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T19:05:39.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginUserHandler.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserHandler.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserHandler.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserHandler.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserHandler.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwCMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T19:26:24.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "GiftApi.Application\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T18:48:51.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Program.cs",
               "RelativeDocumentMoniker": "GiftApi\\Program.cs",
@@ -302,38 +401,11 @@
               "RelativeToolTip": "GiftApi\\Program.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:49:14.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T18:49:14.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FileRepository.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\FileRepository.cs",
-              "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\FileRepository.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\FileRepository.cs",
-              "RelativeToolTip": "GiftApi.Infrastructure\\Repositories\\FileRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAkwBsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T18:33:27.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FileController.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\FileController.cs",
-              "RelativeDocumentMoniker": "GiftApi\\Controllers\\FileController.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\Controllers\\FileController.cs",
-              "RelativeToolTip": "GiftApi\\Controllers\\FileController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T18:32:45.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "UploadFileCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileCommand.cs",
@@ -341,12 +413,11 @@
               "RelativeToolTip": "GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T18:36:02.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T18:36:02.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "UploadFileResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileResponse.cs",
@@ -354,12 +425,11 @@
               "RelativeToolTip": "GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T18:36:08.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T18:36:08.184Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "FileDto.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\DTOs\\FileDto.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\DTOs\\FileDto.cs",
@@ -367,25 +437,11 @@
               "RelativeToolTip": "GiftApi.Application\\DTOs\\FileDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T18:36:42.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T18:36:42.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "GiftApi.Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:45:04.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\appsettings.json",
               "RelativeDocumentMoniker": "GiftApi\\appsettings.json",
@@ -397,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "ImageKitSettings.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Configuration\\ImageKitSettings.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Configuration\\ImageKitSettings.cs",
@@ -409,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "GiftApi.Application.csproj",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\GiftApi.Application.csproj",
               "RelativeDocumentMoniker": "GiftApi.Application\\GiftApi.Application.csproj",
@@ -421,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "GetUserHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetUserHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\GetUserHandlerTests.cs",
@@ -433,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "ManageController.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\ManageController.cs",
               "RelativeDocumentMoniker": "GiftApi\\Controllers\\ManageController.cs",
@@ -445,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "GetAllUsersResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Queries\\GetAllUsers\\GetAllUsersResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Queries\\GetAllUsers\\GetAllUsersResponse.cs",
@@ -457,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "GetAllUsersQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Queries\\GetAllUsers\\GetAllUsersQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Queries\\GetAllUsers\\GetAllUsersQuery.cs",
@@ -469,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "GetUserHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Queries\\GetUser\\GetUserHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Queries\\GetUser\\GetUserHandler.cs",
@@ -481,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "GiftApi.Tests.csproj",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\GiftApi.Tests.csproj",
               "RelativeDocumentMoniker": "GiftApi.Tests\\GiftApi.Tests.csproj",
@@ -493,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "GetUserQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Queries\\GetUser\\GetUserQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Queries\\GetUser\\GetUserQuery.cs",
@@ -505,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "GetUserResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Queries\\GetUser\\GetUserResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Queries\\GetUser\\GetUserResponse.cs",
@@ -517,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "IManageRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IManageRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IManageRepository.cs",
@@ -529,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "ManageRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\ManageRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\ManageRepository.cs",
@@ -541,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "LoginUserHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\LoginUserHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\LoginUserHandlerTests.cs",
@@ -553,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "RegisterUserResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserResponse.cs",
@@ -565,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "LoginUserValidator.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserValidator.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserValidator.cs",
@@ -577,19 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "RegisterUserHandler.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserHandler.cs",
-              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserHandler.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserHandler.cs",
-              "RelativeToolTip": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserHandler.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:48:34.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "RefreshTokenHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenHandler.cs",
@@ -601,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "RefreshTokenCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenCommand.cs",
@@ -613,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "RefreshTokenResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenResponse.cs",
@@ -625,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "GiftApi\\Controllers\\UserController.cs",
@@ -637,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "LoginUserCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserCommand.cs",
@@ -649,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "LoginUserResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserResponse.cs",
@@ -661,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "RegisterUserValidatorTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\RegisterUserValidatorTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\RegisterUserValidatorTests.cs",
@@ -673,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "DbContextHelper.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Helpers\\DbContextHelper.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Helpers\\DbContextHelper.cs",
@@ -685,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "RegisterUserHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\RegisterUserHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\RegisterUserHandlerTests.cs",
@@ -697,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "GiftApi.csproj",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\GiftApi.csproj",
               "RelativeDocumentMoniker": "GiftApi\\GiftApi.csproj",
@@ -709,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "RegisterUserValidation.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserValidation.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserValidation.cs",
@@ -721,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "RegisterUserCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserCommand.cs",

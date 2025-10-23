@@ -6,5 +6,7 @@ namespace GiftApi.Application.Interfaces
     public interface IFileRepository
     {
         Task<FileDto> UploadFileAsync(string? fileName, string? fileUrl, FileType? fileType);
+        Task<GiftApi.Domain.Entities.File?> GetFileAsync(int id);
+        Task<bool> DeleteFileAsync(int fileId);
     }
 }

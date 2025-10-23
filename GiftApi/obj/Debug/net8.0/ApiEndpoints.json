@@ -1,6 +1,32 @@
 [
   {
     "ContainingType": "GiftApi.Controllers.FileController",
+    "Method": "Delete",
+    "RelativePath": "api/file",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FileId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.File.Commands.Delete.DeleteFileResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.FileController",
     "Method": "Upload",
     "RelativePath": "api/file/upload",
     "HttpMethod": "POST",

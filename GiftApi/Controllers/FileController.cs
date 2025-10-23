@@ -1,4 +1,5 @@
-﻿using GiftApi.Application.Features.File.Commands.Upload;
+﻿using GiftApi.Application.Features.File.Commands.Delete;
+using GiftApi.Application.Features.File.Commands.Upload;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,5 +17,8 @@ namespace GiftApi.Controllers
 
         [HttpPost("upload")]
         public async Task<UploadFileResponse> Upload([FromBody] UploadFileCommand request) => await _mediator.Send(request);
+
+        [HttpDelete]
+        public async Task<DeleteFileResponse> Delete([FromQuery] DeleteFileCommand request) => await _mediator.Send(request);
     }
 }
