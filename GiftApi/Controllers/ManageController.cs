@@ -1,6 +1,7 @@
 ﻿using GiftApi.Application.Features.Manage.Category.Commands.Create;
 using GiftApi.Application.Features.Manage.Category.Commands.Delete;
 using GiftApi.Application.Features.Manage.Category.Commands.Edit;
+using GiftApi.Application.Features.Manage.Category.Commands.Restore;
 using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using MediatR;
@@ -32,5 +33,8 @@ namespace GiftApi.Controllers
 
         [HttpDelete("category")]
         public async Task<DeleteCategoryResponse> DeleteCategory([FromQuery] DeleteCategoryCommand request) => await _mediator.Send(request);
+
+        [HttpPut("restore-category")]
+        public async Task<RestoreCategoryResponse> RestoreCategory([FromQuery] RestoreCategoryCommand request) => await _mediator.Send(request);
     }
 }

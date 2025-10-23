@@ -70,5 +70,23 @@ namespace GiftApi.Infrastructure.Repositories
 
             return true;
         }
+
+        public async Task<bool> Restore(int id)
+        {
+            var category = await _db.Categories.FindAsync(id);
+
+            if (category == null)
+                return false;
+
+            if (!category.IsDeleted)
+                return false;
+
+            category.IsDeleted = false;
+            category.DeleteDate = null;
+            category.UpdateDate = DateTime.UtcNow.AddHours(4);
+
+            _db.Categories.Update(category);
+            return true;
+        }
     }
 }
