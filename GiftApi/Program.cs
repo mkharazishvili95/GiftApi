@@ -1,4 +1,5 @@
 using FluentValidation;
+using GiftApi.Application.Configuration;
 using GiftApi.Application.Features.User.Commands.Login;
 using GiftApi.Application.Features.User.Commands.Register;
 using GiftApi.Application.Interfaces;
@@ -62,6 +63,10 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(key)
     };
 });
+
+builder.Services.Configure<ImageKitSettings>(
+    builder.Configuration.GetSection("ImageKit")
+);
 
 builder.Services.AddHttpContextAccessor();
 

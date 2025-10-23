@@ -63,6 +63,10 @@
               "target": "Package",
               "version": "[11.3.1, )"
             },
+            "Imagekit": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[13.0.0, )"

@@ -15,7 +15,7 @@ namespace GiftApi.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet]
+        [HttpGet("user")]
         public async Task<GetUserResponse> Get([FromQuery] GetUserQuery request) => await _mediator.Send(request);
 
         [HttpPost("all-users")]

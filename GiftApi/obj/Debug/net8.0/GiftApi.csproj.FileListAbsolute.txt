@@ -151,3 +151,5 @@ D:\G\GiftApi\GiftApi\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\G\GiftApi\GiftApi\bin\Debug\net8.0\FluentValidation.dll
 D:\G\GiftApi\GiftApi\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 D:\G\GiftApi\GiftApi\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\G\GiftApi\GiftApi\bin\Debug\net8.0\Imagekit.dll
+D:\G\GiftApi\GiftApi\bin\Debug\net8.0\Newtonsoft.Json.dll
