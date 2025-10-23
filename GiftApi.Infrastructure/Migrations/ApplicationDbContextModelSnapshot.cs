@@ -129,8 +129,8 @@ namespace GiftApi.Infrastructure.Migrations
                     b.Property<DateTime?>("UploadDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 

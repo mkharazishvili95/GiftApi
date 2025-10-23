@@ -11,7 +11,7 @@ namespace GiftApi.Domain.Entities
         public DateTime? UploadDate { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime? DeleteDate { get; set; }
-        public string? UserId { get; set; }
+        public Guid? UserId { get; set; }
         public bool? MainImage { get; set; }
     }
 }

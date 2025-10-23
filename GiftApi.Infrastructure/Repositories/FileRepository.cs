@@ -33,7 +33,12 @@ namespace GiftApi.Infrastructure.Repositories
 
         public async Task<Domain.Entities.File?> GetFileAsync(int id)
         {
-            return await _db.Files.FindAsync(id);
+            var file = await _db.Files.FindAsync(id);
+
+            if(file == null || file.IsDeleted)
+                return null;
+
+            return file;
         }
 
         public async Task<FileDto> UploadFileAsync(string? fileName, string? fileUrl, FileType? fileType)
