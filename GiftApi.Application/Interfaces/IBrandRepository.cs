@@ -1,4 +1,5 @@
-﻿using GiftApi.Domain.Entities;
+﻿using GiftApi.Application.DTOs;
+using GiftApi.Domain.Entities;
 
 namespace GiftApi.Application.Interfaces
 {
@@ -8,6 +9,9 @@ namespace GiftApi.Application.Interfaces
         Task<Domain.Entities.Brand?> Update(Domain.Entities.Brand? brand);
         Task<Brand?> Get(int id);
         Task<bool> Delete(int id);
-        Task<bool> Restore(int id);
+        Task<bool> Restore(int id); 
+        Task<bool> BrandExists(int id);
+        Task<BrandDto?> GetBrandDtoByIdAsync(int brandId, CancellationToken cancellationToken);
+        IQueryable<Brand> GetQueryable();
     }
 }

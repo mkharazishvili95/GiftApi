@@ -8,6 +8,7 @@ using GiftApi.Application.Features.Manage.Category.Commands.Edit;
 using GiftApi.Application.Features.Manage.Category.Commands.Restore;
 using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Features.Manage.User.Queries.GetUser;
+using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -52,5 +53,8 @@ namespace GiftApi.Controllers
 
         [HttpPut("restore-brand")]
         public async Task<RestoreBrandResponse> RestoreBrand([FromQuery] RestoreBrandCommand request) => await _mediator.Send(request);
+
+        [HttpPost("create-voucher")]
+        public async Task<CreateVoucherResponse> CreateVoucher([FromBody] CreateVoucherCommand request) => await _mediator.Send(request);
     }
 }

@@ -24,6 +24,8 @@
 	  <Folder Include="Features\Manage\Brand\Queries\" />
 	  <Folder Include="Features\Manage\Category\Queries\" />
 	  <Folder Include="Features\Manage\User\Commands\" />
+	  <Folder Include="Features\Manage\Voucher\Commands\Edit\" />
+	  <Folder Include="Features\Manage\Voucher\Queries\" />
 	  <Folder Include="Features\User\Queries\" />
 	</ItemGroup>
 

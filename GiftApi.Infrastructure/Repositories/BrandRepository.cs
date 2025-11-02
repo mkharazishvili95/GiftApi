@@ -1,4 +1,5 @@
-﻿using GiftApi.Application.Interfaces;
+﻿using GiftApi.Application.DTOs;
+using GiftApi.Application.Interfaces;
 using GiftApi.Domain.Entities;
 using GiftApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,27 @@ namespace GiftApi.Infrastructure.Repositories
             _db = db;
         }
 
+        public async Task<bool> BrandExists(int id)
+        {
+            return await _db.Brands.AnyAsync(x => x.Id == id && !x.IsDeleted);
+        }
+
+        public async Task<BrandDto?> GetBrandDtoByIdAsync(int brandId, CancellationToken cancellationToken)
+        {
+            return await _db.Brands
+                .Where(b => b.Id == brandId)
+                .Select(b => new BrandDto
+                {
+                    Id = b.Id,
+                    Name = b.Name
+                })
+                .FirstOrDefaultAsync(cancellationToken);
+        }
+
+        public IQueryable<Brand> GetQueryable()
+        {
+            return _db.Brands.AsNoTracking();
+        }
         public async Task<Brand?> Create(Brand? brand)
         {
             var newBrand = new GiftApi.Domain.Entities.Brand
