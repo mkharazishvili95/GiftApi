@@ -105,6 +105,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "DeleteBrand",
+    "RelativePath": "api/manage/brand",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Brand.Commands.Delete.DeleteBrandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "DeleteCategory",
     "RelativePath": "api/manage/category",
     "HttpMethod": "DELETE",
@@ -183,6 +209,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "EditBrand",
+    "RelativePath": "api/manage/edit-brand",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Manage.Brand.Commands.Edit.EditBrandCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Brand.Commands.Edit.EditBrandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "EditCategory",
     "RelativePath": "api/manage/edit-category",
     "HttpMethod": "PUT",
@@ -209,6 +261,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "RestoreBrand",
+    "RelativePath": "api/manage/restore-brand",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Brand.Commands.Restore.RestoreBrandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "RestoreCategory",
     "RelativePath": "api/manage/restore-category",
     "HttpMethod": "PUT",
@@ -224,32 +302,6 @@
     "ReturnTypes": [
       {
         "Type": "GiftApi.Application.Features.Manage.Category.Commands.Restore.RestoreCategoryResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "GiftApi.Controllers.ManageController",
-    "Method": "EditBrand",
-    "RelativePath": "api/manage/update-brand",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "GiftApi.Application.Features.Manage.Brand.Commands.Edit.EditBrandCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "GiftApi.Application.Features.Manage.Brand.Commands.Edit.EditBrandResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

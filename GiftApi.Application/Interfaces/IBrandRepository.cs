@@ -7,5 +7,7 @@ namespace GiftApi.Application.Interfaces
         Task<Domain.Entities.Brand?> Create(Domain.Entities.Brand? brand);
         Task<Domain.Entities.Brand?> Update(Domain.Entities.Brand? brand);
         Task<Brand?> Get(int id);
+        Task<bool> Delete(int id);
+        Task<bool> Restore(int id);
     }
 }

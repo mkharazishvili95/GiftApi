@@ -1,5 +1,7 @@
 ﻿using GiftApi.Application.Features.Manage.Brand.Commands.Create;
+using GiftApi.Application.Features.Manage.Brand.Commands.Delete;
 using GiftApi.Application.Features.Manage.Brand.Commands.Edit;
+using GiftApi.Application.Features.Manage.Brand.Commands.Restore;
 using GiftApi.Application.Features.Manage.Category.Commands.Create;
 using GiftApi.Application.Features.Manage.Category.Commands.Delete;
 using GiftApi.Application.Features.Manage.Category.Commands.Edit;
@@ -44,5 +46,11 @@ namespace GiftApi.Controllers
 
         [HttpPost("edit-brand")]
         public async Task<EditBrandResponse> EditBrand([FromBody] EditBrandCommand request) => await _mediator.Send(request);
+
+        [HttpDelete("brand")]
+        public async Task<DeleteBrandResponse> DeleteBrand([FromQuery] DeleteBrandCommand request) => await _mediator.Send(request);
+
+        [HttpPut("restore-brand")]
+        public async Task<RestoreBrandResponse> RestoreBrand([FromQuery] RestoreBrandCommand request) => await _mediator.Send(request);
     }
 }

@@ -31,9 +31,44 @@ namespace GiftApi.Infrastructure.Repositories
             return newBrand;
         }
 
+        public async Task<bool> Delete(int id)
+        {
+            var brand = await _db.Brands.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+
+            if (brand == null)
+                return false;
+
+            if(brand.IsDeleted)
+                return false;
+
+            brand.IsDeleted = true;
+            brand.DeleteDate = DateTime.UtcNow.AddHours(4);
+
+            _db.Brands.Update(brand);
+            return true;
+        }
+
         public async Task<Brand?> Get(int id)
         {
            return await _db.Brands.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task<bool> Restore(int id)
+        {
+            var brand = await Get(id);
+
+            if (brand == null)
+                return false;
+
+            if (!brand.IsDeleted)
+                return false;
+
+            brand.IsDeleted = false;
+            brand.DeleteDate = null;
+            brand.UpdateDate = DateTime.UtcNow.AddHours(4);
+
+            _db.Brands.Update(brand);
+            return true;
         }
 
         public async Task<Brand?> Update(Brand? brand)
