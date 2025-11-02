@@ -1,4 +1,5 @@
 ﻿using GiftApi.Application.Features.Manage.Brand.Commands.Create;
+using GiftApi.Application.Features.Manage.Brand.Commands.Edit;
 using GiftApi.Application.Features.Manage.Category.Commands.Create;
 using GiftApi.Application.Features.Manage.Category.Commands.Delete;
 using GiftApi.Application.Features.Manage.Category.Commands.Edit;
@@ -40,5 +41,8 @@ namespace GiftApi.Controllers
 
         [HttpPost("create-brand")]
         public async Task<CreateBrandResponse> CreateBrand([FromBody] CreateBrandCommand request) => await _mediator.Send(request);
+
+        [HttpPost("edit-brand")]
+        public async Task<EditBrandResponse> EditBrand([FromBody] EditBrandCommand request) => await _mediator.Send(request);
     }
 }
