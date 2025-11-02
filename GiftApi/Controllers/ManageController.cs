@@ -1,4 +1,5 @@
-﻿using GiftApi.Application.Features.Manage.Category.Commands.Create;
+﻿using GiftApi.Application.Features.Manage.Brand.Commands.Create;
+using GiftApi.Application.Features.Manage.Category.Commands.Create;
 using GiftApi.Application.Features.Manage.Category.Commands.Delete;
 using GiftApi.Application.Features.Manage.Category.Commands.Edit;
 using GiftApi.Application.Features.Manage.Category.Commands.Restore;
@@ -36,5 +37,8 @@ namespace GiftApi.Controllers
 
         [HttpPut("restore-category")]
         public async Task<RestoreCategoryResponse> RestoreCategory([FromQuery] RestoreCategoryCommand request) => await _mediator.Send(request);
+
+        [HttpPost("create-brand")]
+        public async Task<CreateBrandResponse> CreateBrand([FromBody] CreateBrandCommand request) => await _mediator.Send(request);
     }
 }

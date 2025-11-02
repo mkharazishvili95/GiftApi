@@ -21,6 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Features\Manage\Brand\Queries\" />
 	  <Folder Include="Features\Manage\Category\Queries\" />
 	  <Folder Include="Features\Manage\User\Commands\" />
 	  <Folder Include="Features\User\Queries\" />

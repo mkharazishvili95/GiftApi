@@ -9,5 +9,6 @@ namespace GiftApi.Application.Interfaces
         Task<Category?> Edit(Category? category);
         Task<bool> Delete(int id);
         Task<bool> Restore(int id);
+        Task<bool> CategoryExists(int categoryId);
     }
 }

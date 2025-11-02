@@ -1,6 +1,7 @@
 ﻿using GiftApi.Application.Interfaces;
 using GiftApi.Domain.Entities;
 using GiftApi.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace GiftApi.Infrastructure.Repositories
 {
@@ -87,6 +88,11 @@ namespace GiftApi.Infrastructure.Repositories
 
             _db.Categories.Update(category);
             return true;
+        }
+
+        public async Task<bool> CategoryExists(int categoryId)
+        {
+            return await _db.Categories.AnyAsync(x => x.Id == categoryId && !x.IsDeleted);
         }
     }
 }

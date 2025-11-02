@@ -131,6 +131,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "CreateBrand",
+    "RelativePath": "api/manage/create-brand",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Manage.Brand.Commands.Create.CreateBrandCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Brand.Commands.Create.CreateBrandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "CreateCategory",
     "RelativePath": "api/manage/create-category",
     "HttpMethod": "POST",
