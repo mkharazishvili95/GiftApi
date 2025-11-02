@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GiftApi.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2cf18126b6cd92854b7c006d814277e50dc8215e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a9f4878fd828669aa84a02a2c60673b2411c9a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("GiftApi.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GiftApi.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

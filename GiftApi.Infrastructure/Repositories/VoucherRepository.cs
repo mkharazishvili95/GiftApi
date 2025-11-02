@@ -18,5 +18,16 @@ namespace GiftApi.Infrastructure.Repositories
 
             return voucher;
         }
+
+        public async Task<Voucher?> Edit(Voucher? voucher)
+        {
+            _db.Vouchers.Update(voucher);
+            return voucher;
+        }
+
+        public async Task<Voucher?> GetByIdAsync(Guid id)
+        {
+            return await _db.Vouchers.FindAsync(id);
+        }
     }
 }

@@ -9,6 +9,7 @@ using GiftApi.Application.Features.Manage.Category.Commands.Restore;
 using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
+using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -56,5 +57,8 @@ namespace GiftApi.Controllers
 
         [HttpPost("create-voucher")]
         public async Task<CreateVoucherResponse> CreateVoucher([FromBody] CreateVoucherCommand request) => await _mediator.Send(request);
+        
+        [HttpPost("edit-voucher")]
+        public async Task<EditVoucherResponse> EditVoucher([FromBody] EditVoucherCommand request) => await _mediator.Send(request);
     }
 }

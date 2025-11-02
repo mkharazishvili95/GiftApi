@@ -612,6 +612,54 @@
         }
       }
     },
+    "/api/manage/edit-voucher": {
+      "post": {
+        "tags": [
+          "Manage"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditVoucherCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditVoucherCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditVoucherCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EditVoucherResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EditVoucherResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EditVoucherResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/user/register": {
       "post": {
         "tags": [
@@ -1128,6 +1176,101 @@
           },
           "logo": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EditVoucherCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "isPercentage": {
+            "type": "boolean"
+          },
+          "brandId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "validMonths": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unlimited": {
+            "type": "boolean"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "redeemed": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EditVoucherResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "isPercentage": {
+            "type": "boolean"
+          },
+          "brandId": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },
