@@ -5,6 +5,7 @@ using GiftApi.Application.Features.User.Commands.Register;
 using GiftApi.Application.Interfaces;
 using GiftApi.Infrastructure.Data;
 using GiftApi.Infrastructure.Repositories;
+using GiftApi.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -75,6 +76,8 @@ builder.Services.Configure<ImageKitSettings>(
 builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
+
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
