@@ -123,5 +123,13 @@ namespace GiftApi.Infrastructure.Repositories
                 .AsNoTracking()
                 .FirstOrDefaultAsync(b => b.Id == id);
         }
+
+        public async Task<List<Brand>?> GetAllBrandsWithCategoriesAsync(CancellationToken cancellationToken)
+        {
+            return await _db.Brands
+                .Include(b => b.Category)
+                .AsNoTracking()
+                .ToListAsync(cancellationToken);
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using GiftApi.Application.Features.Brand.Queries.Get;
 using GiftApi.Application.Features.Brand.Queries.GetAll;
+using GiftApi.Application.Features.Brand.Queries.GetAllWithCategories;
 using GiftApi.Application.Features.Brand.Queries.GetWithCategory;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -24,5 +25,8 @@ namespace GiftApi.Controllers
 
         [HttpGet("with-category")]
         public async Task<GetBrandWithCategoryResponse> GetBrandWithCategory([FromQuery] GetBrandWithCategoryQuery request) => await _mediator.Send(request);
+
+        [HttpPost("all-with-categories")]
+        public async Task<GetAllBrandsWithCategoriesResponse> GetAllBrandsWithCategories([FromBody] GetAllBrandsWithCategoriesQuery request) => await _mediator.Send(request);
     }
 }

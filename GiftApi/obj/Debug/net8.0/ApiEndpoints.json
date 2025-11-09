@@ -27,6 +27,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.BrandController",
+    "Method": "GetAllBrandsWithCategories",
+    "RelativePath": "api/Brand/all-with-categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Brand.Queries.GetAllWithCategories.GetAllBrandsWithCategoriesQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Brand.Queries.GetAllWithCategories.GetAllBrandsWithCategoriesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.BrandController",
     "Method": "GetBrand",
     "RelativePath": "api/Brand/details",
     "HttpMethod": "GET",
