@@ -105,6 +105,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.CategoryController",
+    "Method": "GetAllCategories",
+    "RelativePath": "api/Category/all",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Category.Queries.GetAll.GetAllCategoriesQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Category.Queries.GetAll.GetAllCategoriesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.CategoryController",
     "Method": "GetCategory",
     "RelativePath": "api/Category/details",
     "HttpMethod": "GET",

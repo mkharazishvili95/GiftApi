@@ -109,5 +109,12 @@ namespace GiftApi.Infrastructure.Repositories
                 .Where(c => !c.IsDeleted)
                 .ToListAsync(cancellationToken);
         }
+
+        public async Task<List<Category>?> GetAll(CancellationToken cancellationToken)
+        {
+            return await _db.Categories
+                .Where(c => !c.IsDeleted)
+                .ToListAsync(cancellationToken);
+        }
     }
 }

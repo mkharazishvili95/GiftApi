@@ -7,6 +7,7 @@ namespace GiftApi.Application.Interfaces
     {
         Task<Category?> Create(Category? category);
         Task<Category?> Get(int id);
+        Task<List<Category>?> GetAll(CancellationToken cancellationToken);
         Task<Category?> Edit(Category? category);
         Task<bool> Delete(int id);
         Task<bool> Restore(int id);
