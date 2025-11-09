@@ -5,7 +5,94 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/file/upload": {
+    "/api/Brand/details": {
+      "get": {
+        "tags": [
+          "Brand"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetBrandResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetBrandResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetBrandResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Brand/all": {
+      "post": {
+        "tags": [
+          "Brand"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllBrandsQuery"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllBrandsQuery"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllBrandsQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAllBrandsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAllBrandsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAllBrandsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/File/upload": {
       "post": {
         "tags": [
           "File"
@@ -53,7 +140,7 @@
         }
       }
     },
-    "/api/file": {
+    "/api/File": {
       "get": {
         "tags": [
           "File"
@@ -129,7 +216,7 @@
         }
       }
     },
-    "/api/manage/user": {
+    "/api/Manage/user": {
       "get": {
         "tags": [
           "Manage"
@@ -168,7 +255,7 @@
         }
       }
     },
-    "/api/manage/all-users": {
+    "/api/Manage/all-users": {
       "post": {
         "tags": [
           "Manage"
@@ -216,7 +303,7 @@
         }
       }
     },
-    "/api/manage/create-category": {
+    "/api/Manage/create-category": {
       "post": {
         "tags": [
           "Manage"
@@ -264,7 +351,7 @@
         }
       }
     },
-    "/api/manage/edit-category": {
+    "/api/Manage/edit-category": {
       "put": {
         "tags": [
           "Manage"
@@ -312,7 +399,7 @@
         }
       }
     },
-    "/api/manage/category": {
+    "/api/Manage/category": {
       "delete": {
         "tags": [
           "Manage"
@@ -351,7 +438,7 @@
         }
       }
     },
-    "/api/manage/restore-category": {
+    "/api/Manage/restore-category": {
       "put": {
         "tags": [
           "Manage"
@@ -390,7 +477,7 @@
         }
       }
     },
-    "/api/manage/create-brand": {
+    "/api/Manage/create-brand": {
       "post": {
         "tags": [
           "Manage"
@@ -438,7 +525,7 @@
         }
       }
     },
-    "/api/manage/edit-brand": {
+    "/api/Manage/edit-brand": {
       "post": {
         "tags": [
           "Manage"
@@ -486,7 +573,7 @@
         }
       }
     },
-    "/api/manage/brand": {
+    "/api/Manage/brand": {
       "delete": {
         "tags": [
           "Manage"
@@ -525,7 +612,7 @@
         }
       }
     },
-    "/api/manage/restore-brand": {
+    "/api/Manage/restore-brand": {
       "put": {
         "tags": [
           "Manage"
@@ -564,7 +651,7 @@
         }
       }
     },
-    "/api/manage/create-voucher": {
+    "/api/Manage/create-voucher": {
       "post": {
         "tags": [
           "Manage"
@@ -612,7 +699,7 @@
         }
       }
     },
-    "/api/manage/edit-voucher": {
+    "/api/Manage/edit-voucher": {
       "post": {
         "tags": [
           "Manage"
@@ -660,7 +747,7 @@
         }
       }
     },
-    "/api/user/register": {
+    "/api/User/register": {
       "post": {
         "tags": [
           "User"
@@ -708,7 +795,7 @@
         }
       }
     },
-    "/api/user/login": {
+    "/api/User/login": {
       "post": {
         "tags": [
           "User"
@@ -756,7 +843,7 @@
         }
       }
     },
-    "/api/user/refresh-token": {
+    "/api/User/refresh-token": {
       "post": {
         "tags": [
           "User"
@@ -1293,6 +1380,85 @@
         "type": "integer",
         "format": "int32"
       },
+      "GetAllBrandsItemsResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "logoUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "website": {
+            "type": "string",
+            "nullable": true
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updateDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "categoryId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAllBrandsQuery": {
+        "type": "object",
+        "properties": {
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationModel"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAllBrandsResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetAllBrandsItemsResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "GetAllUsersQuery": {
         "type": "object",
         "properties": {
@@ -1327,6 +1493,61 @@
             "items": {
               "$ref": "#/components/schemas/GetUsersItemsResponse"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetBrandResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "logoUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "website": {
+            "type": "string",
+            "nullable": true
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "categoryId": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },

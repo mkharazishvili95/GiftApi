@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GiftApi.Controllers
 {
     [ApiController]
-    [Route("api/user")]
+    [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
         readonly IMediator _mediator;

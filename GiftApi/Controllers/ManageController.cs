@@ -16,7 +16,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GiftApi.Controllers
 {
     [ApiController]
-    [Route("api/manage")]
+    [Route("api/[controller]")]
     public class ManageController : ControllerBase
     {
         readonly IMediator _mediator;

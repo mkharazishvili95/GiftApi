@@ -110,5 +110,10 @@ namespace GiftApi.Infrastructure.Repositories
             _db.Brands.Update(existingBrand);
             return existingBrand;
         }
+
+        public async Task<List<Brand>?> GetAllBrandsAsync(CancellationToken cancellationToken)
+        {
+            return await _db.Brands.AsNoTracking().ToListAsync(cancellationToken);
+        }
     }
 }

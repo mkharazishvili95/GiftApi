@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GiftApi.Controllers
 {
     [ApiController]
-    [Route("api/file")]
+    [Route("api/[controller]")]
     public class FileController : ControllerBase
     {
         readonly IMediator _mediator;

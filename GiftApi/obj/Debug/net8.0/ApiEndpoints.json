@@ -1,8 +1,60 @@
 [
   {
+    "ContainingType": "GiftApi.Controllers.BrandController",
+    "Method": "GetAllBrands",
+    "RelativePath": "api/Brand/all",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Brand.Queries.GetAll.GetAllBrandsQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Brand.Queries.GetAll.GetAllBrandsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.BrandController",
+    "Method": "GetBrand",
+    "RelativePath": "api/Brand/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Brand.Queries.Get.GetBrandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GiftApi.Controllers.FileController",
     "Method": "Get",
-    "RelativePath": "api/file",
+    "RelativePath": "api/File",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -28,7 +80,7 @@
   {
     "ContainingType": "GiftApi.Controllers.FileController",
     "Method": "Delete",
-    "RelativePath": "api/file",
+    "RelativePath": "api/File",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -54,7 +106,7 @@
   {
     "ContainingType": "GiftApi.Controllers.FileController",
     "Method": "Upload",
-    "RelativePath": "api/file/upload",
+    "RelativePath": "api/File/upload",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -80,7 +132,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "GetAllUsersResponse",
-    "RelativePath": "api/manage/all-users",
+    "RelativePath": "api/Manage/all-users",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -106,7 +158,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "DeleteBrand",
-    "RelativePath": "api/manage/brand",
+    "RelativePath": "api/Manage/brand",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -132,7 +184,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "DeleteCategory",
-    "RelativePath": "api/manage/category",
+    "RelativePath": "api/Manage/category",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -158,7 +210,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "CreateBrand",
-    "RelativePath": "api/manage/create-brand",
+    "RelativePath": "api/Manage/create-brand",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -184,7 +236,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "CreateCategory",
-    "RelativePath": "api/manage/create-category",
+    "RelativePath": "api/Manage/create-category",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -210,7 +262,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "CreateVoucher",
-    "RelativePath": "api/manage/create-voucher",
+    "RelativePath": "api/Manage/create-voucher",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -236,7 +288,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "EditBrand",
-    "RelativePath": "api/manage/edit-brand",
+    "RelativePath": "api/Manage/edit-brand",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -262,7 +314,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "EditCategory",
-    "RelativePath": "api/manage/edit-category",
+    "RelativePath": "api/Manage/edit-category",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -288,7 +340,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "EditVoucher",
-    "RelativePath": "api/manage/edit-voucher",
+    "RelativePath": "api/Manage/edit-voucher",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -314,7 +366,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "RestoreBrand",
-    "RelativePath": "api/manage/restore-brand",
+    "RelativePath": "api/Manage/restore-brand",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -340,7 +392,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "RestoreCategory",
-    "RelativePath": "api/manage/restore-category",
+    "RelativePath": "api/Manage/restore-category",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -366,7 +418,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "Get",
-    "RelativePath": "api/manage/user",
+    "RelativePath": "api/Manage/user",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -392,7 +444,7 @@
   {
     "ContainingType": "GiftApi.Controllers.UserController",
     "Method": "Login",
-    "RelativePath": "api/user/login",
+    "RelativePath": "api/User/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -418,7 +470,7 @@
   {
     "ContainingType": "GiftApi.Controllers.UserController",
     "Method": "RefreshToken",
-    "RelativePath": "api/user/refresh-token",
+    "RelativePath": "api/User/refresh-token",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -444,7 +496,7 @@
   {
     "ContainingType": "GiftApi.Controllers.UserController",
     "Method": "Register",
-    "RelativePath": "api/user/register",
+    "RelativePath": "api/User/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
