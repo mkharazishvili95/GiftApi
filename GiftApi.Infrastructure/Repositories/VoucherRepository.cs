@@ -61,5 +61,61 @@ namespace GiftApi.Infrastructure.Repositories
 
             return vouchers;
         }
+
+        public async Task<bool> Buy(
+            Guid voucherId,
+            Guid userId,
+            int quantity,
+            string recipientName,
+            string recipientPhone,
+            string recipientCity,
+            string recipientAddress,
+            string? recipientEmail = null,
+            string? message = null,
+            string? senderName = null)
+        {
+            var user = await _db.Users.FirstOrDefaultAsync(x => x.Id == userId);
+
+            if (user == null)
+                return false;
+
+            var voucher = await _db.Vouchers.FirstOrDefaultAsync(x => x.Id == voucherId && x.IsActive && !x.IsDeleted);
+
+            if (voucher == null || voucher.Quantity < quantity)
+                return false;
+
+            using var transaction = await _db.Database.BeginTransactionAsync();
+
+            try
+            {
+                voucher.Quantity -= quantity;
+                _db.Vouchers.Update(voucher);
+
+                var deliveryInfo = new VoucherDeliveryInfo
+                {
+                    Id = Guid.NewGuid(),
+                    VoucherId = voucher.Id,
+                    SenderName = senderName,
+                    RecipientName = recipientName,
+                    RecipientEmail = recipientEmail, 
+                    RecipientPhone = recipientPhone,
+                    RecipientCity = recipientCity,
+                    RecipientAddress = recipientAddress,
+                    Message = message
+                };
+
+                _db.VoucherDeliveryInfos.Add(deliveryInfo);
+
+                await _db.SaveChangesAsync();
+                await transaction.CommitAsync();
+
+                return true;
+            }
+            catch
+            {
+                await transaction.RollbackAsync();
+                return false;
+            }
+        }
     }
 }

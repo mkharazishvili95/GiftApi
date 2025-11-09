@@ -234,6 +234,9 @@ namespace GiftApi.Infrastructure.Migrations
                     b.Property<int>("Redeemed")
                         .HasColumnType("int");
 
+                    b.Property<int?>("SoldCount")
+                        .HasColumnType("int");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

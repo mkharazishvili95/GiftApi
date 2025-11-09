@@ -757,5 +757,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.VoucherController",
+    "Method": "Buy",
+    "RelativePath": "api/Voucher/buy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "GiftApi.Application.Features.Voucher.Commands.Buy.BuyVoucherCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Voucher.Commands.Buy.BuyVoucherResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

@@ -110,5 +110,21 @@ namespace GiftApi.Infrastructure.Repositories
 
             return true;
         }
+
+        public async Task UpdateUserAsync(User user)
+        {
+            var trackedUser = await _db.Users.FindAsync(user.Id);
+            if (trackedUser != null)
+            {
+                trackedUser.Balance = user.Balance;
+                trackedUser.FirstName = user.FirstName;
+                trackedUser.LastName = user.LastName;
+            }
+            else
+            {
+                _db.Users.Attach(user);
+                _db.Entry(user).State = EntityState.Modified;
+            }
+        }
     }
 }

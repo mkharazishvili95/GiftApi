@@ -15,5 +15,6 @@ namespace GiftApi.Application.Interfaces
         IQueryable<User> GetAllUsers();
         Task<bool> TopUpBalance(Guid userId, decimal amount);
         Task<User?> GetCurrentUserAsync(Guid userId);
+        Task UpdateUserAsync(User user);
     }
 }

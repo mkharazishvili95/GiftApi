@@ -61,5 +61,10 @@ namespace GiftApi.Tests.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public Task UpdateUserAsync(Domain.Entities.User user)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

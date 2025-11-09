@@ -9,5 +9,6 @@ namespace GiftApi.Application.Interfaces
         Task<Domain.Entities.Voucher?> Edit(Domain.Entities.Voucher? voucher);
         Task<Voucher?> GetWithCategoryAndBrand(Guid id);
         Task<List<Voucher>?> GetAllWithCategoryAndBrand();
+        Task<bool> Buy(Guid voucherId,Guid userId,int quantity,string recipientName,string recipientPhone, string recipientCity,string recipientAddress,string? recipientEmail = null,string? message = null,string? senderName = null);
     }
 }

@@ -18,5 +18,6 @@
         public DateTime? UpdateDate { get; set; }
         public string? ImageUrl { get; set; }
         public bool IsDeleted { get; set; }
+        public int? SoldCount { get; set; }
     }
 }
