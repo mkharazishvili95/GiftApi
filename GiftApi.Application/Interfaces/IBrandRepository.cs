@@ -14,5 +14,6 @@ namespace GiftApi.Application.Interfaces
         Task<BrandDto?> GetBrandDtoByIdAsync(int brandId, CancellationToken cancellationToken);
         IQueryable<Brand> GetQueryable();
         Task<List<Brand>?> GetAllBrandsAsync(CancellationToken cancellationToken);
+        Task<Brand?> GetWithCategory(int id);
     }
 }

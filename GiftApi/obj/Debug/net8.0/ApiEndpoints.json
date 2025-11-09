@@ -52,6 +52,32 @@
     ]
   },
   {
+    "ContainingType": "GiftApi.Controllers.BrandController",
+    "Method": "GetBrandWithCategory",
+    "RelativePath": "api/Brand/with-category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Brand.Queries.GetWithCategory.GetBrandWithCategoryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GiftApi.Controllers.FileController",
     "Method": "Get",
     "RelativePath": "api/File",
