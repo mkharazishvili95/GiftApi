@@ -1,4 +1,5 @@
-﻿using GiftApi.Domain.Entities;
+﻿using GiftApi.Application.DTOs;
+using GiftApi.Domain.Entities;
 
 namespace GiftApi.Application.Interfaces
 {
@@ -10,5 +11,7 @@ namespace GiftApi.Application.Interfaces
         Task<bool> Delete(int id);
         Task<bool> Restore(int id);
         Task<bool> CategoryExists(int categoryId);
+        Task<Category?> GetWithBrands(int id);
+        Task<List<Category>?> GetAllCategoriesWithBrandsAsync(CancellationToken cancellationToken);
     }
 }

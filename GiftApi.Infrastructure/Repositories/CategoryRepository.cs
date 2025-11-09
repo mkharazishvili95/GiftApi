@@ -94,5 +94,20 @@ namespace GiftApi.Infrastructure.Repositories
         {
             return await _db.Categories.AnyAsync(x => x.Id == categoryId && !x.IsDeleted);
         }
+
+        public async Task<Category?> GetWithBrands(int id)
+        {
+            return await _db.Categories
+                .Include(c => c.Brands.Where(b => !b.IsDeleted))
+                .FirstOrDefaultAsync(c => c.Id == id && !c.IsDeleted);
+        }
+
+        public async Task<List<Category>?> GetAllCategoriesWithBrandsAsync(CancellationToken cancellationToken)
+        {
+           return await _db.Categories
+                .Include(c => c.Brands.Where(b => !b.IsDeleted))
+                .Where(c => !c.IsDeleted)
+                .ToListAsync(cancellationToken);
+        }
     }
 }
