@@ -1,6 +1,7 @@
 ﻿using GiftApi.Application.Interfaces;
 using GiftApi.Domain.Entities;
 using GiftApi.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace GiftApi.Infrastructure.Repositories
 {
@@ -28,6 +29,14 @@ namespace GiftApi.Infrastructure.Repositories
         public async Task<Voucher?> GetByIdAsync(Guid id)
         {
             return await _db.Vouchers.FindAsync(id);
+        }
+
+        public Task<Voucher?> GetWithCategoryAndBrand(Guid id)
+        {
+            return _db.Vouchers
+                .Include(x => x.Brand)
+                .ThenInclude(x => x.Category)
+                .FirstOrDefaultAsync(x => x.Id == id);
         }
     }
 }
