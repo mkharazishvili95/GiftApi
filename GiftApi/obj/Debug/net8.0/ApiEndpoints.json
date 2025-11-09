@@ -573,6 +573,37 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "TopUpBalance",
+    "RelativePath": "api/Manage/to-pup-balance",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Amount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.User.Commands.TopUpBalance.TopUpBalanceResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "Get",
     "RelativePath": "api/Manage/user",
     "HttpMethod": "GET",

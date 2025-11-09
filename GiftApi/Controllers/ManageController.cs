@@ -6,6 +6,7 @@ using GiftApi.Application.Features.Manage.Category.Commands.Create;
 using GiftApi.Application.Features.Manage.Category.Commands.Delete;
 using GiftApi.Application.Features.Manage.Category.Commands.Edit;
 using GiftApi.Application.Features.Manage.Category.Commands.Restore;
+using GiftApi.Application.Features.Manage.User.Commands.TopUpBalance;
 using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
@@ -60,5 +61,8 @@ namespace GiftApi.Controllers
         
         [HttpPost("edit-voucher")]
         public async Task<EditVoucherResponse> EditVoucher([FromBody] EditVoucherCommand request) => await _mediator.Send(request);
+
+        [HttpPut("to-pup-balance")]
+        public async Task<TopUpBalanceResponse> TopUpBalance([FromQuery] TopUpBalanceCommand request) => await _mediator.Send(request);
     }
 }

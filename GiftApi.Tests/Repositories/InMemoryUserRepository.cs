@@ -56,6 +56,10 @@ namespace GiftApi.Tests.Repositories
         {
             throw new NotImplementedException();
         }
-    }
 
+        public Task<bool> TopUpBalance(Guid userId, decimal amount)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

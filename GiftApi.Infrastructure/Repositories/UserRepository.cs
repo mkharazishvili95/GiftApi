@@ -95,5 +95,20 @@ namespace GiftApi.Infrastructure.Repositories
         {
             return _db.Users.AsNoTracking();
         }
+
+        public async Task<bool> TopUpBalance(Guid userId, decimal amount)
+        {
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.Id == userId);
+
+            if (user == null) return false;
+
+            if(amount <= 0) return false;
+
+            user.Balance += amount;
+            _db.Users.Update(user);
+            await _db.SaveChangesAsync();
+
+            return true;
+        }
     }
 }

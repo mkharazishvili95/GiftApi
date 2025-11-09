@@ -13,7 +13,7 @@ namespace GiftApi.Application.Interfaces
         Task<User?> GetByUserNameAsync(string userName);
         Task UpdateRefreshTokenAsync(User user, string refreshToken, DateTime expiry);
         IQueryable<User> GetAllUsers();
-
+        Task<bool> TopUpBalance(Guid userId, decimal amount);
         Task<User?> GetCurrentUserAsync(Guid userId);
     }
 }
