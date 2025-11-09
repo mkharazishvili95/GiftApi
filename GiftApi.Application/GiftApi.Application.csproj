@@ -23,7 +23,6 @@
 	<ItemGroup>
 	  <Folder Include="Features\Brand\Commands\" />
 	  <Folder Include="Features\Category\Commands\" />
-	  <Folder Include="Features\Category\Queries\GetAllWithBrands\" />
 	  <Folder Include="Features\Manage\Brand\Queries\" />
 	  <Folder Include="Features\Manage\Category\Queries\" />
 	  <Folder Include="Features\Manage\User\Commands\" />

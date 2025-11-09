@@ -131,6 +131,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.CategoryController",
+    "Method": "GetAllCategoriesWithBrands",
+    "RelativePath": "api/Category/all-with-brands",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Category.Queries.GetAllWithBrands.GetAllCategoriesWithBrandsQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Category.Queries.GetAllWithBrands.GetAllCategoriesWithBrandsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.CategoryController",
     "Method": "GetCategory",
     "RelativePath": "api/Category/details",
     "HttpMethod": "GET",
