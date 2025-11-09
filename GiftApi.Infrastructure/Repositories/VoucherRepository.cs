@@ -31,12 +31,35 @@ namespace GiftApi.Infrastructure.Repositories
             return await _db.Vouchers.FindAsync(id);
         }
 
-        public Task<Voucher?> GetWithCategoryAndBrand(Guid id)
+        public async Task<Voucher?> GetWithCategoryAndBrand(Guid id)
         {
-            return _db.Vouchers
+            return await _db.Vouchers
                 .Include(x => x.Brand)
                 .ThenInclude(x => x.Category)
-                .FirstOrDefaultAsync(x => x.Id == id);
+                .FirstOrDefaultAsync(x => x.Id == id && x.IsActive);
+        }
+
+        public async Task<List<Voucher>?> GetAllWithCategoryAndBrand()
+        {
+            var vouchers = await _db.Vouchers
+                .Include(v => v.Brand)
+                .ThenInclude(b => b.Category)
+                .Where(v => v.IsActive)
+                .ToListAsync();
+
+            foreach (var v in vouchers)
+            {
+                if (v.Brand != null && v.Brand.IsDeleted)
+                {
+                    v.Brand = null;
+                }
+                else if (v.Brand?.Category != null && v.Brand.Category.IsDeleted)
+                {
+                    v.Brand.Category = null;
+                }
+            }
+
+            return vouchers;
         }
     }
 }

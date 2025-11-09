@@ -8,5 +8,6 @@ namespace GiftApi.Application.Interfaces
         Task<Domain.Entities.Voucher?> GetByIdAsync(Guid id);
         Task<Domain.Entities.Voucher?> Edit(Domain.Entities.Voucher? voucher);
         Task<Voucher?> GetWithCategoryAndBrand(Guid id);
+        Task<List<Voucher>?> GetAllWithCategoryAndBrand();
     }
 }

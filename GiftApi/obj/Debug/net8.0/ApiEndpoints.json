@@ -731,5 +731,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.VoucherController",
+    "Method": "GetAll",
+    "RelativePath": "api/Voucher/all",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "GiftApi.Application.Features.Voucher.Queries.GetAll.GetAllVouchersQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Voucher.Queries.GetAll.GetAllVouchersResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
