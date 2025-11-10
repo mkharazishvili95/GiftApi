@@ -682,6 +682,26 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.UserController",
+    "Method": "Me",
+    "RelativePath": "api/User/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.User.Queries.GetCurrent.GetCurrentUserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.UserController",
     "Method": "RefreshToken",
     "RelativePath": "api/User/refresh-token",
     "HttpMethod": "POST",

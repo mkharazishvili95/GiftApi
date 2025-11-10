@@ -27,7 +27,6 @@
 	  <Folder Include="Features\Manage\Category\Queries\" />
 	  <Folder Include="Features\Manage\VoucherDeliveryInfo\Queries\" />
 	  <Folder Include="Features\Manage\Voucher\Queries\" />
-	  <Folder Include="Features\User\Queries\" />
 	</ItemGroup>
 
 </Project>

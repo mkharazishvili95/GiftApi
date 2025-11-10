@@ -1,7 +1,9 @@
 ﻿using GiftApi.Application.Features.User.Commands.Login;
 using GiftApi.Application.Features.User.Commands.Login.RefreshToken;
 using GiftApi.Application.Features.User.Commands.Register;
+using GiftApi.Application.Features.User.Queries.GetCurrent;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GiftApi.Controllers
@@ -24,5 +26,10 @@ namespace GiftApi.Controllers
 
         [HttpPost("refresh-token")]
         public async Task<RefreshTokenResponse> RefreshToken([FromBody] RefreshTokenCommand command) => await _mediator.Send(command);
+
+        [Authorize]
+        [HttpGet("me")]
+        public async Task<GetCurrentUserResponse> Me()
+            => await _mediator.Send(new GetCurrentUserQuery());
     }
 }
