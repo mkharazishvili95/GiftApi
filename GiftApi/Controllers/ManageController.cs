@@ -11,6 +11,7 @@ using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
+using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.ChangeStatus;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -64,5 +65,8 @@ namespace GiftApi.Controllers
 
         [HttpPut("to-pup-balance")]
         public async Task<TopUpBalanceResponse> TopUpBalance([FromQuery] TopUpBalanceCommand request) => await _mediator.Send(request);
+
+        [HttpPut("change-delivery-info-status")]
+        public async Task<ChangeStatusResponse> ChangeDeliveryInfoStatus([FromQuery] ChangeStatusCommand request) => await _mediator.Send(request);
     }
 }

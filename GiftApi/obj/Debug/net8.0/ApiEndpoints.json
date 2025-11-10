@@ -365,6 +365,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "ChangeDeliveryInfoStatus",
+    "RelativePath": "api/Manage/change-delivery-info-status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DeliveryInfoId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.ChangeStatus.ChangeStatusResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "CreateBrand",
     "RelativePath": "api/Manage/create-brand",
     "HttpMethod": "POST",

@@ -109,5 +109,10 @@ namespace GiftApi.Infrastructure.Repositories
 
             return true;
         }
+
+        public async Task<VoucherDeliveryInfo?> GetDeliveryInfoByIdAsync(Guid id)
+        {
+            return await _db.VoucherDeliveryInfos.FindAsync(id);
+        }
     }
 }

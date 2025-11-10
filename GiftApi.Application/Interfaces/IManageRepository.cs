@@ -2,5 +2,6 @@
 {
     public interface IManageRepository
     {
+        Task<bool> ChangeUsedStatus(Guid id);
     }
 }
