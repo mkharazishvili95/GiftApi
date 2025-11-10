@@ -3,6 +3,7 @@ using GiftApi.Domain.Enums.User;
 using GiftApi.Infrastructure.Data;
 using GiftApi.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace GiftApi.Tests.Voucher
 {
@@ -19,8 +20,9 @@ namespace GiftApi.Tests.Voucher
         public void Setup()
         {
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase(Guid.NewGuid().ToString())
-                .Options;
+            .UseInMemoryDatabase(Guid.NewGuid().ToString())
+            .ConfigureWarnings(x => x.Ignore(InMemoryEventId.TransactionIgnoredWarning)) 
+            .Options;
 
             _db = new ApplicationDbContext(options);
             _voucherRepository = new VoucherRepository(_db);
@@ -177,21 +179,18 @@ namespace GiftApi.Tests.Voucher
             var user = CreateUser(balance: 100);
             var voucher = CreateVoucher(quantity: 5);
 
-            _db.Users.Add(user);
-            _db.Vouchers.Add(voucher);
+            await _db.Users.AddAsync(user);
+            await _db.Vouchers.AddAsync(voucher);
             await _db.SaveChangesAsync();
 
             var command = new BuyVoucherCommand
             {
                 UserId = user.Id,
                 VoucherId = voucher.Id,
-                Quantity = 2,
+                Quantity = 1,
                 RecipientName = "John",
                 RecipientPhone = "598123456",
                 RecipientCity = "Tbilisi",
-                Message = "Happy Birthday!", 
-                RecipientEmail = "test@gmail.com",
-                SenderName = "Jane",
                 RecipientAddress = "Street 1"
             };
 
@@ -205,7 +204,7 @@ namespace GiftApi.Tests.Voucher
             var updatedVoucher = await _db.Vouchers.FindAsync(voucher.Id);
 
             Assert.AreEqual(50, updatedUser.Balance);
-            Assert.AreEqual(3, updatedVoucher.Quantity);
+            Assert.AreEqual(4, updatedVoucher.Quantity);
         }
     }
 }

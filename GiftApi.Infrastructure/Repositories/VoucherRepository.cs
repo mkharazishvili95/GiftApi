@@ -13,11 +13,10 @@ namespace GiftApi.Infrastructure.Repositories
             _db = db;
         }
 
-        public async Task<Voucher?> Create(Voucher? voucher)
+        public Task<Voucher?> Create(Voucher? voucher)
         {
             _db.Vouchers.Add(voucher);
-
-            return voucher;
+            return Task.FromResult(voucher);
         }
 
         public async Task<Voucher?> Edit(Voucher? voucher)
@@ -36,7 +35,7 @@ namespace GiftApi.Infrastructure.Repositories
             return await _db.Vouchers
                 .Include(x => x.Brand)
                 .ThenInclude(x => x.Category)
-                .FirstOrDefaultAsync(x => x.Id == id && x.IsActive);
+                .FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<List<Voucher>?> GetAllWithCategoryAndBrand()
@@ -72,50 +71,43 @@ namespace GiftApi.Infrastructure.Repositories
             string recipientAddress,
             string? recipientEmail = null,
             string? message = null,
-            string? senderName = null)
+            string? senderName = null,
+            Guid? senderId = null)
         {
             var user = await _db.Users.FirstOrDefaultAsync(x => x.Id == userId);
 
             if (user == null)
                 return false;
 
-            var voucher = await _db.Vouchers.FirstOrDefaultAsync(x => x.Id == voucherId && x.IsActive && !x.IsDeleted);
+            var voucher = await _db.Vouchers
+                .FirstOrDefaultAsync(x => x.Id == voucherId && x.IsActive && !x.IsDeleted);
 
             if (voucher == null || voucher.Quantity < quantity)
                 return false;
 
-            using var transaction = await _db.Database.BeginTransactionAsync();
+            voucher.Quantity -= quantity;
+            voucher.SoldCount = (voucher.SoldCount ?? 0) + quantity;
+            _db.Vouchers.Update(voucher);
 
-            try
+            var deliveryInfo = new VoucherDeliveryInfo
             {
-                voucher.Quantity -= quantity;
-                _db.Vouchers.Update(voucher);
+                Id = Guid.NewGuid(),
+                VoucherId = voucher.Id,
+                SenderName = senderName,
+                RecipientName = recipientName,
+                RecipientEmail = recipientEmail,
+                RecipientPhone = recipientPhone,
+                RecipientCity = recipientCity,
+                RecipientAddress = recipientAddress,
+                Message = message,
+                SenderId = user.Id,
+                Quantity = quantity,
+                IsUsed = false
+            };
 
-                var deliveryInfo = new VoucherDeliveryInfo
-                {
-                    Id = Guid.NewGuid(),
-                    VoucherId = voucher.Id,
-                    SenderName = senderName,
-                    RecipientName = recipientName,
-                    RecipientEmail = recipientEmail, 
-                    RecipientPhone = recipientPhone,
-                    RecipientCity = recipientCity,
-                    RecipientAddress = recipientAddress,
-                    Message = message
-                };
+            _db.VoucherDeliveryInfos.Add(deliveryInfo);
 
-                _db.VoucherDeliveryInfos.Add(deliveryInfo);
-
-                await _db.SaveChangesAsync();
-                await transaction.CommitAsync();
-
-                return true;
-            }
-            catch
-            {
-                await transaction.RollbackAsync();
-                return false;
-            }
+            return true;
         }
     }
 }

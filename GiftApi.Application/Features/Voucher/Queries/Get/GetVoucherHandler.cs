@@ -19,7 +19,7 @@ namespace GiftApi.Application.Features.Voucher.Queries.Get
 
             var voucher = await _voucherRepository.GetWithCategoryAndBrand(request.Id);
 
-            if (voucher == null)
+            if (voucher == null || !voucher.IsActive)
                 return new GetVoucherResponse { Id = request.Id, Success = false, Message = $"Voucher with Id {request.Id} not found.", StatusCode = 404 };
 
             if (voucher.IsDeleted)

@@ -12,5 +12,8 @@
         public string RecipientCity { get; set; }
         public string RecipientAddress { get; set; }
         public string? Message { get; set; }
+        public Guid? SenderId { get; set; }
+        public int? Quantity { get; set; }
+        public bool? IsUsed { get; set; }
     }
 }

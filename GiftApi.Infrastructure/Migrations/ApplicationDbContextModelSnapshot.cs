@@ -263,8 +263,14 @@ namespace GiftApi.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<bool?>("IsUsed")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Message")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Quantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("RecipientAddress")
                         .IsRequired()
@@ -284,6 +290,9 @@ namespace GiftApi.Infrastructure.Migrations
                     b.Property<string>("RecipientPhone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("SenderId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("SenderName")
                         .HasColumnType("nvarchar(max)");
