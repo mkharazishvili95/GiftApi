@@ -114,5 +114,32 @@ namespace GiftApi.Infrastructure.Repositories
         {
             return await _db.VoucherDeliveryInfos.FindAsync(id);
         }
+
+        public async Task<List<VoucherDeliveryInfo>> GetDeliveryInfosBySenderAsync(Guid senderId, bool includeVoucher, bool? isUsedFilter, int page, int pageSize)
+        {
+            var query = _db.VoucherDeliveryInfos
+                .AsQueryable()
+                .Where(x => x.SenderId == senderId);
+
+            if (isUsedFilter.HasValue)
+                query = query.Where(x => x.IsUsed == isUsedFilter.Value);
+
+            if (includeVoucher)
+            {
+                query = query
+                    .Include(x => x.Voucher)
+                    .ThenInclude(v => v.Brand)
+                    .ThenInclude(b => b.Category);
+            }
+
+            if (page < 1) page = 1;
+            if (pageSize <= 0) pageSize = 10;
+
+            return await query
+                .OrderByDescending(x => x.Id)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+        }
     }
 }

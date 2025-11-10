@@ -2,6 +2,7 @@
 using GiftApi.Application.Features.User.Commands.Login.RefreshToken;
 using GiftApi.Application.Features.User.Commands.Register;
 using GiftApi.Application.Features.User.Queries.GetCurrent;
+using GiftApi.Application.Features.User.Queries.GetMyPurchases;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -29,7 +30,10 @@ namespace GiftApi.Controllers
 
         [Authorize]
         [HttpGet("me")]
-        public async Task<GetCurrentUserResponse> Me()
-            => await _mediator.Send(new GetCurrentUserQuery());
+        public async Task<GetCurrentUserResponse> Me() => await _mediator.Send(new GetCurrentUserQuery());
+
+        [Authorize]
+        [HttpGet("my-purchases")]
+        public async Task<GetMyPurchasesResponse> MyPurchases([FromQuery] GetMyPurchasesQuery query) => await _mediator.Send(query);
     }
 }
