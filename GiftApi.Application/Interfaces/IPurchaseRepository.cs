@@ -6,7 +6,6 @@ namespace GiftApi.Application.Interfaces
     public interface IPurchaseRepository
     {
         Task<VoucherDeliveryInfo?> Get(Guid id);
-        Task<List<VoucherDeliveryInfo>?> GetAllByUserId(Guid userId);
         Task<List<VoucherDeliveryInfo>?> GetAll();
     }
 }

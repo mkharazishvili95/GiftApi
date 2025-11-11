@@ -261,6 +261,37 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.FileController",
+    "Method": "Rename",
+    "RelativePath": "api/File/rename",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FileId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "NewFileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.File.Commands.Rename.RenameFileResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.FileController",
     "Method": "Upload",
     "RelativePath": "api/File/upload",
     "HttpMethod": "POST",
@@ -276,6 +307,32 @@
     "ReturnTypes": [
       {
         "Type": "GiftApi.Application.Features.File.Commands.Upload.UploadFileResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "GetAllPurchases",
+    "RelativePath": "api/Manage/all-purchases",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll.GetAllPurchasesQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll.GetAllPurchasesResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -548,7 +605,7 @@
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "GetPurchase",
-    "RelativePath": "api/Manage/purchase{id}",
+    "RelativePath": "api/Manage/purchase",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -557,11 +614,6 @@
         "Name": "Id",
         "Type": "System.Guid",
         "IsRequired": false
-      },
-      {
-        "Name": "id",
-        "Type": "",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": [

@@ -282,6 +282,86 @@ namespace GiftApi.Tests.VoucherDeliveryInfo
             Assert.IsTrue(result4.Success);
             Assert.AreEqual("No purchases found", result4.Message);
         }
+        [Test]
+        public async Task Should_Filter_By_SenderId()
+        {
+            var voucherId = _db.Vouchers.First().Id;
+            var senderId1 = Guid.NewGuid();
+            var senderId2 = Guid.NewGuid();
+
+            var purchases = new List<GiftApi.Domain.Entities.VoucherDeliveryInfo>
+            {
+                new GiftApi.Domain.Entities.VoucherDeliveryInfo
+                {
+                    Id = Guid.NewGuid(),
+                    VoucherId = voucherId,
+                    SenderId = senderId1,
+                    SenderName = "Alice",
+                    RecipientName = "John Doe",
+                    RecipientEmail = "john@example.com",
+                    RecipientPhone = "555111222",
+                    RecipientCity = "Tbilisi",
+                    RecipientAddress = "Rustaveli 1",
+                    Message = "Happy Birthday",
+                    Quantity = 1,
+                    IsUsed = false
+                },
+                new GiftApi.Domain.Entities.VoucherDeliveryInfo
+                {
+                    Id = Guid.NewGuid(),
+                    VoucherId = voucherId,
+                    SenderId = senderId2,
+                    SenderName = "Bob",
+                    RecipientName = "Jane Smith",
+                    RecipientEmail = "jane@example.com",
+                    RecipientPhone = "555333444",
+                    RecipientCity = "Batumi",
+                    RecipientAddress = "Beach St 2",
+                    Message = "Congrats",
+                    Quantity = 2,
+                    IsUsed = true
+                },
+                new GiftApi.Domain.Entities.VoucherDeliveryInfo
+                {
+                    Id = Guid.NewGuid(),
+                    VoucherId = voucherId,
+                    SenderId = null,
+                    SenderName = "Charlie",
+                    RecipientName = "Jack Brown",
+                    RecipientEmail = "jack@example.com",
+                    RecipientPhone = "555555555",
+                    RecipientCity = "Kutaisi",
+                    RecipientAddress = "Center 3",
+                    Message = "Gift",
+                    Quantity = 1,
+                    IsUsed = false
+                }
+            };
+
+            _db.VoucherDeliveryInfos.AddRange(purchases);
+            await _db.SaveChangesAsync();
+
+            var query1 = new GetAllPurchasesQuery { SenderId = senderId1 };
+            var result1 = await _handler.Handle(query1, default);
+
+            Assert.IsTrue(result1.Success);
+            Assert.AreEqual(1, result1.Items.Count);
+            Assert.IsTrue(result1.Items.All(x => x.SenderId == senderId1));
+
+            var query2 = new GetAllPurchasesQuery { SenderId = senderId2 };
+            var result2 = await _handler.Handle(query2, default);
+
+            Assert.IsTrue(result2.Success);
+            Assert.AreEqual(1, result2.Items.Count);
+            Assert.IsTrue(result2.Items.All(x => x.SenderId == senderId2));
+
+            var query3 = new GetAllPurchasesQuery { SenderId = Guid.NewGuid() };
+            var result3 = await _handler.Handle(query3, default);
+
+            Assert.IsTrue(result3.Success);
+            Assert.AreEqual(0, result3.Items.Count);
+            Assert.AreEqual("No purchases found", result3.Message);
+        }
 
     }
 }

@@ -32,6 +32,12 @@ namespace GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll
                 ).ToList();
             }
 
+            if (request.SenderId.HasValue)
+                purchases = purchases.Where(x => x.SenderId == request.SenderId.Value).ToList();
+
+            if (request.VoucherId.HasValue)
+                purchases = purchases.Where(x => x.VoucherId == request.VoucherId.Value).ToList();
+
             var totalCount = purchases.Count;
 
             if(totalCount == 0)

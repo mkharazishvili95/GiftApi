@@ -23,10 +23,5 @@ namespace GiftApi.Infrastructure.Repositories
         {
             return await _db.VoucherDeliveryInfos.AsNoTracking().Include(x => x.Voucher).ToListAsync();
         }
-
-        public async Task<List<VoucherDeliveryInfo>?> GetAllByUserId(Guid userId)
-        {
-            return await _db.VoucherDeliveryInfos.AsNoTracking().Include(x => x.Voucher).Where(x => x.SenderId == userId).ToListAsync();
-        }
     }
 }

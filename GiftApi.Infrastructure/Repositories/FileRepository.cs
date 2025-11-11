@@ -41,6 +41,13 @@ namespace GiftApi.Infrastructure.Repositories
             return file;
         }
 
+        public async Task EditFile(Domain.Entities.File? file)
+        {
+            if (file != null && !file.IsDeleted)
+            _db.Update(file);
+            await _db.SaveChangesAsync();
+        }
+
         public async Task<FileDto> UploadFileAsync(string? fileName, string? fileUrl, FileType? fileType)
         {
             if (string.IsNullOrWhiteSpace(fileName) || string.IsNullOrWhiteSpace(fileUrl) || fileType == null)

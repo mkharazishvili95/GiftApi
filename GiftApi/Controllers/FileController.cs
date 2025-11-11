@@ -1,4 +1,5 @@
 ﻿using GiftApi.Application.Features.File.Commands.Delete;
+using GiftApi.Application.Features.File.Commands.Rename;
 using GiftApi.Application.Features.File.Commands.Upload;
 using GiftApi.Application.Features.File.Queries.Get;
 using GiftApi.Domain.Enums.User;
@@ -27,5 +28,9 @@ namespace GiftApi.Controllers
         [Authorize(Roles = nameof(UserType.Admin))]
         [HttpDelete]
         public async Task<DeleteFileResponse> Delete([FromQuery] DeleteFileCommand request) => await _mediator.Send(request);
+
+        [Authorize(Roles = nameof(UserType.Admin))]
+        [HttpPut("rename")]
+        public async Task<RenameFileResponse> Rename([FromQuery] RenameFileCommand request) => await _mediator.Send(request);
     }
 }

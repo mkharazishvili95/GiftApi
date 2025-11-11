@@ -477,6 +477,52 @@
         }
       }
     },
+    "/api/File/rename": {
+      "put": {
+        "tags": [
+          "File"
+        ],
+        "parameters": [
+          {
+            "name": "FileId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "NewFileName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RenameFileResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RenameFileResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RenameFileResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Manage/user": {
       "get": {
         "tags": [
@@ -1094,7 +1140,7 @@
         }
       }
     },
-    "/api/Manage/purchase{id}": {
+    "/api/Manage/purchase": {
       "get": {
         "tags": [
           "Manage"
@@ -1106,14 +1152,6 @@
             "schema": {
               "type": "string",
               "format": "uuid"
-            }
-          },
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -1134,6 +1172,54 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/GetPurchaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Manage/all-purchases": {
+      "post": {
+        "tags": [
+          "Manage"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllPurchasesQuery"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllPurchasesQuery"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllPurchasesQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAllPurchasesResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAllPurchasesResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAllPurchasesResponse"
                 }
               }
             }
@@ -2466,6 +2552,119 @@
         },
         "additionalProperties": false
       },
+      "GetAllPurchasesItemsResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "voucherId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "senderName": {
+            "type": "string",
+            "nullable": true
+          },
+          "recipientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "recipientEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "recipientPhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "recipientCity": {
+            "type": "string",
+            "nullable": true
+          },
+          "recipientAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "senderMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "senderId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isUsed": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAllPurchasesQuery": {
+        "type": "object",
+        "properties": {
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationModel"
+          },
+          "senderId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "voucherId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "isUsed": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "searchString": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAllPurchasesResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetAllPurchasesItemsResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "GetAllUsersQuery": {
         "type": "object",
         "properties": {
@@ -3491,6 +3690,37 @@
             "nullable": true
           },
           "userName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RenameFileResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fileId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "newFileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileUrl": {
             "type": "string",
             "nullable": true
           }
