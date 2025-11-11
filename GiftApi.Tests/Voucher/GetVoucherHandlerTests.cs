@@ -65,7 +65,7 @@ namespace GiftApi.Tests.Voucher
                 Title = "Test Voucher",
                 IsDeleted = true,
                 CreateDate = DateTime.UtcNow,
-                Description = "Description",
+                Description = "Description", 
             };
 
             _db.Vouchers.Add(voucher);
@@ -163,6 +163,7 @@ namespace GiftApi.Tests.Voucher
                 Title = "Voucher 1",
                 Description = "Description",
                 IsDeleted = false,
+                IsActive = true,
                 BrandId = brand.Id,
                 Brand = brand,
                 CreateDate = DateTime.UtcNow

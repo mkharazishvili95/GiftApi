@@ -547,6 +547,37 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "GetPurchase",
+    "RelativePath": "api/Manage/purchase{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Get.GetPurchaseResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "RestoreBrand",
     "RelativePath": "api/Manage/restore-brand",
     "HttpMethod": "PUT",
@@ -655,35 +686,9 @@
     ]
   },
   {
-    "ContainingType": "GiftApi.Controllers.UserController",
-    "Method": "Login",
-    "RelativePath": "api/User/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "GiftApi.Application.Features.User.Commands.Login.LoginUserCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "GiftApi.Application.Features.User.Commands.Login.LoginUserResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "GiftApi.Controllers.UserController",
+    "ContainingType": "GiftApi.Controllers.ProfileController",
     "Method": "Me",
-    "RelativePath": "api/User/me",
+    "RelativePath": "api/Profile/me",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -701,9 +706,9 @@
     ]
   },
   {
-    "ContainingType": "GiftApi.Controllers.UserController",
+    "ContainingType": "GiftApi.Controllers.ProfileController",
     "Method": "MyPurchases",
-    "RelativePath": "api/User/my-purchases",
+    "RelativePath": "api/Profile/my-purchases",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -732,6 +737,32 @@
     "ReturnTypes": [
       {
         "Type": "GiftApi.Application.Features.User.Queries.GetMyPurchases.GetMyPurchasesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.User.Commands.Login.LoginUserCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.User.Commands.Login.LoginUserResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

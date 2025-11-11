@@ -3,6 +3,82 @@
   "WorkspaceRootPath": "D:\\G\\GiftApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|d:\\g\\giftapi\\giftapi.tests\\voucher\\getvoucherhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|solutionrelative:giftapi.tests\\voucher\\getvoucherhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\voucher\\queries\\get\\getvoucherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\voucher\\queries\\get\\getvoucherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|d:\\g\\giftapi\\giftapi.tests\\purchase\\getpurchasehandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|solutionrelative:giftapi.tests\\purchase\\getpurchasehandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|d:\\g\\giftapi\\giftapi.tests\\brand\\getbrandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|solutionrelative:giftapi.tests\\brand\\getbrandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\manage\\voucherdeliveryinfo\\queries\\get\\getpurchasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\manage\\voucherdeliveryinfo\\queries\\get\\getpurchasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\manage\\user\\queries\\getuser\\getuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\manage\\user\\queries\\getuser\\getuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\manage\\voucherdeliveryinfo\\queries\\get\\getpurchaseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\manage\\voucherdeliveryinfo\\queries\\get\\getpurchaseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\manage\\voucherdeliveryinfo\\queries\\get\\getpurchasequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\manage\\voucherdeliveryinfo\\queries\\get\\getpurchasequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\dtos\\purchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\dtos\\purchasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|d:\\g\\giftapi\\giftapi.infrastructure\\repositories\\purchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|solutionrelative:giftapi.infrastructure\\repositories\\purchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\interfaces\\ipurchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\interfaces\\ipurchaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A46FA0FB-EA3B-4BC3-8BA0-718EB9D0FE1A}|GiftApi.Domain\\GiftApi.Domain.csproj|d:\\g\\giftapi\\giftapi.domain\\entities\\voucherdeliveryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A46FA0FB-EA3B-4BC3-8BA0-718EB9D0FE1A}|GiftApi.Domain\\GiftApi.Domain.csproj|solutionrelative:giftapi.domain\\entities\\voucherdeliveryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\interfaces\\ivoucherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\interfaces\\ivoucherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|d:\\g\\giftapi\\giftapi.infrastructure\\repositories\\voucherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|solutionrelative:giftapi.infrastructure\\repositories\\voucherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\user\\queries\\getmypurchases\\getmypurchasesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\user\\queries\\getmypurchases\\getmypurchasesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|d:\\g\\giftapi\\giftapi.tests\\user\\getmypurchaseshandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|solutionrelative:giftapi.tests\\user\\getmypurchaseshandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,28 +99,8 @@
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\user\\queries\\getmypurchases\\getmypurchaseshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\user\\queries\\getmypurchases\\getmypurchasesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\user\\queries\\getmypurchases\\getmypurchasesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\user\\queries\\getmypurchases\\getmypurchasesresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\user\\queries\\getmypurchases\\getmypurchasesresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A46FA0FB-EA3B-4BC3-8BA0-718EB9D0FE1A}|GiftApi.Domain\\GiftApi.Domain.csproj|d:\\g\\giftapi\\giftapi.domain\\entities\\voucherdeliveryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A46FA0FB-EA3B-4BC3-8BA0-718EB9D0FE1A}|GiftApi.Domain\\GiftApi.Domain.csproj|solutionrelative:giftapi.domain\\entities\\voucherdeliveryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\interfaces\\ivoucherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\interfaces\\ivoucherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|d:\\g\\giftapi\\giftapi.infrastructure\\repositories\\voucherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|solutionrelative:giftapi.infrastructure\\repositories\\voucherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\interfaces\\icurrentuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\user\\queries\\getcurrentuser\\getcurrentuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|d:\\g\\giftapi\\giftapi.infrastructure\\repositories\\currentuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A253992B-6272-42E2-B65C-21ED4B33BC39}|GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj|solutionrelative:giftapi.infrastructure\\repositories\\currentuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -73,10 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|d:\\g\\giftapi\\giftapi\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD620916-B663-4973-AB59-4D76CA38E28E}|GiftApi\\GiftApi.csproj|solutionrelative:giftapi\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\user\\commands\\login\\loginuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -143,14 +191,6 @@
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\manage\\voucher\\commands\\create\\createvouchercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\voucher\\queries\\get\\getvoucherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\voucher\\queries\\get\\getvoucherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|d:\\g\\giftapi\\giftapi.tests\\voucher\\getvoucherhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|solutionrelative:giftapi.tests\\voucher\\getvoucherhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\voucher\\commands\\buy\\buyvouchervalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\voucher\\commands\\buy\\buyvouchervalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -197,10 +237,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\voucher\\queries\\getall\\getallvouchersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\voucher\\queries\\getall\\getallvouchersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|d:\\g\\giftapi\\giftapi.tests\\brand\\getbrandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4691E6B5-D0CA-4572-B732-B207764AD6B9}|GiftApi.Tests\\GiftApi.Tests.csproj|solutionrelative:giftapi.tests\\brand\\getbrandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -651,10 +687,6 @@
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\manage\\user\\queries\\getuser\\getuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\manage\\user\\queries\\getuser\\getuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\manage\\user\\queries\\getuser\\getuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|d:\\g\\giftapi\\giftapi.application\\features\\manage\\user\\queries\\getuser\\getuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E12490A-4F4B-46DF-8736-83FE1EE43D02}|GiftApi.Application\\GiftApi.Application.csproj|solutionrelative:giftapi.application\\features\\manage\\user\\queries\\getuser\\getuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -742,7 +774,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -750,59 +782,267 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetPurchaseHandlerTests.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Purchase\\GetPurchaseHandlerTests.cs",
+              "RelativeDocumentMoniker": "GiftApi.Tests\\Purchase\\GetPurchaseHandlerTests.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\Purchase\\GetPurchaseHandlerTests.cs",
+              "RelativeToolTip": "GiftApi.Tests\\Purchase\\GetPurchaseHandlerTests.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAcwFYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:26:35.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PurchaseDto.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\DTOs\\PurchaseDto.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\DTOs\\PurchaseDto.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\DTOs\\PurchaseDto.cs",
+              "RelativeToolTip": "GiftApi.Application\\DTOs\\PurchaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:40:01.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "GiftApi\\Controllers\\ManageController.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "GiftApi\\Controllers\\ManageController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowBsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T20:17:06.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "GiftApi\\Controllers\\ProfileController.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "GiftApi\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:32:39.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetBrandHandlerTests.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\GetBrandHandlerTests.cs",
+              "RelativeDocumentMoniker": "GiftApi.Tests\\Brand\\GetBrandHandlerTests.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\GetBrandHandlerTests.cs",
+              "RelativeToolTip": "GiftApi.Tests\\Brand\\GetBrandHandlerTests.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwD8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T07:20:32.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GetVoucherHandlerTests.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Voucher\\GetVoucherHandlerTests.cs",
+              "RelativeDocumentMoniker": "GiftApi.Tests\\Voucher\\GetVoucherHandlerTests.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\Voucher\\GetVoucherHandlerTests.cs",
+              "RelativeToolTip": "GiftApi.Tests\\Voucher\\GetVoucherHandlerTests.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAwKUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T11:23:31.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetVoucherHandler.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherHandler.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherHandler.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherHandler.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherHandler.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAYwEcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T11:17:05.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IPurchaseRepository.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IPurchaseRepository.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IPurchaseRepository.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IPurchaseRepository.cs",
+              "RelativeToolTip": "GiftApi.Application\\Interfaces\\IPurchaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:41:01.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PurchaseRepository.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\PurchaseRepository.cs",
+              "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\PurchaseRepository.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\PurchaseRepository.cs",
+              "RelativeToolTip": "GiftApi.Infrastructure\\Repositories\\PurchaseRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:41:21.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetPurchaseResponse.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseResponse.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseResponse.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseResponse.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:53:07.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetPurchaseHandler.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseHandler.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseHandler.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseHandler.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:53:20.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetPurchaseQuery.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseQuery.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseQuery.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseQuery.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Queries\\Get\\GetPurchaseQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:53:13.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IVoucherRepository.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IVoucherRepository.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IVoucherRepository.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IVoucherRepository.cs",
+              "RelativeToolTip": "GiftApi.Application\\Interfaces\\IVoucherRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T18:15:25.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetUserQuery.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserQuery.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserQuery.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserQuery.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T20:19:38.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Program.cs",
+              "RelativeDocumentMoniker": "GiftApi\\Program.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\Program.cs",
+              "RelativeToolTip": "GiftApi\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T18:49:14.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VoucherDeliveryInfo.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\VoucherDeliveryInfo.cs",
+              "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\VoucherDeliveryInfo.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\VoucherDeliveryInfo.cs",
+              "RelativeToolTip": "GiftApi.Domain\\Entities\\VoucherDeliveryInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T13:13:12.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "VoucherRepository.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\VoucherRepository.cs",
+              "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\VoucherRepository.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\VoucherRepository.cs",
+              "RelativeToolTip": "GiftApi.Infrastructure\\Repositories\\VoucherRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T18:15:05.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetMyPurchasesQuery.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesQuery.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesQuery.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesQuery.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:00:32.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GiftApi\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GiftApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T18:53:32.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "GetMyPurchasesHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetMyPurchasesHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\GetMyPurchasesHandlerTests.cs",
               "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetMyPurchasesHandlerTests.cs",
               "RelativeToolTip": "GiftApi.Tests\\User\\GetMyPurchasesHandlerTests.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAA9wC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T20:08:24.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetMyPurchasesHandler.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesHandler.cs",
-              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesHandler.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesHandler.cs",
-              "RelativeToolTip": "GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesHandler.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwEoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:00:38.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetCurrentUserHandlerTests.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetCurrentUserHandlerTests.cs",
-              "RelativeDocumentMoniker": "GiftApi.Tests\\User\\GetCurrentUserHandlerTests.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetCurrentUserHandlerTests.cs",
-              "RelativeToolTip": "GiftApi.Tests\\User\\GetCurrentUserHandlerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T19:51:23.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetAllUsersHandlerTests.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetAllUsersHandlerTests.cs",
-              "RelativeDocumentMoniker": "GiftApi.Tests\\User\\GetAllUsersHandlerTests.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetAllUsersHandlerTests.cs",
-              "RelativeToolTip": "GiftApi.Tests\\User\\GetAllUsersHandlerTests.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T20:48:00.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 20,
               "Title": "Voucher.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\Voucher.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\Voucher.cs",
@@ -810,25 +1050,47 @@
               "RelativeToolTip": "GiftApi.Domain\\Entities\\Voucher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T12:45:49.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T12:45:49.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "GiftApi\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\Controllers\\UserController.cs",
-              "RelativeToolTip": "GiftApi\\Controllers\\UserController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwCIAAAATAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "GetAllUsersHandlerTests.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetAllUsersHandlerTests.cs",
+              "RelativeDocumentMoniker": "GiftApi.Tests\\User\\GetAllUsersHandlerTests.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetAllUsersHandlerTests.cs",
+              "RelativeToolTip": "GiftApi.Tests\\User\\GetAllUsersHandlerTests.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:53:32.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T20:48:00.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
+              "Title": "GetCurrentUserHandlerTests.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetCurrentUserHandlerTests.cs",
+              "RelativeDocumentMoniker": "GiftApi.Tests\\User\\GetCurrentUserHandlerTests.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetCurrentUserHandlerTests.cs",
+              "RelativeToolTip": "GiftApi.Tests\\User\\GetCurrentUserHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T19:51:23.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GetMyPurchasesHandler.cs",
+              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesHandler.cs",
+              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesHandler.cs",
+              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesHandler.cs",
+              "RelativeToolTip": "GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesHandler.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwEoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:00:38.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "GetMyPurchasesResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesResponse.cs",
@@ -836,38 +1098,11 @@
               "RelativeToolTip": "GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesResponse.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:00:13.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T20:00:13.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetMyPurchasesQuery.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesQuery.cs",
-              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesQuery.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesQuery.cs",
-              "RelativeToolTip": "GiftApi.Application\\Features\\User\\Queries\\GetMyPurchases\\GetMyPurchasesQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:00:32.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VoucherDeliveryInfo.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\VoucherDeliveryInfo.cs",
-              "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\VoucherDeliveryInfo.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\VoucherDeliveryInfo.cs",
-              "RelativeToolTip": "GiftApi.Domain\\Entities\\VoucherDeliveryInfo.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T13:13:12.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 27,
               "Title": "GetCurrentUserQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetCurrentUser\\GetCurrentUserQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Queries\\GetCurrentUser\\GetCurrentUserQuery.cs",
@@ -879,45 +1114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Program.cs",
-              "RelativeDocumentMoniker": "GiftApi\\Program.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\Program.cs",
-              "RelativeToolTip": "GiftApi\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwBwAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:49:14.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VoucherRepository.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\VoucherRepository.cs",
-              "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\VoucherRepository.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\VoucherRepository.cs",
-              "RelativeToolTip": "GiftApi.Infrastructure\\Repositories\\VoucherRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T18:15:05.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IVoucherRepository.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IVoucherRepository.cs",
-              "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IVoucherRepository.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IVoucherRepository.cs",
-              "RelativeToolTip": "GiftApi.Application\\Interfaces\\IVoucherRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T18:15:25.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 25,
               "Title": "ICurrentUserRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\ICurrentUserRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\ICurrentUserRepository.cs",
@@ -929,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "CurrentUserRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\CurrentUserRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\CurrentUserRepository.cs",
@@ -941,7 +1138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 26,
               "Title": "GetCurrentUserHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetCurrentUser\\GetCurrentUserHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Queries\\GetCurrentUser\\GetCurrentUserHandler.cs",
@@ -953,20 +1150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ManageController.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\ManageController.cs",
-              "RelativeDocumentMoniker": "GiftApi\\Controllers\\ManageController.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi\\Controllers\\ManageController.cs",
-              "RelativeToolTip": "GiftApi\\Controllers\\ManageController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T20:17:06.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "LoginUserHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserHandler.cs",
@@ -978,7 +1162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 30,
               "Title": "FileController.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\FileController.cs",
               "RelativeDocumentMoniker": "GiftApi\\Controllers\\FileController.cs",
@@ -990,7 +1174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 33,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\User.cs",
@@ -1002,7 +1186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 29,
               "Title": "VoucherController.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\VoucherController.cs",
               "RelativeDocumentMoniker": "GiftApi\\Controllers\\VoucherController.cs",
@@ -1014,7 +1198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 38,
               "Title": "IManageRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IManageRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IManageRepository.cs",
@@ -1026,7 +1210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 32,
               "Title": "UserType.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Enums\\User\\UserType.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Enums\\User\\UserType.cs",
@@ -1038,7 +1222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 37,
               "Title": "ManageRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\ManageRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\ManageRepository.cs",
@@ -1050,7 +1234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 182,
+              "DocumentIndex": 190,
               "Title": "20251110185221_AddedQuantityIntoDeliveryInfo.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Migrations\\20251110185221_AddedQuantityIntoDeliveryInfo.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Migrations\\20251110185221_AddedQuantityIntoDeliveryInfo.cs",
@@ -1062,7 +1246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 34,
               "Title": "GetCurrentUserResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Queries\\GetCurrentUser\\GetCurrentUserResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Queries\\GetCurrentUser\\GetCurrentUserResponse.cs",
@@ -1074,7 +1258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 36,
               "Title": "ChangeStatusHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Voucher\\ChangeStatusHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Voucher\\ChangeStatusHandlerTests.cs",
@@ -1086,7 +1270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 35,
               "Title": "ChangeStatusHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Commands\\ChangeStatus\\ChangeStatusHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Commands\\ChangeStatus\\ChangeStatusHandler.cs",
@@ -1098,7 +1282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 40,
               "Title": "ChangeStatusResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Commands\\ChangeStatus\\ChangeStatusResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Commands\\ChangeStatus\\ChangeStatusResponse.cs",
@@ -1110,7 +1294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 39,
               "Title": "ChangeStatusCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Commands\\ChangeStatus\\ChangeStatusCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\VoucherDeliveryInfo\\Commands\\ChangeStatus\\ChangeStatusCommand.cs",
@@ -1122,7 +1306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 41,
               "Title": "FileRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\FileRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\FileRepository.cs",
@@ -1134,7 +1318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 43,
               "Title": "EditVoucherHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Edit\\EditVoucherHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Edit\\EditVoucherHandler.cs",
@@ -1146,7 +1330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 45,
               "Title": "BuyVoucherValidationTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Voucher\\BuyVoucherValidationTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Voucher\\BuyVoucherValidationTests.cs",
@@ -1158,7 +1342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 181,
+              "DocumentIndex": 189,
               "Title": "20251110185033_addedSenderUserIdIntoDeliveryInfo.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Migrations\\20251110185033_addedSenderUserIdIntoDeliveryInfo.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Migrations\\20251110185033_addedSenderUserIdIntoDeliveryInfo.cs",
@@ -1170,7 +1354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 180,
+              "DocumentIndex": 188,
               "Title": "20251110185622_AddedIsUsedIntoDeliveryInfo.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Migrations\\20251110185622_AddedIsUsedIntoDeliveryInfo.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Migrations\\20251110185622_AddedIsUsedIntoDeliveryInfo.cs",
@@ -1182,7 +1366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 42,
               "Title": "BuyVoucherHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Commands\\Buy\\BuyVoucherHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Commands\\Buy\\BuyVoucherHandler.cs",
@@ -1194,19 +1378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "GetVoucherHandler.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherHandler.cs",
-              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherHandler.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherHandler.cs",
-              "RelativeToolTip": "GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T11:17:05.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 44,
               "Title": "BuyVoucherHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Voucher\\BuyVoucherHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Voucher\\BuyVoucherHandlerTests.cs",
@@ -1218,19 +1390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "GetVoucherHandlerTests.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Voucher\\GetVoucherHandlerTests.cs",
-              "RelativeDocumentMoniker": "GiftApi.Tests\\Voucher\\GetVoucherHandlerTests.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\Voucher\\GetVoucherHandlerTests.cs",
-              "RelativeToolTip": "GiftApi.Tests\\Voucher\\GetVoucherHandlerTests.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAQwIkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T11:23:31.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 46,
               "Title": "CreateVoucherCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Create\\CreateVoucherCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Create\\CreateVoucherCommand.cs",
@@ -1242,7 +1402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 47,
               "Title": "BuyVoucherValidation.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Commands\\Buy\\BuyVoucherValidation.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Commands\\Buy\\BuyVoucherValidation.cs",
@@ -1254,7 +1414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 48,
               "Title": "BuyVoucherCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Commands\\Buy\\BuyVoucherCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Commands\\Buy\\BuyVoucherCommand.cs",
@@ -1266,7 +1426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 49,
               "Title": "BuyVoucherResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Commands\\Buy\\BuyVoucherResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Commands\\Buy\\BuyVoucherResponse.cs",
@@ -1278,7 +1438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 50,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\UserRepository.cs",
@@ -1290,7 +1450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 51,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IUserRepository.cs",
@@ -1302,7 +1462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 179,
+              "DocumentIndex": 187,
               "Title": "20251109134545_AddedSoldCount.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Migrations\\20251109134545_AddedSoldCount.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Migrations\\20251109134545_AddedSoldCount.cs",
@@ -1314,7 +1474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 52,
               "Title": "InMemoryUserRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Repositories\\InMemoryUserRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Repositories\\InMemoryUserRepository.cs",
@@ -1326,7 +1486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 53,
               "Title": "GetAllVouchersHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Voucher\\GetAllVouchersHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Voucher\\GetAllVouchersHandlerTests.cs",
@@ -1338,7 +1498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 54,
               "Title": "GetAllVouchersHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Queries\\GetAll\\GetAllVouchersHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Queries\\GetAll\\GetAllVouchersHandler.cs",
@@ -1350,7 +1510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 55,
               "Title": "GetAllVouchersResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Queries\\GetAll\\GetAllVouchersResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Queries\\GetAll\\GetAllVouchersResponse.cs",
@@ -1362,7 +1522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 57,
               "Title": "GetAllBrandsHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\GetAll\\GetAllBrandsHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\GetAll\\GetAllBrandsHandler.cs",
@@ -1374,7 +1534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 56,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "GiftApi\\Controllers\\CategoryController.cs",
@@ -1386,7 +1546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 58,
               "Title": "GetAllVouchersQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Queries\\GetAll\\GetAllVouchersQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Queries\\GetAll\\GetAllVouchersQuery.cs",
@@ -1398,19 +1558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "GetBrandHandlerTests.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\GetBrandHandlerTests.cs",
-              "RelativeDocumentMoniker": "GiftApi.Tests\\Brand\\GetBrandHandlerTests.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\GetBrandHandlerTests.cs",
-              "RelativeToolTip": "GiftApi.Tests\\Brand\\GetBrandHandlerTests.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAkwE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T07:20:32.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 62,
               "Title": "TopUpBalanceHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\TopUpBalanceHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\TopUpBalanceHandlerTests.cs",
@@ -1422,7 +1570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 59,
               "Title": "CategoryDto.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\DTOs\\CategoryDto.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\DTOs\\CategoryDto.cs",
@@ -1434,7 +1582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 60,
               "Title": "GetVoucherResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherResponse.cs",
@@ -1446,7 +1594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 61,
               "Title": "GetVoucherQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Voucher\\Queries\\Get\\GetVoucherQuery.cs",
@@ -1458,7 +1606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 63,
               "Title": "TopUpBalanceHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Commands\\TopUpBalance\\TopUpBalanceHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\User\\Commands\\TopUpBalance\\TopUpBalanceHandler.cs",
@@ -1470,7 +1618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 69,
               "Title": "GetAllCategoriesHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\GetAll\\GetAllCategoriesHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\GetAll\\GetAllCategoriesHandler.cs",
@@ -1482,7 +1630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 66,
               "Title": "GetAllCategoriesWithBrandsHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Category\\GetAllCategoriesWithBrandsHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Category\\GetAllCategoriesWithBrandsHandlerTests.cs",
@@ -1494,7 +1642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 65,
               "Title": "TopUpBalanceResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Commands\\TopUpBalance\\TopUpBalanceResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\User\\Commands\\TopUpBalance\\TopUpBalanceResponse.cs",
@@ -1506,7 +1654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 64,
               "Title": "TopUpBalanceCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Commands\\TopUpBalance\\TopUpBalanceCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\User\\Commands\\TopUpBalance\\TopUpBalanceCommand.cs",
@@ -1518,7 +1666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 71,
               "Title": "GetCategoryQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\Get\\GetCategoryQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\Get\\GetCategoryQuery.cs",
@@ -1530,7 +1678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 72,
               "Title": "GetCategoryResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\Get\\GetCategoryResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\Get\\GetCategoryResponse.cs",
@@ -1542,7 +1690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 68,
               "Title": "BrandDto.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\DTOs\\BrandDto.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\DTOs\\BrandDto.cs",
@@ -1554,7 +1702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 70,
               "Title": "GetAllCategoriesWithBrandsResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\GetAllWithBrands\\GetAllCategoriesWithBrandsResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\GetAllWithBrands\\GetAllCategoriesWithBrandsResponse.cs",
@@ -1566,7 +1714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 67,
               "Title": "GetAllCategoriesWithBrandsHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\GetAllWithBrands\\GetAllCategoriesWithBrandsHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\GetAllWithBrands\\GetAllCategoriesWithBrandsHandler.cs",
@@ -1578,7 +1726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 73,
               "Title": "GetAllCategoriesWithBrandsQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\GetAllWithBrands\\GetAllCategoriesWithBrandsQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\GetAllWithBrands\\GetAllCategoriesWithBrandsQuery.cs",
@@ -1590,7 +1738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 74,
               "Title": "GetCategoryWithBrandsHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Category\\GetCategoryWithBrandsHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Category\\GetCategoryWithBrandsHandlerTests.cs",
@@ -1602,7 +1750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 78,
               "Title": "GetCategoryHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\Get\\GetCategoryHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\Get\\GetCategoryHandler.cs",
@@ -1614,7 +1762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 76,
               "Title": "GetAllBrandsWithCategoriesHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\GetAllWithCategories\\GetAllBrandsWithCategoriesHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\GetAllWithCategories\\GetAllBrandsWithCategoriesHandler.cs",
@@ -1626,7 +1774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 75,
               "Title": "GetCategoryWithBrandsHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\GetWithBrands\\GetCategoryWithBrandsHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\GetWithBrands\\GetCategoryWithBrandsHandler.cs",
@@ -1638,7 +1786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 77,
               "Title": "GetCategoryWithBrandsResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\GetWithBrands\\GetCategoryWithBrandsResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\GetWithBrands\\GetCategoryWithBrandsResponse.cs",
@@ -1650,7 +1798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 79,
               "Title": "GetCategoryWithBrandsQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\GetWithBrands\\GetCategoryWithBrandsQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\GetWithBrands\\GetCategoryWithBrandsQuery.cs",
@@ -1662,7 +1810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 81,
               "Title": "GetAllCategoriesHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Category\\GetAllCategoriesHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Category\\GetAllCategoriesHandlerTests.cs",
@@ -1674,7 +1822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 85,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\ICategoryRepository.cs",
@@ -1686,7 +1834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 84,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\CategoryRepository.cs",
@@ -1698,7 +1846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 80,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\Category.cs",
@@ -1710,7 +1858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 82,
               "Title": "Brand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\Brand.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\Brand.cs",
@@ -1722,7 +1870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 83,
               "Title": "GetAllCategoriesResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\GetAll\\GetAllCategoriesResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\GetAll\\GetAllCategoriesResponse.cs",
@@ -1734,7 +1882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 86,
               "Title": "GetAllCategoriesQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Category\\Queries\\GetAll\\GetAllCategoriesQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Category\\Queries\\GetAll\\GetAllCategoriesQuery.cs",
@@ -1746,7 +1894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 88,
               "Title": "GetCategoryHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Category\\GetCategoryHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Category\\GetCategoryHandlerTests.cs",
@@ -1758,7 +1906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 89,
               "Title": "GetBrandHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\Get\\GetBrandHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\Get\\GetBrandHandler.cs",
@@ -1770,7 +1918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 87,
               "Title": "GetAllBrandsQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\GetAll\\GetAllBrandsQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\GetAll\\GetAllBrandsQuery.cs",
@@ -1782,7 +1930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 91,
               "Title": "IBrandRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IBrandRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IBrandRepository.cs",
@@ -1794,7 +1942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 92,
               "Title": "GetAllBrandsWithCategoriesHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\GetAllBrandsWithCategoriesHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Brand\\GetAllBrandsWithCategoriesHandlerTests.cs",
@@ -1806,7 +1954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 90,
               "Title": "BrandController.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Controllers\\BrandController.cs",
               "RelativeDocumentMoniker": "GiftApi\\Controllers\\BrandController.cs",
@@ -1818,7 +1966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 94,
               "Title": "BrandRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Repositories\\BrandRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Repositories\\BrandRepository.cs",
@@ -1830,7 +1978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 96,
               "Title": "GetAllBrandsResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\GetAll\\GetAllBrandsResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\GetAll\\GetAllBrandsResponse.cs",
@@ -1842,7 +1990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 95,
               "Title": "GetAllBrandsWithCategoriesResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\GetAllWithCategories\\GetAllBrandsWithCategoriesResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\GetAllWithCategories\\GetAllBrandsWithCategoriesResponse.cs",
@@ -1854,7 +2002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 93,
               "Title": "PaginationModel.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Common\\Models\\PaginationModel.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Common\\Models\\PaginationModel.cs",
@@ -1866,7 +2014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 97,
               "Title": "GetAllBrandsWithCategoriesQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\GetAllWithCategories\\GetAllBrandsWithCategoriesQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\GetAllWithCategories\\GetAllBrandsWithCategoriesQuery.cs",
@@ -1878,7 +2026,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 98,
               "Title": "GetBrandWithCategoryHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\GetBrandWithCategoryHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Brand\\GetBrandWithCategoryHandlerTests.cs",
@@ -1890,7 +2038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 101,
               "Title": "GetBrandWithCategoryQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\GetWithCategory\\GetBrandWithCategoryQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\GetWithCategory\\GetBrandWithCategoryQuery.cs",
@@ -1902,7 +2050,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 99,
               "Title": "GetBrandWithCategoryHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\GetWithCategory\\GetBrandWithCategoryHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\GetWithCategory\\GetBrandWithCategoryHandler.cs",
@@ -1914,7 +2062,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 100,
               "Title": "GetBrandWithCategoryResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\GetWithCategory\\GetBrandWithCategoryResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\GetWithCategory\\GetBrandWithCategoryResponse.cs",
@@ -1926,7 +2074,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 102,
               "Title": "GetBrandResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\Get\\GetBrandResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\Get\\GetBrandResponse.cs",
@@ -1938,7 +2086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 105,
               "Title": "GetBrandQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Brand\\Queries\\Get\\GetBrandQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Brand\\Queries\\Get\\GetBrandQuery.cs",
@@ -1950,7 +2098,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 103,
               "Title": "GetAllBrandsHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\GetAllBrandsHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Brand\\GetAllBrandsHandler.cs",
@@ -1962,7 +2110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 104,
               "Title": "DeleteBrandHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\DeleteBrandHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Brand\\DeleteBrandHandlerTests.cs",
@@ -1974,7 +2122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 106,
               "Title": "GlobalExceptionMiddleware.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\Middleware\\GlobalExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "GiftApi\\Middleware\\GlobalExceptionMiddleware.cs",
@@ -1986,7 +2134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 110,
               "Title": "EditVoucherCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Edit\\EditVoucherCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Edit\\EditVoucherCommand.cs",
@@ -1998,7 +2146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 108,
               "Title": "EditVoucherHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Voucher\\EditVoucherHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Voucher\\EditVoucherHandlerTests.cs",
@@ -2010,7 +2158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 107,
               "Title": "GiftApi.Infrastructure.csproj",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\GiftApi.Infrastructure.csproj",
@@ -2022,7 +2170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 112,
               "Title": "CreateBrandHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Create\\CreateBrandHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Create\\CreateBrandHandler.cs",
@@ -2034,7 +2182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 111,
               "Title": "CreateVoucherHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Create\\CreateVoucherHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Create\\CreateVoucherHandler.cs",
@@ -2046,7 +2194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 109,
               "Title": "EditVoucherResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Edit\\EditVoucherResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Edit\\EditVoucherResponse.cs",
@@ -2058,7 +2206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 113,
               "Title": "CreateVoucherHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Voucher\\CreateVoucherHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Voucher\\CreateVoucherHandler.cs",
@@ -2070,7 +2218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 114,
               "Title": "CreateVoucherResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Create\\CreateVoucherResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Voucher\\Commands\\Create\\CreateVoucherResponse.cs",
@@ -2082,7 +2230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 115,
               "Title": "CreateCategoryHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Category\\CreateCategoryHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Category\\CreateCategoryHandlerTests.cs",
@@ -2094,7 +2242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 116,
               "Title": "RestoreBrandHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\RestoreBrandHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Brand\\RestoreBrandHandlerTests.cs",
@@ -2106,7 +2254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 119,
               "Title": "CreateBrandHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\CreateBrandHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Brand\\CreateBrandHandlerTests.cs",
@@ -2118,7 +2266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 118,
               "Title": "EditBrandHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Brand\\EditBrandHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Brand\\EditBrandHandlerTests.cs",
@@ -2130,7 +2278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 117,
               "Title": "DeleteBrandHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Delete\\DeleteBrandHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Delete\\DeleteBrandHandler.cs",
@@ -2142,7 +2290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 120,
               "Title": "RestoreBrandHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Restore\\RestoreBrandHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Restore\\RestoreBrandHandler.cs",
@@ -2154,7 +2302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 122,
               "Title": "RestoreBrandResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Restore\\RestoreBrandResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Restore\\RestoreBrandResponse.cs",
@@ -2166,7 +2314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 121,
               "Title": "RestoreBrandCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Restore\\RestoreBrandCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Restore\\RestoreBrandCommand.cs",
@@ -2178,7 +2326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 124,
               "Title": "DeleteBrandResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Delete\\DeleteBrandResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Delete\\DeleteBrandResponse.cs",
@@ -2190,7 +2338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 123,
               "Title": "DeleteBrandCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Delete\\DeleteBrandCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Delete\\DeleteBrandCommand.cs",
@@ -2202,7 +2350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 127,
               "Title": "CreateBrandCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Create\\CreateBrandCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Create\\CreateBrandCommand.cs",
@@ -2214,7 +2362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 125,
               "Title": "EditBrandCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Edit\\EditBrandCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Edit\\EditBrandCommand.cs",
@@ -2226,7 +2374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 126,
               "Title": "EditBrandHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Edit\\EditBrandHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Edit\\EditBrandHandler.cs",
@@ -2238,7 +2386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 128,
               "Title": "EditBrandResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Edit\\EditBrandResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Edit\\EditBrandResponse.cs",
@@ -2250,7 +2398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 130,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IUnitOfWork.cs",
@@ -2262,7 +2410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 129,
               "Title": "DeleteFileHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileHandler.cs",
@@ -2274,7 +2422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 132,
               "Title": "CreateCategoryCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Create\\CreateCategoryCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Create\\CreateCategoryCommand.cs",
@@ -2286,7 +2434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 133,
               "Title": "CreateBrandResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Create\\CreateBrandResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Brand\\Commands\\Create\\CreateBrandResponse.cs",
@@ -2298,7 +2446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 134,
               "Title": "RestoreCategoryHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Category\\RestoreCategoryHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Category\\RestoreCategoryHandlerTests.cs",
@@ -2310,7 +2458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 140,
               "Title": "DeleteCategoryHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Delete\\DeleteCategoryHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Delete\\DeleteCategoryHandler.cs",
@@ -2322,7 +2470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 131,
               "Title": "CreateCategoryHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Create\\CreateCategoryHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Create\\CreateCategoryHandler.cs",
@@ -2334,7 +2482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 135,
               "Title": "DeleteCategoryHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Category\\DeleteCategoryHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Category\\DeleteCategoryHandlerTests.cs",
@@ -2346,7 +2494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 139,
               "Title": "RestoreCategoryResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Restore\\RestoreCategoryResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Restore\\RestoreCategoryResponse.cs",
@@ -2358,7 +2506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 136,
               "Title": "RestoreCategoryHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Restore\\RestoreCategoryHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Restore\\RestoreCategoryHandler.cs",
@@ -2370,7 +2518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 137,
               "Title": "RestoreCategoryCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Restore\\RestoreCategoryCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Restore\\RestoreCategoryCommand.cs",
@@ -2382,7 +2530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 138,
               "Title": "DeleteCategoryCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Delete\\DeleteCategoryCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Delete\\DeleteCategoryCommand.cs",
@@ -2394,7 +2542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 142,
               "Title": "DeleteFileHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\File\\DeleteFileHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\File\\DeleteFileHandlerTests.cs",
@@ -2406,7 +2554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 141,
               "Title": "EditCategoryHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Category\\EditCategoryHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Category\\EditCategoryHandlerTests.cs",
@@ -2418,7 +2566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 146,
               "Title": "EditCategoryResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Edit\\EditCategoryResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Edit\\EditCategoryResponse.cs",
@@ -2430,7 +2578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 144,
               "Title": "EditCategoryCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Edit\\EditCategoryCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Edit\\EditCategoryCommand.cs",
@@ -2442,7 +2590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 145,
               "Title": "EditCategoryHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Edit\\EditCategoryHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Edit\\EditCategoryHandler.cs",
@@ -2454,7 +2602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 143,
               "Title": "DeleteCategoryResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Delete\\DeleteCategoryResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Delete\\DeleteCategoryResponse.cs",
@@ -2466,7 +2614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 147,
               "Title": "GetUserHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\GetUserHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\GetUserHandlerTests.cs",
@@ -2478,7 +2626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 148,
               "Title": "UploadFileHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileHandler.cs",
@@ -2490,7 +2638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 149,
               "Title": "FileDto.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\DTOs\\FileDto.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\DTOs\\FileDto.cs",
@@ -2502,7 +2650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 150,
               "Title": "CreateCategoryResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\Category\\Commands\\Create\\CreateCategoryResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\Category\\Commands\\Create\\CreateCategoryResponse.cs",
@@ -2514,7 +2662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 152,
               "Title": "UploadFileHandlerIntegrationTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\File\\UploadFileHandlerIntegrationTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\File\\UploadFileHandlerIntegrationTests.cs",
@@ -2526,7 +2674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 159,
               "Title": "DeleteFileResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileResponse.cs",
@@ -2538,7 +2686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 158,
               "Title": "DeleteFileCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Delete\\DeleteFileCommand.cs",
@@ -2550,7 +2698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 156,
               "Title": "GetFileQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Queries\\Get\\GetFileQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Queries\\Get\\GetFileQuery.cs",
@@ -2562,7 +2710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 154,
               "Title": "GetFileHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\File\\GetFileHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\File\\GetFileHandlerTests.cs",
@@ -2574,7 +2722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 153,
               "Title": "UploadFileCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileCommand.cs",
@@ -2586,7 +2734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 151,
               "Title": "GetAllUsersHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Queries\\GetAllUsers\\GetAllUsersHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\User\\Queries\\GetAllUsers\\GetAllUsersHandler.cs",
@@ -2598,7 +2746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 155,
               "Title": "GetFileResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Queries\\Get\\GetFileResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Queries\\Get\\GetFileResponse.cs",
@@ -2610,7 +2758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 157,
               "Title": "GetFileHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Queries\\Get\\GetFileHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Queries\\Get\\GetFileHandler.cs",
@@ -2622,7 +2770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 160,
               "Title": "File.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Domain\\Entities\\File.cs",
               "RelativeDocumentMoniker": "GiftApi.Domain\\Entities\\File.cs",
@@ -2634,7 +2782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 178,
+              "DocumentIndex": 186,
               "Title": "20251023194216_changedUserIdToGuid.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Infrastructure\\Migrations\\20251023194216_changedUserIdToGuid.cs",
               "RelativeDocumentMoniker": "GiftApi.Infrastructure\\Migrations\\20251023194216_changedUserIdToGuid.cs",
@@ -2646,7 +2794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 161,
               "Title": "IFileRepository.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Interfaces\\IFileRepository.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Interfaces\\IFileRepository.cs",
@@ -2658,7 +2806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 162,
               "Title": "RegisterUserHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserHandler.cs",
@@ -2670,7 +2818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 163,
               "Title": "UploadFileResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\File\\Commands\\Upload\\UploadFileResponse.cs",
@@ -2682,7 +2830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 165,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\appsettings.json",
               "RelativeDocumentMoniker": "GiftApi\\appsettings.json",
@@ -2694,7 +2842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 164,
               "Title": "ImageKitSettings.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Configuration\\ImageKitSettings.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Configuration\\ImageKitSettings.cs",
@@ -2706,7 +2854,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 169,
               "Title": "GiftApi.Application.csproj",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\GiftApi.Application.csproj",
               "RelativeDocumentMoniker": "GiftApi.Application\\GiftApi.Application.csproj",
@@ -2718,7 +2866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 166,
               "Title": "GetAllUsersResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Queries\\GetAllUsers\\GetAllUsersResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\User\\Queries\\GetAllUsers\\GetAllUsersResponse.cs",
@@ -2730,7 +2878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 167,
               "Title": "GetAllUsersQuery.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Queries\\GetAllUsers\\GetAllUsersQuery.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\User\\Queries\\GetAllUsers\\GetAllUsersQuery.cs",
@@ -2742,7 +2890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 170,
               "Title": "GetUserHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserHandler.cs",
@@ -2754,7 +2902,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 168,
               "Title": "GiftApi.Tests.csproj",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\GiftApi.Tests.csproj",
               "RelativeDocumentMoniker": "GiftApi.Tests\\GiftApi.Tests.csproj",
@@ -2766,19 +2914,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 162,
-              "Title": "GetUserQuery.cs",
-              "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserQuery.cs",
-              "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserQuery.cs",
-              "ToolTip": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserQuery.cs",
-              "RelativeToolTip": "GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T20:19:38.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 163,
+              "DocumentIndex": 171,
               "Title": "GetUserResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\Manage\\User\\Queries\\GetUser\\GetUserResponse.cs",
@@ -2790,7 +2926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 165,
+              "DocumentIndex": 173,
               "Title": "LoginUserHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\LoginUserHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\LoginUserHandlerTests.cs",
@@ -2802,7 +2938,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 164,
+              "DocumentIndex": 172,
               "Title": "RegisterUserResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserResponse.cs",
@@ -2814,7 +2950,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 166,
+              "DocumentIndex": 174,
               "Title": "LoginUserValidator.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserValidator.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserValidator.cs",
@@ -2826,7 +2962,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 167,
+              "DocumentIndex": 175,
               "Title": "RefreshTokenHandler.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenHandler.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenHandler.cs",
@@ -2838,7 +2974,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 168,
+              "DocumentIndex": 176,
               "Title": "RefreshTokenCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenCommand.cs",
@@ -2850,7 +2986,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 169,
+              "DocumentIndex": 177,
               "Title": "RefreshTokenResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\RefreshToken\\RefreshTokenResponse.cs",
@@ -2862,7 +2998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 171,
+              "DocumentIndex": 179,
               "Title": "LoginUserCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserCommand.cs",
@@ -2874,7 +3010,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 170,
+              "DocumentIndex": 178,
               "Title": "LoginUserResponse.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserResponse.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Login\\LoginUserResponse.cs",
@@ -2886,7 +3022,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 172,
+              "DocumentIndex": 180,
               "Title": "RegisterUserValidatorTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\RegisterUserValidatorTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\RegisterUserValidatorTests.cs",
@@ -2898,7 +3034,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 175,
+              "DocumentIndex": 183,
               "Title": "DbContextHelper.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\Helpers\\DbContextHelper.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\Helpers\\DbContextHelper.cs",
@@ -2910,7 +3046,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 174,
+              "DocumentIndex": 182,
               "Title": "RegisterUserHandlerTests.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Tests\\User\\RegisterUserHandlerTests.cs",
               "RelativeDocumentMoniker": "GiftApi.Tests\\User\\RegisterUserHandlerTests.cs",
@@ -2922,7 +3058,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 177,
+              "DocumentIndex": 185,
               "Title": "GiftApi.csproj",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi\\GiftApi.csproj",
               "RelativeDocumentMoniker": "GiftApi\\GiftApi.csproj",
@@ -2934,7 +3070,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 173,
+              "DocumentIndex": 181,
               "Title": "RegisterUserValidation.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserValidation.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserValidation.cs",
@@ -2946,7 +3082,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 176,
+              "DocumentIndex": 184,
               "Title": "RegisterUserCommand.cs",
               "DocumentMoniker": "D:\\G\\GiftApi\\GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserCommand.cs",
               "RelativeDocumentMoniker": "GiftApi.Application\\Features\\User\\Commands\\Register\\RegisterUserCommand.cs",

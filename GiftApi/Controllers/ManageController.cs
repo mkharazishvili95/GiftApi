@@ -12,6 +12,7 @@ using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.ChangeStatus;
+using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Get;
 using GiftApi.Domain.Enums.User;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -71,5 +72,8 @@ namespace GiftApi.Controllers
 
         [HttpPut("change-delivery-info-status")]
         public async Task<ChangeStatusResponse> ChangeDeliveryInfoStatus([FromQuery] ChangeStatusCommand request) => await _mediator.Send(request);
+
+        [HttpGet("purchase")]
+        public async Task<GetPurchaseResponse> GetPurchase([FromQuery] GetPurchaseQuery request) => await _mediator.Send(request);
     }
 }
