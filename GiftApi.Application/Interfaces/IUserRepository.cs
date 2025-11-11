@@ -16,5 +16,6 @@ namespace GiftApi.Application.Interfaces
         Task<bool> TopUpBalance(Guid userId, decimal amount);
         Task<User?> GetCurrentUserAsync(Guid userId);
         Task UpdateUserAsync(User user);
+        Task<LoginAudit?> SaveLog(Guid userId);
     }
 }

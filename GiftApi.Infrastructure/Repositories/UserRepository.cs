@@ -126,5 +126,17 @@ namespace GiftApi.Infrastructure.Repositories
                 _db.Entry(user).State = EntityState.Modified;
             }
         }
+
+        public async Task<LoginAudit?> SaveLog(Guid userId)
+        {
+            var log = new LoginAudit
+            {
+                UserId = userId,
+                LoginDate = DateTime.UtcNow.AddHours(4)
+            };
+            _db.LoginAudits.Add(log);
+            await _db.SaveChangesAsync();
+            return log;
+        }
     }
 }

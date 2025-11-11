@@ -1,4 +1,5 @@
 ﻿using GiftApi.Application.Interfaces;
+using GiftApi.Domain.Entities;
 using GiftApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -63,6 +64,11 @@ namespace GiftApi.Tests.Repositories
         }
 
         public Task UpdateUserAsync(Domain.Entities.User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<LoginAudit?> SaveLog(Guid userId)
         {
             throw new NotImplementedException();
         }

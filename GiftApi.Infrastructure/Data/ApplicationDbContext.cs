@@ -26,5 +26,7 @@ namespace GiftApi.Infrastructure.Data
         public DbSet<GiftApi.Domain.Entities.File> Files { get; set; }
         public DbSet<Voucher> Vouchers { get; set; }
         public DbSet<VoucherDeliveryInfo> VoucherDeliveryInfos { get; set; }
+
+        public DbSet<LoginAudit> LoginAudits { get; set; }
     }
 }

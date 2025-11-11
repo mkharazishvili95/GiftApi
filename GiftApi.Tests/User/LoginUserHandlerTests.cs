@@ -4,7 +4,9 @@ using GiftApi.Application.Interfaces;
 using GiftApi.Infrastructure.Data;
 using GiftApi.Infrastructure.Repositories;
 using GiftApi.Tests.Helpers;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace GiftApi.Tests.User
 {
@@ -16,6 +18,7 @@ namespace GiftApi.Tests.User
         private IConfiguration _configuration;
         private LoginUserHandler _handler;
         private IUserRepository _userRepository;
+        private ILogger<LoginUserHandler> _logger;
 
         [SetUp]
         public void Setup()
@@ -37,7 +40,7 @@ namespace GiftApi.Tests.User
 
             _userRepository = new UserRepository(_db);
 
-            _handler = new LoginUserHandler(_validator, _userRepository, _configuration);
+            _handler = new LoginUserHandler(_validator, _userRepository, _configuration, _logger);
 
         }
 
@@ -139,5 +142,26 @@ namespace GiftApi.Tests.User
             result.Message.Should().Contain("Password is required");
         }
 
+        [Test]
+        public async Task Should_Save_LoginAudit_When_Login_Successful()
+        {
+            string password = "Secret123";
+            await SeedUserAsync("misho", password);
+
+            var command = new LoginUserCommand
+            {
+                UserName = "misho",
+                Password = password
+            };
+
+            var result = await _handler.Handle(command, CancellationToken.None);
+
+            result.Success.Should().BeTrue();
+
+            var audit = await _db.LoginAudits.FirstOrDefaultAsync(x => x.UserId == _db.Users.First().Id);
+            audit.Should().NotBeNull();
+            audit.UserId.Should().Be(_db.Users.First().Id);
+            audit.LoginDate.Should().BeCloseTo(DateTime.UtcNow.AddHours(4), TimeSpan.FromSeconds(5));
+        }
     }
 }

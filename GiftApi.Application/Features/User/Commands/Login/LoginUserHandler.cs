@@ -2,6 +2,7 @@
 using GiftApi.Application.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -12,18 +13,21 @@ namespace GiftApi.Application.Features.User.Commands.Login
 {
     public class LoginUserHandler : IRequestHandler<LoginUserCommand, LoginUserResponse>
     {
-        private readonly IValidator<LoginUserCommand> _validator;
-        private readonly IUserRepository _userRepository;
-        private readonly IConfiguration _configuration;
+        readonly IValidator<LoginUserCommand> _validator;
+        readonly IUserRepository _userRepository;
+        readonly IConfiguration _configuration;
+        readonly ILogger<LoginUserHandler> _logger;
 
         public LoginUserHandler(
             IValidator<LoginUserCommand> validator,
             IUserRepository userRepository,
-            IConfiguration configuration)
+            IConfiguration configuration,
+            ILogger<LoginUserHandler> logger)
         {
             _validator = validator;
             _userRepository = userRepository;
             _configuration = configuration;
+            _logger = logger;
         }
 
         public async Task<LoginUserResponse> Handle(LoginUserCommand request, CancellationToken cancellationToken)
@@ -72,6 +76,15 @@ namespace GiftApi.Application.Features.User.Commands.Login
             var refreshToken = Convert.ToBase64String(RandomNumberGenerator.GetBytes(64));
 
             await _userRepository.UpdateRefreshTokenAsync(user, refreshToken, DateTime.UtcNow.AddDays(7));
+
+            try
+            {
+                await _userRepository.SaveLog(user.Id);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Failed to persist login audit for user {UserId}", user.Id);
+            }
 
             return new LoginUserResponse
             {
