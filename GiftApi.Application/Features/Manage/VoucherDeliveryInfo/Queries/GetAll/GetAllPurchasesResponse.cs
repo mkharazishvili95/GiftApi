@@ -1,6 +1,13 @@
-﻿namespace GiftApi.Application.DTOs
+﻿using GiftApi.Application.Common.Models;
+
+namespace GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll
 {
-    public class PurchaseDTO
+    public class GetAllPurchasesResponse : BaseResponse
+    {
+        public int TotalCount { get; set; }
+        public List<GetAllPurchasesItemsResponse> Items { get; set; } = new();
+    }
+    public class GetAllPurchasesItemsResponse
     {
         public Guid Id { get; set; }
         public Guid VoucherId { get; set; }

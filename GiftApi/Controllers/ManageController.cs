@@ -13,6 +13,7 @@ using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.ChangeStatus;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Get;
+using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll;
 using GiftApi.Domain.Enums.User;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -75,5 +76,8 @@ namespace GiftApi.Controllers
 
         [HttpGet("purchase")]
         public async Task<GetPurchaseResponse> GetPurchase([FromQuery] GetPurchaseQuery request) => await _mediator.Send(request);
+
+        [HttpPost("all-purchases")]
+        public async Task<GetAllPurchasesResponse> GetAllPurchases([FromBody] GetAllPurchasesQuery request) => await _mediator.Send(request);
     }
 }

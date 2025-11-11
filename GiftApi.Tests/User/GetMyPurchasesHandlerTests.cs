@@ -90,7 +90,7 @@ namespace GiftApi.Tests.User
             };
             await _db.Vouchers.AddAsync(voucher);
 
-            var deliveryInfo = new VoucherDeliveryInfo
+            var deliveryInfo = new GiftApi.Domain.Entities.VoucherDeliveryInfo
             {
                 Id = Guid.NewGuid(),
                 VoucherId = voucher.Id,

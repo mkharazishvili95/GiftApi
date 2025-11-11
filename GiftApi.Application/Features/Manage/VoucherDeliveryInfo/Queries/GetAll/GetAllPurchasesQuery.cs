@@ -1,0 +1,12 @@
+﻿using GiftApi.Application.Common.Models;
+using MediatR;
+
+namespace GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll
+{
+    public class GetAllPurchasesQuery : IRequest<GetAllPurchasesResponse>
+    {
+        public PaginationModel Pagination { get; set; } = new();
+        public bool? IsUsed { get; set; }
+        public string? SearchString { get; set; }
+    }
+}
