@@ -2,6 +2,7 @@
 using GiftApi.Application.Interfaces;
 using GiftApi.Domain.Enums.File;
 using GiftApi.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace GiftApi.Infrastructure.Repositories
 {
@@ -73,6 +74,13 @@ namespace GiftApi.Infrastructure.Repositories
                 FileUrl = fileEntity.FileUrl,
                 FileType = fileEntity.FileType
             };
+        }
+
+        public async Task<List<GiftApi.Domain.Entities.File>?> GetAll()
+        {
+            return await _db.Files
+                .Where(x => !x.IsDeleted)
+                .ToListAsync();
         }
     }
 }

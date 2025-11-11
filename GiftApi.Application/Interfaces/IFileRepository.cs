@@ -10,5 +10,6 @@ namespace GiftApi.Application.Interfaces
         Task<GiftApi.Domain.Entities.File?> GetFileAsync(int id);
         Task<bool> DeleteFileAsync(int fileId);
         Task EditFile(Domain.Entities.File? file);
+        Task<List<GiftApi.Domain.Entities.File>?> GetAll();
     }
 }

@@ -261,6 +261,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.FileController",
+    "Method": "GetAll",
+    "RelativePath": "api/File/all",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.File.Queries.GetAll.GetAllFilesQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.File.Queries.GetAll.GetAllFilesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.FileController",
     "Method": "Rename",
     "RelativePath": "api/File/rename",
     "HttpMethod": "PUT",
