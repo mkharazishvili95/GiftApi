@@ -7,7 +7,7 @@ namespace GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Export
 {
     public class ExportAllPurchasesHandler : IRequestHandler<ExportAllPurchasesQuery, ExportAllPurchasesResponse>
     {
-        private readonly IPurchaseRepository _purchaseRepository;
+        readonly IPurchaseRepository _purchaseRepository;
 
         public ExportAllPurchasesHandler(IPurchaseRepository purchaseRepository)
         {

@@ -5,7 +5,7 @@ namespace GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll
 {
     public class GetAllPurchasesHandler : IRequestHandler<GetAllPurchasesQuery, GetAllPurchasesResponse>
     {
-        private readonly IPurchaseRepository _purchaseRepository;
+        readonly IPurchaseRepository _purchaseRepository;
 
         public GetAllPurchasesHandler(IPurchaseRepository purchaseRepository)
         {

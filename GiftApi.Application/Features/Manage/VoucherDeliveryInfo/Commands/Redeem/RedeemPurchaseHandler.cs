@@ -5,7 +5,7 @@ namespace GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.Redee
 {
     public class RedeemPurchaseHandler : IRequestHandler<RedeemPurchaseCommand, RedeemPurchaseResponse>
     {
-        private readonly IPurchaseRepository _purchaseRepository;
+        readonly IPurchaseRepository _purchaseRepository;
 
         public RedeemPurchaseHandler(IPurchaseRepository purchaseRepository)
         {

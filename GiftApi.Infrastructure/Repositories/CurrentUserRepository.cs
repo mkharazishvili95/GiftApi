@@ -6,7 +6,7 @@ namespace GiftApi.Infrastructure.Repositories
 {
     public class CurrentUserRepository : ICurrentUserRepository
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        readonly IHttpContextAccessor _httpContextAccessor;
 
         public CurrentUserRepository(IHttpContextAccessor httpContextAccessor)
         {

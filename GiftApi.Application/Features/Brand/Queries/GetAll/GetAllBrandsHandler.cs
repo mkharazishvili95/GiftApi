@@ -5,7 +5,7 @@ namespace GiftApi.Application.Features.Brand.Queries.GetAll
 {
     public class GetAllBrandsHandler : IRequestHandler<GetAllBrandsQuery, GetAllBrandsResponse>
     {
-        private readonly IBrandRepository _brandRepository;
+        readonly IBrandRepository _brandRepository;
 
         public GetAllBrandsHandler(IBrandRepository brandRepository)
         {

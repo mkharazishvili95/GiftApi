@@ -11,8 +11,8 @@ namespace GiftApi.Application.Features.User.Commands.Login.RefreshToken
 {
     public class RefreshTokenHandler : IRequestHandler<RefreshTokenCommand, RefreshTokenResponse>
     {
-        private readonly IUserRepository _userRepository;
-        private readonly IConfiguration _configuration;
+        readonly IUserRepository _userRepository;
+        readonly IConfiguration _configuration;
 
         public RefreshTokenHandler(IUserRepository userRepository, IConfiguration configuration)
         {

@@ -7,8 +7,8 @@ namespace GiftApi.Application.Features.User.Commands.Register
 {
     public class RegisterUserHandler : IRequestHandler<RegisterUserCommand, RegisterUserResponse>
     {
-        private readonly IUserRepository _userRepository;
-        private readonly RegisterUserValidator _validator;
+        readonly IUserRepository _userRepository;
+        readonly RegisterUserValidator _validator;
 
         public RegisterUserHandler(IUserRepository userRepository, RegisterUserValidator validator)
         {

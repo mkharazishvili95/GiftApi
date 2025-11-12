@@ -5,7 +5,7 @@ namespace GiftApi.Application.Features.File.Queries.GetAll
 {
     public class GetAllFilesHandler : IRequestHandler<GetAllFilesQuery, GetAllFilesResponse>
     {
-        private readonly IFileRepository _fileRepository;
+        readonly IFileRepository _fileRepository;
 
         public GetAllFilesHandler(IFileRepository fileRepository)
         {

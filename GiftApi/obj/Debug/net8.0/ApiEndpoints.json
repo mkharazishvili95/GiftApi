@@ -672,6 +672,32 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "RedeemPurchase",
+    "RelativePath": "api/Manage/purchase/redeem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.Redeem.RedeemPurchaseCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.Redeem.RedeemPurchaseResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "RestoreBrand",
     "RelativePath": "api/Manage/restore-brand",
     "HttpMethod": "PUT",
@@ -987,6 +1013,37 @@
     "ReturnTypes": [
       {
         "Type": "GiftApi.Application.Features.Voucher.Commands.Buy.BuyVoucherResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.DashboardController",
+    "Method": "GetDashboardSummary",
+    "RelativePath": "Dashboard/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ExpiringInDays",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TopBrands",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Dashboard.Queries.GetSummary.DashboardSummaryResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

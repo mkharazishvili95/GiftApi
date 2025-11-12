@@ -6,7 +6,7 @@ namespace GiftApi.Application.Features.Manage.User.Queries.GetAllUsers
 {
     public class GetAllUsersHandler : IRequestHandler<GetAllUsersQuery, GetAllUsersResponse>
     {
-        private readonly IUserRepository _userRepository;
+        readonly IUserRepository _userRepository;
 
         public GetAllUsersHandler(IUserRepository userRepository)
         {
