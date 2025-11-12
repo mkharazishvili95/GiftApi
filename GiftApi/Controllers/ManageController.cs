@@ -12,6 +12,7 @@ using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.ChangeStatus;
+using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.Redeem;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Export;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Get;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll;
@@ -87,5 +88,8 @@ namespace GiftApi.Controllers
             var result = await _mediator.Send(request);
             return File(result.Data, result.ContentType, result.FileName);
         }
+
+        [HttpPost("purchase/redeem")]
+        public async Task<RedeemPurchaseResponse> RedeemPurchase([FromBody] RedeemPurchaseCommand request) => await _mediator.Send(request);
     }
 }

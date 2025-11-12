@@ -314,6 +314,9 @@ namespace GiftApi.Infrastructure.Migrations
                     b.Property<string>("SenderName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("UsedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<Guid>("VoucherId")
                         .HasColumnType("uniqueidentifier");
 

@@ -7,5 +7,6 @@ namespace GiftApi.Application.Interfaces
     {
         Task<VoucherDeliveryInfo?> Get(Guid id);
         Task<List<VoucherDeliveryInfo>?> GetAll();
+        Task<bool> RedeemAsync(Guid deliveryInfoId, Guid performedByUserId);
     }
 }
