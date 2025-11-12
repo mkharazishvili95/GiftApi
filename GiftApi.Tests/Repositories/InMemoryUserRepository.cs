@@ -68,7 +68,12 @@ namespace GiftApi.Tests.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<LoginAudit?> SaveLog(Guid userId)
+        public Task<GiftApi.Domain.Entities.LoginAudit?> SaveLog(Guid userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<(List<GiftApi.Domain.Entities.LoginAudit> Items, int TotalCount)> GetLoginAuditsAsync(Guid? userId, DateTime? fromUtc, DateTime? toUtc, int page, int pageSize, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }

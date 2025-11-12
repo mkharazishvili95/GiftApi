@@ -6,6 +6,7 @@ using GiftApi.Application.Features.Manage.Category.Commands.Create;
 using GiftApi.Application.Features.Manage.Category.Commands.Delete;
 using GiftApi.Application.Features.Manage.Category.Commands.Edit;
 using GiftApi.Application.Features.Manage.Category.Commands.Restore;
+using GiftApi.Application.Features.Manage.LoginAudit.Queries.GetAll;
 using GiftApi.Application.Features.Manage.User.Commands.TopUpBalance;
 using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Features.Manage.User.Queries.GetUser;
@@ -91,5 +92,8 @@ namespace GiftApi.Controllers
 
         [HttpPost("purchase/redeem")]
         public async Task<RedeemPurchaseResponse> RedeemPurchase([FromBody] RedeemPurchaseCommand request) => await _mediator.Send(request);
+
+        [HttpGet("login-audits")]
+        public async Task<GetLoginAuditsResponse> GetLoginAudits([FromBody] GetLoginAuditsQuery request) => await _mediator.Send(request);
     }
 }

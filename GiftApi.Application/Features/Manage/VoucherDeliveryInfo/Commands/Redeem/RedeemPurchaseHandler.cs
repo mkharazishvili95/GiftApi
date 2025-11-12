@@ -35,6 +35,7 @@ namespace GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.Redee
 
             return new RedeemPurchaseResponse
             {
+                StatusCode = 200,
                 Success = true,
                 Message = "Redeemed successfully",
                 DeliveryInfoId = entity!.Id,

@@ -1401,6 +1401,77 @@
         }
       }
     },
+    "/api/Manage/login-audits": {
+      "get": {
+        "tags": [
+          "Manage"
+        ],
+        "parameters": [
+          {
+            "name": "UserId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "FromUtc",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "ToUtc",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "Pagination.Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Pagination.PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetLoginAuditsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetLoginAuditsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetLoginAuditsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Profile/me": {
       "get": {
         "tags": [
@@ -3509,6 +3580,36 @@
         },
         "additionalProperties": false
       },
+      "GetLoginAuditsResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LoginAuditItem"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "GetMyPurchasesPurchasesItemsResponse": {
         "type": "object",
         "properties": {
@@ -3859,6 +3960,32 @@
           },
           "category": {
             "$ref": "#/components/schemas/CategoryDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginAuditItem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "loginDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

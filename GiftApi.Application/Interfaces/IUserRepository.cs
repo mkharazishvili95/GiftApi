@@ -17,5 +17,6 @@ namespace GiftApi.Application.Interfaces
         Task<User?> GetCurrentUserAsync(Guid userId);
         Task UpdateUserAsync(User user);
         Task<LoginAudit?> SaveLog(Guid userId);
+        Task<(List<LoginAudit> Items, int TotalCount)> GetLoginAuditsAsync(Guid? userId, DateTime? fromUtc, DateTime? toUtc, int page, int pageSize, CancellationToken cancellationToken);
     }
 }

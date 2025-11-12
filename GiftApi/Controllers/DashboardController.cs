@@ -9,7 +9,7 @@ namespace GiftApi.Controllers
     [ApiController]
     [Route("[controller]")]
     [Authorize(Roles = nameof(UserType.Admin))]
-    public class DashboardController : ControllerBase
+    public class DashboardController : ControllerBase 
     {
         readonly IMediator _mediator;
 

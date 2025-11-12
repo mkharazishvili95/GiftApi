@@ -138,5 +138,38 @@ namespace GiftApi.Infrastructure.Repositories
             await _db.SaveChangesAsync();
             return log;
         }
+
+        public async Task<(List<LoginAudit> Items, int TotalCount)> GetLoginAuditsAsync(
+            Guid? userId,
+            DateTime? fromUtc,
+            DateTime? toUtc,
+            int page,
+            int pageSize,
+            CancellationToken cancellationToken)
+        {
+            if (page < 1) page = 1;
+            if (pageSize <= 0) pageSize = 10;
+
+            var query = _db.LoginAudits.AsNoTracking().AsQueryable();
+
+            if (userId.HasValue)
+                query = query.Where(x => x.UserId == userId.Value);
+
+            if (fromUtc.HasValue)
+                query = query.Where(x => x.LoginDate >= fromUtc.Value);
+
+            if (toUtc.HasValue)
+                query = query.Where(x => x.LoginDate <= toUtc.Value);
+
+            var totalCount = await query.CountAsync(cancellationToken);
+
+            var items = await query
+                .OrderByDescending(x => x.LoginDate)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync(cancellationToken);
+
+            return (items, totalCount);
+        }
     }
 }
