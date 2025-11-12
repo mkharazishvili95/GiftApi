@@ -171,5 +171,12 @@ namespace GiftApi.Infrastructure.Repositories
 
             return (items, totalCount);
         }
+
+        public async Task UpdatePasswordAsync(User user, string newHashedPassword)
+        {
+            user.Password = newHashedPassword;
+            _db.Users.Update(user);
+            await _db.SaveChangesAsync();
+        }
     }
 }

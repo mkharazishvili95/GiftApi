@@ -1,6 +1,7 @@
 using FluentValidation;
 using GiftApi.Application.Configuration;
 using GiftApi.Application.Features.User.Commands.Login;
+using GiftApi.Application.Features.User.Commands.Password.Change;
 using GiftApi.Application.Features.User.Commands.Register;
 using GiftApi.Application.Interfaces;
 using GiftApi.Infrastructure.Data;
@@ -36,7 +37,7 @@ builder.Services.AddScoped<IDashboardRepository, DashboardRepository>();
 
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<RegisterUserCommand>());
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<LoginUserHandler>());
-
+builder.Services.AddTransient<IValidator<ChangePasswordCommand>, ChangePasswordValidation>();
 builder.Services.AddValidatorsFromAssemblyContaining<LoginUserValidator>();
 builder.Services.AddScoped<RegisterUserValidator>();
 
@@ -98,3 +99,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+

@@ -7,7 +7,7 @@ namespace GiftApi.Tests.Repositories
 {
     public class InMemoryUserRepository : IUserRepository
     {
-        private readonly ApplicationDbContext _db;
+        readonly ApplicationDbContext _db;
 
         public InMemoryUserRepository(ApplicationDbContext db)
         {
@@ -74,6 +74,11 @@ namespace GiftApi.Tests.Repositories
         }
 
         public Task<(List<GiftApi.Domain.Entities.LoginAudit> Items, int TotalCount)> GetLoginAuditsAsync(Guid? userId, DateTime? fromUtc, DateTime? toUtc, int page, int pageSize, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task UpdatePasswordAsync(Domain.Entities.User user, string newHashedPassword)
         {
             throw new NotImplementedException();
         }
