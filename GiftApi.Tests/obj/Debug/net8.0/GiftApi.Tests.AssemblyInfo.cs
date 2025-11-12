@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GiftApi.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+374185d13449a466ee3bede1a78930d40ad54178")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd16eebb8a9cd3bbdc4e35d3a1319311a1b13013")]
 [assembly: System.Reflection.AssemblyProductAttribute("GiftApi.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GiftApi.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

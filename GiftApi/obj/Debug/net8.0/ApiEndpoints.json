@@ -370,6 +370,22 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "ExportAllPurchases",
+    "RelativePath": "api/Manage/all-purchases/export",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Export.ExportAllPurchasesQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "GetAllUsersResponse",
     "RelativePath": "api/Manage/all-users",
     "HttpMethod": "POST",

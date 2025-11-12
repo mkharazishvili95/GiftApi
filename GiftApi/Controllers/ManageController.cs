@@ -12,6 +12,7 @@ using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.ChangeStatus;
+using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Export;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Get;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll;
 using GiftApi.Domain.Enums.User;
@@ -79,5 +80,12 @@ namespace GiftApi.Controllers
 
         [HttpPost("all-purchases")]
         public async Task<GetAllPurchasesResponse> GetAllPurchases([FromBody] GetAllPurchasesQuery request) => await _mediator.Send(request);
+
+        [HttpPost("all-purchases/export")]
+        public async Task<IActionResult> ExportAllPurchases([FromBody] ExportAllPurchasesQuery request)
+        {
+            var result = await _mediator.Send(request);
+            return File(result.Data, result.ContentType, result.FileName);
+        }
     }
 }

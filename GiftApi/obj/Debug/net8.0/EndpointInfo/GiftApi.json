@@ -1275,6 +1275,37 @@
         }
       }
     },
+    "/api/Manage/all-purchases/export": {
+      "post": {
+        "tags": [
+          "Manage"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExportAllPurchasesQuery"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExportAllPurchasesQuery"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExportAllPurchasesQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Profile/me": {
       "get": {
         "tags": [
@@ -2266,6 +2297,30 @@
           "brandId": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExportAllPurchasesQuery": {
+        "type": "object",
+        "properties": {
+          "senderId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "voucherId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "isUsed": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "searchString": {
+            "type": "string",
             "nullable": true
           }
         },
