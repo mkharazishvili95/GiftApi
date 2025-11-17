@@ -370,6 +370,27 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "ActivateVoucher",
+    "RelativePath": "api/Manage/{id}/activate-voucher",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "body",
+        "Type": "GiftApi.Application.Features.Manage.Voucher.Commands.Activate.ActivateVoucherCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "GetAllPurchases",
     "RelativePath": "api/Manage/all-purchases",
     "HttpMethod": "POST",

@@ -10,6 +10,7 @@ using GiftApi.Application.Features.Manage.LoginAudit.Queries.GetAll;
 using GiftApi.Application.Features.Manage.User.Commands.TopUpBalance;
 using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Features.Manage.User.Queries.GetUser;
+using GiftApi.Application.Features.Manage.Voucher.Commands.Activate;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.ChangeStatus;
@@ -95,5 +96,14 @@ namespace GiftApi.Controllers
 
         [HttpGet("login-audits")]
         public async Task<GetLoginAuditsResponse> GetLoginAudits([FromBody] GetLoginAuditsQuery request) => await _mediator.Send(request);
+
+        [HttpPatch("{id:guid}/activate-voucher")]
+        public async Task<IActionResult> ActivateVoucher(Guid id, [FromBody] ActivateVoucherCommand body)
+        {
+            if (body == null) return BadRequest("Body required.");
+            body.Id = id;
+            var result = await _mediator.Send(body);
+            return StatusCode((int)result.StatusCode, result);
+        }
     }
 }
