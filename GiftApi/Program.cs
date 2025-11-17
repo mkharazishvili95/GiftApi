@@ -34,6 +34,7 @@ builder.Services.AddScoped<IVoucherRepository, VoucherRepository>();
 builder.Services.AddScoped<ICurrentUserRepository, CurrentUserRepository>();
 builder.Services.AddScoped<IPurchaseRepository, PurchaseRepository>();
 builder.Services.AddScoped<IDashboardRepository, DashboardRepository>();
+builder.Services.AddScoped<IVoucherStatisticsRepository, VoucherStatisticsRepository>();
 
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<RegisterUserCommand>());
 builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<LoginUserHandler>());
