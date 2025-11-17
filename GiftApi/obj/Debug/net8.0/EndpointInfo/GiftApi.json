@@ -1508,6 +1508,65 @@
         }
       }
     },
+    "/api/Manage/purchases/{deliveryInfoId}/undo-redeem": {
+      "patch": {
+        "tags": [
+          "Manage"
+        ],
+        "parameters": [
+          {
+            "name": "deliveryInfoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UndoRedeemPurchaseCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UndoRedeemPurchaseCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UndoRedeemPurchaseCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UndoRedeemPurchaseResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UndoRedeemPurchaseResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UndoRedeemPurchaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Manage/login-audits": {
       "get": {
         "tags": [
@@ -1640,6 +1699,92 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Manage/voucher-statistics": {
+      "get": {
+        "tags": [
+          "Manage"
+        ],
+        "parameters": [
+          {
+            "name": "BrandId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "FromUtc",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "ToUtc",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "LowStockThreshold",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ExpiringInDays",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "IncludeInactive",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "TopSoldTake",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/VoucherStatisticsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VoucherStatisticsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VoucherStatisticsResponse"
+                }
+              }
+            }
           }
         }
       }
@@ -4696,6 +4841,51 @@
         },
         "additionalProperties": false
       },
+      "UndoRedeemPurchaseCommand": {
+        "type": "object",
+        "properties": {
+          "deliveryInfoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "performedByUserId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UndoRedeemPurchaseResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "deliveryInfoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "isUsed": {
+            "type": "boolean"
+          },
+          "usedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UploadBrandLogoCommand": {
         "type": "object",
         "properties": {
@@ -4854,6 +5044,86 @@
         ],
         "type": "integer",
         "format": "int32"
+      },
+      "VoucherStatItem": {
+        "type": "object",
+        "properties": {
+          "voucherId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "brandName": {
+            "type": "string",
+            "nullable": true
+          },
+          "unlimited": {
+            "type": "boolean"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "redeemed": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "soldCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "remaining": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "expiryDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VoucherStatisticsResponse": {
+        "type": "object",
+        "properties": {
+          "topSold": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VoucherStatItem"
+            },
+            "nullable": true
+          },
+          "lowStock": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VoucherStatItem"
+            },
+            "nullable": true
+          },
+          "expiringSoon": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VoucherStatItem"
+            },
+            "nullable": true
+          },
+          "totalVouchersConsidered": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
       },
       "VoucherUsageStatsItem": {
         "type": "object",

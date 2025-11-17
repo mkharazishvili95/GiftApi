@@ -802,6 +802,37 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "UndoRedeem",
+    "RelativePath": "api/Manage/purchases/{deliveryInfoId}/undo-redeem",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deliveryInfoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.UndoRedeem.UndoRedeemPurchaseCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.UndoRedeem.UndoRedeemPurchaseResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "RestoreBrand",
     "RelativePath": "api/Manage/restore-brand",
     "HttpMethod": "PUT",
@@ -900,6 +931,62 @@
     "ReturnTypes": [
       {
         "Type": "GiftApi.Application.Features.Manage.User.Queries.GetUser.GetUserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "GetVoucherStatistics",
+    "RelativePath": "api/Manage/voucher-statistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BrandId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FromUtc",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ToUtc",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "LowStockThreshold",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExpiringInDays",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeInactive",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "TopSoldTake",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Voucher.Queries.Statistics.VoucherStatisticsResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

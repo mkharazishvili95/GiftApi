@@ -1,4 +1,5 @@
 using GiftApi.Application.Features.Manage.Voucher.Queries.UsageStats;
+using GiftApi.Application.Features.Manage.Voucher.Queries.Statistics;
 using GiftApi.Application.Interfaces;
 using GiftApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +8,7 @@ namespace GiftApi.Infrastructure.Repositories
 {
     public class VoucherStatisticsRepository : IVoucherStatisticsRepository
     {
-        private readonly ApplicationDbContext _db;
+        readonly ApplicationDbContext _db;
         public VoucherStatisticsRepository(ApplicationDbContext db) => _db = db;
 
         public async Task<VoucherUsageStatsResponse> GetVoucherUsageStatsAsync(
@@ -75,6 +76,81 @@ namespace GiftApi.Infrastructure.Repositories
             };
 
             return response;
+        }
+
+        public async Task<VoucherStatisticsResponse> GetVoucherStatisticsAsync(
+            int? brandId,
+            DateTime? fromUtc,
+            DateTime? toUtc,
+            int lowStockThreshold,
+            int expiringInDays,
+            bool includeInactive,
+            int topSoldTake,
+            CancellationToken cancellationToken)
+        {
+            var now = DateTime.UtcNow;
+            var expiryLimit = now.AddDays(expiringInDays);
+
+            var vouchers = _db.Vouchers
+                .Include(v => v.Brand)
+                .Where(v => !v.IsDeleted);
+
+            if (!includeInactive)
+                vouchers = vouchers.Where(v => v.IsActive);
+
+            if (brandId.HasValue)
+                vouchers = vouchers.Where(v => v.BrandId == brandId.Value);
+
+            if (fromUtc.HasValue)
+                vouchers = vouchers.Where(v => v.CreateDate >= fromUtc.Value);
+            if (toUtc.HasValue)
+                vouchers = vouchers.Where(v => v.CreateDate <= toUtc.Value);
+
+            var baseProjection = vouchers.Select(v => new VoucherStatItem
+            {
+                VoucherId = v.Id,
+                Title = v.Title,
+                BrandName = v.Brand != null ? v.Brand.Name : null,
+                Unlimited = v.Unlimited,
+                IsActive = v.IsActive,
+                Quantity = v.Quantity,
+                Redeemed = v.Redeemed,
+                SoldCount = v.SoldCount ?? 0,
+                Remaining = v.Unlimited
+                    ? (v.SoldCount ?? 0) - v.Redeemed
+                    : (v.Quantity - v.Redeemed),
+                CreateDate = v.CreateDate,
+                ExpiryDate = v.Unlimited ? null : v.CreateDate.AddMonths(v.ValidMonths)
+            });
+
+            var topSold = await baseProjection
+                .OrderByDescending(x => x.SoldCount)
+                .ThenBy(x => x.Title)
+                .Take(topSoldTake)
+                .ToListAsync(cancellationToken);
+
+            var lowStock = await baseProjection
+                .Where(x => !x.Unlimited && x.Remaining < lowStockThreshold)
+                .OrderBy(x => x.Remaining)
+                .ThenByDescending(x => x.SoldCount)
+                .ToListAsync(cancellationToken);
+
+            var expiringSoon = await baseProjection
+                .Where(x =>
+                    !x.Unlimited &&
+                    x.ExpiryDate != null &&
+                    x.ExpiryDate >= now &&
+                    x.ExpiryDate <= expiryLimit)
+                .OrderBy(x => x.ExpiryDate)
+                .ToListAsync(cancellationToken);
+
+            return new VoucherStatisticsResponse
+            {
+                TopSold = topSold,
+                LowStock = lowStock,
+                ExpiringSoon = expiringSoon,
+                TotalVouchersConsidered = await vouchers.CountAsync(cancellationToken)
+            };
         }
     }
 }

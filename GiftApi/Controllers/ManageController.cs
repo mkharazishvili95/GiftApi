@@ -15,6 +15,7 @@ using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Delete;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Restore;
+using GiftApi.Application.Features.Manage.Voucher.Queries.Statistics;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.ChangeStatus;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.Redeem;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.UndoRedeem;
@@ -131,5 +132,8 @@ namespace GiftApi.Controllers
             var result = await _mediator.Send(cmd);
             return StatusCode(result.StatusCode ?? 500, result);
         }
+
+        [HttpGet("voucher-statistics")]
+        public async Task<VoucherStatisticsResponse> GetVoucherStatistics([FromQuery] VoucherStatisticsQuery query) => await _mediator.Send(query);
     }
 }

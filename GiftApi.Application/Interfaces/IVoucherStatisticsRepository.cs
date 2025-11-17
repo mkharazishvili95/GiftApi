@@ -1,4 +1,5 @@
 using GiftApi.Application.Features.Manage.Voucher.Queries.UsageStats;
+using GiftApi.Application.Features.Manage.Voucher.Queries.Statistics;
 
 namespace GiftApi.Application.Interfaces
 {
@@ -10,6 +11,16 @@ namespace GiftApi.Application.Interfaces
             bool includeInactive,
             string? orderBy,
             bool desc,
+            CancellationToken cancellationToken);
+
+        Task<VoucherStatisticsResponse> GetVoucherStatisticsAsync(
+            int? brandId,
+            DateTime? fromUtc,
+            DateTime? toUtc,
+            int lowStockThreshold,
+            int expiringInDays,
+            bool includeInactive,
+            int topSoldTake,
             CancellationToken cancellationToken);
     }
 }
