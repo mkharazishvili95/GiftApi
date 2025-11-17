@@ -1,5 +1,6 @@
 ﻿using GiftApi.Application.Features.File.Commands.Delete;
 using GiftApi.Application.Features.File.Commands.Rename;
+using GiftApi.Application.Features.File.Commands.UpdateMeta;
 using GiftApi.Application.Features.File.Commands.Upload;
 using GiftApi.Application.Features.File.Queries.Get;
 using GiftApi.Application.Features.File.Queries.GetAll;
@@ -41,6 +42,16 @@ namespace GiftApi.Controllers
             command.Id = id;
             return await _mediator.Send(command);
         }
+
+        [Authorize(Roles = nameof(UserType.Admin))]
+        [HttpPatch("{id:int}/meta")]
+        public async Task<IActionResult> PatchMeta(int id, [FromBody] UpdateFileMetaCommand command)
+        {
+            command.FileId = id;
+            var result = await _mediator.Send(command);
+            return StatusCode(result.StatusCode ?? 200, result);
+        }
+
         [HttpGet]
         public async Task<GetFileResponse> Get([FromQuery] GetFileQuery request) => await _mediator.Send(request);
 
