@@ -51,7 +51,7 @@ namespace GiftApi.Controllers
             var response = new
             {
                 status = dbOk ? "Healthy" : "Degraded",
-                timestampUtc = DateTime.UtcNow,
+                timestampUtc = DateTime.UtcNow.AddHours(4),
                 environment = _env.EnvironmentName,
                 version = assemblyVersion,
                 uptimeSeconds = (DateTime.UtcNow - _startedUtc).TotalSeconds,

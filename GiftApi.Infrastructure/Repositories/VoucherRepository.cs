@@ -102,7 +102,8 @@ namespace GiftApi.Infrastructure.Repositories
                 Message = message,
                 SenderId = user.Id,
                 Quantity = quantity,
-                IsUsed = false
+                IsUsed = false,
+                CreateDate = DateTime.UtcNow.AddHours(4)
             };
 
             _db.VoucherDeliveryInfos.Add(deliveryInfo);

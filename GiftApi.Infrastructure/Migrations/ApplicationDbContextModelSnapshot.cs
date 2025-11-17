@@ -283,6 +283,9 @@ namespace GiftApi.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool?>("IsUsed")
                         .HasColumnType("bit");
 

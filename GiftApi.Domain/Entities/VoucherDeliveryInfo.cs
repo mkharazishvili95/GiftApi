@@ -16,5 +16,6 @@
         public int? Quantity { get; set; }
         public bool? IsUsed { get; set; }
         public DateTime? UsedDate { get; set; }
+        public DateTime? CreateDate { get; set; }  
     }
 }

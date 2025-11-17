@@ -1,4 +1,5 @@
-﻿using GiftApi.Application.Features.Manage.Dashboard.Queries.GetSummary;
+﻿using GiftApi.Application.Features.Manage.Dashboard.Queries.GetGlobalMetrics;
+using GiftApi.Application.Features.Manage.Dashboard.Queries.GetSummary;
 using GiftApi.Domain.Enums.User;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -20,5 +21,8 @@ namespace GiftApi.Controllers
 
         [HttpGet("summary")]
         public async Task<DashboardSummaryResponse> GetDashboardSummary([FromQuery] DashboardSummaryQuery query) => await _mediator.Send(query);
+
+        [HttpGet]
+        public async Task<GetGlobalMetricsResponse> Get([FromQuery] GetGlobalMetricsQuery query)  => await _mediator.Send(query);
     }
 }
