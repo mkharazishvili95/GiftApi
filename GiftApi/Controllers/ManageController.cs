@@ -12,7 +12,9 @@ using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Activate;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
+using GiftApi.Application.Features.Manage.Voucher.Commands.Delete;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
+using GiftApi.Application.Features.Manage.Voucher.Commands.Restore;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.ChangeStatus;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.Redeem;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Export;
@@ -103,7 +105,23 @@ namespace GiftApi.Controllers
             if (body == null) return BadRequest("Body required.");
             body.Id = id;
             var result = await _mediator.Send(body);
-            return StatusCode((int)result.StatusCode, result);
+            return StatusCode(result.StatusCode ?? 500, result);
+        }
+
+        [HttpDelete("voucher/{id:guid}")]
+        public async Task<IActionResult> DeleteVoucher(Guid id)
+        {
+            var cmd = new DeleteVoucherCommand { Id = id };
+            var result = await _mediator.Send(cmd);
+            return StatusCode(result.StatusCode ?? 500, result);
+        }
+
+        [HttpPatch("voucher/{id:guid}/restore")]
+        public async Task<IActionResult> RestoreVoucher(Guid id)
+        {
+            var cmd = new RestoreVoucherCommand { Id = id };
+            var result = await _mediator.Send(cmd);
+            return StatusCode(result.StatusCode ?? 500, result);
         }
     }
 }

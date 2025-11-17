@@ -141,5 +141,30 @@ namespace GiftApi.Infrastructure.Repositories
                 .Take(pageSize)
                 .ToListAsync();
         }
+
+        public async Task<bool> Delete(Guid id)
+        {
+            var voucher = await _db.Vouchers.FirstOrDefaultAsync(x => x.Id == id);
+            if (voucher == null || voucher.IsDeleted) return false;
+
+            voucher.IsDeleted = true;
+            voucher.IsActive = false;
+            voucher.UpdateDate = DateTime.UtcNow.AddHours(4);
+            voucher.DeleteDate = DateTime.UtcNow.AddHours(4);
+            _db.Vouchers.Update(voucher);
+            return true;
+        }
+
+        public async Task<bool> Restore(Guid id)
+        {
+            var voucher = await _db.Vouchers.FirstOrDefaultAsync(x => x.Id == id);
+            if (voucher == null || !voucher.IsDeleted) return false;
+
+            voucher.IsDeleted = false;
+            voucher.DeleteDate = null;
+            voucher.UpdateDate = DateTime.UtcNow.AddHours(4);
+            _db.Vouchers.Update(voucher);
+            return true;
+        }
     }
 }

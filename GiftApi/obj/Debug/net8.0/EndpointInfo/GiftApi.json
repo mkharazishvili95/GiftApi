@@ -1539,6 +1539,52 @@
         }
       }
     },
+    "/api/Manage/voucher/{id}": {
+      "delete": {
+        "tags": [
+          "Manage"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Manage/voucher/{id}/restore": {
+      "patch": {
+        "tags": [
+          "Manage"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Profile/me": {
       "get": {
         "tags": [

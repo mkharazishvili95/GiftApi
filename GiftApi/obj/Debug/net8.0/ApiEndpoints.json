@@ -879,6 +879,38 @@
     ]
   },
   {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "DeleteVoucher",
+    "RelativePath": "api/Manage/voucher/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "RestoreVoucher",
+    "RelativePath": "api/Manage/voucher/{id}/restore",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GiftApi.Controllers.ProfileController",
     "Method": "ChangePassword",
     "RelativePath": "api/Profile/change-password",
