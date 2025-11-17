@@ -3,6 +3,7 @@ using GiftApi.Application.Features.File.Commands.Rename;
 using GiftApi.Application.Features.File.Commands.Upload;
 using GiftApi.Application.Features.File.Queries.Get;
 using GiftApi.Application.Features.File.Queries.GetAll;
+using GiftApi.Application.Features.Manage.Brand.Commands.UploadLogo;
 using GiftApi.Domain.Enums.User;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -19,9 +20,18 @@ namespace GiftApi.Controllers
         {
             _mediator = mediator;
         }
+
         [Authorize(Roles = nameof(UserType.Admin))]
         [HttpPost("upload")]
         public async Task<UploadFileResponse> Upload([FromBody] UploadFileCommand request) => await _mediator.Send(request);
+
+        [Authorize(Roles = nameof(UserType.Admin))]
+        [HttpPost("upload-logo")]
+        public async Task<ActionResult<UploadBrandLogoResponse>> UploadLogo([FromBody] UploadBrandLogoCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return StatusCode(result.StatusCode ?? 200, result);
+        }
 
         [HttpGet]
         public async Task<GetFileResponse> Get([FromQuery] GetFileQuery request) => await _mediator.Send(request);

@@ -343,6 +343,32 @@
     ]
   },
   {
+    "ContainingType": "GiftApi.Controllers.FileController",
+    "Method": "UploadLogo",
+    "RelativePath": "api/File/upload-logo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "GiftApi.Application.Features.Manage.Brand.Commands.UploadLogo.UploadBrandLogoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Brand.Commands.UploadLogo.UploadBrandLogoResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "GetAllPurchases",
     "RelativePath": "api/Manage/all-purchases",
