@@ -4,6 +4,7 @@ using GiftApi.Application.Features.File.Commands.Upload;
 using GiftApi.Application.Features.File.Queries.Get;
 using GiftApi.Application.Features.File.Queries.GetAll;
 using GiftApi.Application.Features.Manage.Brand.Commands.UploadLogo;
+using GiftApi.Application.Features.Manage.Voucher.Commands.UploadImage;
 using GiftApi.Domain.Enums.User;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -33,6 +34,13 @@ namespace GiftApi.Controllers
             return StatusCode(result.StatusCode ?? 200, result);
         }
 
+        [Authorize(Roles = nameof(UserType.Admin))]
+        [HttpPatch("voucher-image/{id:guid}")]
+        public async Task<UploadVoucherImageResponse> ReplaceVoucherImage(Guid id, [FromBody] UploadVoucherImageCommand command)
+        {
+            command.Id = id;
+            return await _mediator.Send(command);
+        }
         [HttpGet]
         public async Task<GetFileResponse> Get([FromQuery] GetFileQuery request) => await _mediator.Send(request);
 

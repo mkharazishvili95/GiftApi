@@ -369,6 +369,37 @@
     ]
   },
   {
+    "ContainingType": "GiftApi.Controllers.FileController",
+    "Method": "ReplaceVoucherImage",
+    "RelativePath": "api/File/voucher-image/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "GiftApi.Application.Features.Manage.Voucher.Commands.UploadImage.UploadVoucherImageCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Voucher.Commands.UploadImage.UploadVoucherImageResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GiftApi.Controllers.ManageController",
     "Method": "ActivateVoucher",
     "RelativePath": "api/Manage/{id}/activate-voucher",
