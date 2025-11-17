@@ -17,6 +17,7 @@ using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Restore;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.ChangeStatus;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.Redeem;
+using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.UndoRedeem;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Export;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Get;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll;
@@ -95,6 +96,13 @@ namespace GiftApi.Controllers
 
         [HttpPost("purchase/redeem")]
         public async Task<RedeemPurchaseResponse> RedeemPurchase([FromBody] RedeemPurchaseCommand request) => await _mediator.Send(request);
+
+        [HttpPatch("purchases/{deliveryInfoId:guid}/undo-redeem")]
+        public async Task<UndoRedeemPurchaseResponse> UndoRedeem(Guid deliveryInfoId, [FromBody] UndoRedeemPurchaseCommand command)
+        {
+            command.DeliveryInfoId = deliveryInfoId;
+            return await _mediator.Send(command);
+        }
 
         [HttpGet("login-audits")]
         public async Task<GetLoginAuditsResponse> GetLoginAudits([FromBody] GetLoginAuditsQuery request) => await _mediator.Send(request);

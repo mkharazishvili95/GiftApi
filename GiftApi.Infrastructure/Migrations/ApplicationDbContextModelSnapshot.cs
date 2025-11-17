@@ -330,6 +330,42 @@ namespace GiftApi.Infrastructure.Migrations
                     b.ToTable("VoucherDeliveryInfos");
                 });
 
+            modelBuilder.Entity("GiftApi.Domain.Entities.VoucherRedeemAudit", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Action")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("DeliveryInfoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("NewIsUsed")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("PerformedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("PerformedByUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("PreviousIsUsed")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("VoucherId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VoucherRedeemAudits");
+                });
+
             modelBuilder.Entity("GiftApi.Domain.Entities.Brand", b =>
                 {
                     b.HasOne("GiftApi.Domain.Entities.Category", "Category")
