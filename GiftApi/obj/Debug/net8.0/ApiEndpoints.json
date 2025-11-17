@@ -1029,6 +1029,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "GiftApi.Controllers.ManageController",
+    "Method": "BulkUpsertVouchers",
+    "RelativePath": "api/Manage/vouchers/bulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "GiftApi.Application.Features.Manage.Voucher.Commands.BulkUpsert.BulkUpsertVouchersCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GiftApi.Controllers.ProfileController",
     "Method": "ChangePassword",
     "RelativePath": "api/Profile/change-password",

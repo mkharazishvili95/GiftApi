@@ -14,5 +14,10 @@ namespace GiftApi.Application.Interfaces
         Task<List<VoucherDeliveryInfo>> GetDeliveryInfosBySenderAsync(Guid senderId, bool includeVoucher, bool? isUsedFilter, int page, int pageSize);
         Task<bool> Delete(Guid id);
         Task<bool> Restore(Guid id);
+
+        //Bulk-ისთვის:
+        Task<List<Voucher>> GetByIdsAsync(IEnumerable<Guid> ids);
+        Task AddRangeAsync(IEnumerable<Voucher> vouchers);
+        Task UpdateRangeAsync(IEnumerable<Voucher> vouchers);
     }
 }

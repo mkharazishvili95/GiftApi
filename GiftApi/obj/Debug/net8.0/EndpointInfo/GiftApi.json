@@ -1789,6 +1789,37 @@
         }
       }
     },
+    "/api/Manage/vouchers/bulk": {
+      "post": {
+        "tags": [
+          "Manage"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkUpsertVouchersCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkUpsertVouchersCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkUpsertVouchersCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Profile/me": {
       "get": {
         "tags": [
@@ -2318,6 +2349,72 @@
           "categoryId": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BulkUpsertVouchersCommand": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BulkUpsertVouchersItemsResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BulkUpsertVouchersItemsResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "isPercentage": {
+            "type": "boolean"
+          },
+          "brandId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "validMonths": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unlimited": {
+            "type": "boolean"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "redeemed": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "imageUrl": {
+            "type": "string",
             "nullable": true
           }
         },

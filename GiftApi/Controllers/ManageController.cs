@@ -11,6 +11,7 @@ using GiftApi.Application.Features.Manage.User.Commands.TopUpBalance;
 using GiftApi.Application.Features.Manage.User.Queries.GetAllUsers;
 using GiftApi.Application.Features.Manage.User.Queries.GetUser;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Activate;
+using GiftApi.Application.Features.Manage.Voucher.Commands.BulkUpsert;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Create;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Delete;
 using GiftApi.Application.Features.Manage.Voucher.Commands.Edit;
@@ -135,5 +136,12 @@ namespace GiftApi.Controllers
 
         [HttpGet("voucher-statistics")]
         public async Task<VoucherStatisticsResponse> GetVoucherStatistics([FromQuery] VoucherStatisticsQuery query) => await _mediator.Send(query);
+
+        [HttpPost("vouchers/bulk")]
+        public async Task<IActionResult> BulkUpsertVouchers([FromBody] BulkUpsertVouchersCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return StatusCode(result.StatusCode ?? 500, result);
+        }
     }
 }

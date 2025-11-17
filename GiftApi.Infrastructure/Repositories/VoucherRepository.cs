@@ -166,5 +166,25 @@ namespace GiftApi.Infrastructure.Repositories
             _db.Vouchers.Update(voucher);
             return true;
         }
+
+        //Bulk-ისთვის:
+        public async Task<List<Voucher>> GetByIdsAsync(IEnumerable<Guid> ids)
+        {
+            var idList = ids.ToList();
+            if (idList.Count == 0) return new List<Voucher>();
+            return await _db.Vouchers.Where(v => idList.Contains(v.Id)).ToListAsync();
+        }
+
+        public Task AddRangeAsync(IEnumerable<Voucher> vouchers)
+        {
+            _db.Vouchers.AddRange(vouchers);
+            return Task.CompletedTask;
+        }
+
+        public Task UpdateRangeAsync(IEnumerable<Voucher> vouchers)
+        {
+            _db.Vouchers.UpdateRange(vouchers);
+            return Task.CompletedTask;
+        }
     }
 }
