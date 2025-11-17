@@ -1,4 +1,5 @@
-﻿using GiftApi.Application.Features.Manage.Voucher.Queries.UsageStats;
+﻿using GiftApi.Application.Features.Manage.Voucher.Queries.Statistics;
+using GiftApi.Application.Features.Manage.Voucher.Queries.UsageStats;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +29,22 @@ namespace GiftApi.Controllers
                 IncludeInactive = includeInactive,
                 OrderBy = orderBy,
                 Desc = desc
+            };
+            var result = await _mediator.Send(query);
+            return Ok(result);
+        }
+
+        [HttpGet("vouchers-expiring-soon")]
+        public async Task<ActionResult<List<VoucherStatisticsItemsResponse>>> GetExpiringSoon(
+            [FromQuery] int? brandId,
+            [FromQuery] int days = 30,
+            [FromQuery] bool includeInactive = false)
+        {
+            var query = new ExpiringSoonVouchersQuery
+            {
+                BrandId = brandId,
+                Days = days,
+                IncludeInactive = includeInactive
             };
             var result = await _mediator.Send(query);
             return Ok(result);

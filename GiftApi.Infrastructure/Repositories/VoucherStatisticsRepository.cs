@@ -106,7 +106,7 @@ namespace GiftApi.Infrastructure.Repositories
             if (toUtc.HasValue)
                 vouchers = vouchers.Where(v => v.CreateDate <= toUtc.Value);
 
-            var baseProjection = vouchers.Select(v => new VoucherStatItem
+            var baseProjection = vouchers.Select(v => new VoucherStatisticsItemsResponse
             {
                 VoucherId = v.Id,
                 Title = v.Title,
@@ -151,6 +151,50 @@ namespace GiftApi.Infrastructure.Repositories
                 ExpiringSoon = expiringSoon,
                 TotalVouchersConsidered = await vouchers.CountAsync(cancellationToken)
             };
+        }
+        public async Task<List<VoucherStatisticsItemsResponse>> GetExpiringSoonAsync(
+            int? brandId,
+            int days,
+            bool includeInactive,
+            CancellationToken cancellationToken)
+        {
+            var now = DateTime.UtcNow;
+            var limit = now.AddDays(days);
+
+            var query = _db.Vouchers
+                .Include(v => v.Brand)
+                .Where(v => !v.IsDeleted);
+
+            if (!includeInactive)
+                query = query.Where(v => v.IsActive);
+
+            if (brandId.HasValue)
+                query = query.Where(v => v.BrandId == brandId.Value);
+
+            return await query
+                .Where(v => !v.Unlimited)
+                .Select(v => new VoucherStatisticsItemsResponse
+                {
+                    VoucherId = v.Id,
+                    Title = v.Title,
+                    BrandName = v.Brand != null ? v.Brand.Name : null,
+                    Unlimited = v.Unlimited,
+                    IsActive = v.IsActive,
+                    Quantity = v.Quantity,
+                    Redeemed = v.Redeemed,
+                    SoldCount = v.SoldCount ?? 0,
+                    Remaining = v.Unlimited
+                        ? (v.SoldCount ?? 0) - v.Redeemed
+                        : (v.Quantity - v.Redeemed),
+                    CreateDate = v.CreateDate,
+                    ExpiryDate = v.Unlimited ? null : v.CreateDate.AddMonths(v.ValidMonths)
+                })
+                .Where(x =>
+                    x.ExpiryDate != null &&
+                    x.ExpiryDate >= now &&
+                    x.ExpiryDate <= limit)
+                .OrderBy(x => x.ExpiryDate)
+                .ToListAsync(cancellationToken);
         }
     }
 }

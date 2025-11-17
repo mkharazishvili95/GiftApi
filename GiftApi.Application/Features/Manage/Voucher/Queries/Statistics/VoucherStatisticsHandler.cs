@@ -5,11 +5,14 @@ namespace GiftApi.Application.Features.Manage.Voucher.Queries.Statistics
 {
     public class VoucherStatisticsHandler : IRequestHandler<VoucherStatisticsQuery, VoucherStatisticsResponse>
     {
-        readonly IVoucherStatisticsRepository _repo;
-        public VoucherStatisticsHandler(IVoucherStatisticsRepository repo) => _repo = repo;
+        readonly IVoucherStatisticsRepository _voucherStatisticsRepository;
+        public VoucherStatisticsHandler(IVoucherStatisticsRepository voucherStatisticsRepository)
+        {
+            _voucherStatisticsRepository = voucherStatisticsRepository;
+        }
 
         public Task<VoucherStatisticsResponse> Handle(VoucherStatisticsQuery request, CancellationToken cancellationToken) =>
-            _repo.GetVoucherStatisticsAsync(
+            _voucherStatisticsRepository.GetVoucherStatisticsAsync(
                 request.BrandId,
                 request.FromUtc,
                 request.ToUtc,

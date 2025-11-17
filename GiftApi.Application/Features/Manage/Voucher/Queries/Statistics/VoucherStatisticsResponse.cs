@@ -2,13 +2,13 @@
 {
     public class VoucherStatisticsResponse
     {
-        public List<VoucherStatItem> TopSold { get; set; } = new();
-        public List<VoucherStatItem> LowStock { get; set; } = new();
-        public List<VoucherStatItem> ExpiringSoon { get; set; } = new();
+        public List<VoucherStatisticsItemsResponse> TopSold { get; set; } = new();
+        public List<VoucherStatisticsItemsResponse> LowStock { get; set; } = new();
+        public List<VoucherStatisticsItemsResponse> ExpiringSoon { get; set; } = new();
         public int TotalVouchersConsidered { get; set; }
     }
 
-    public class VoucherStatItem
+    public class VoucherStatisticsItemsResponse
     {
         public Guid VoucherId { get; set; }
         public string Title { get; set; } = string.Empty;

@@ -22,5 +22,11 @@ namespace GiftApi.Application.Interfaces
             bool includeInactive,
             int topSoldTake,
             CancellationToken cancellationToken);
+
+        Task<List<VoucherStatisticsItemsResponse>> GetExpiringSoonAsync(
+            int? brandId,
+            int days,
+            bool includeInactive,
+            CancellationToken cancellationToken);
     }
 }

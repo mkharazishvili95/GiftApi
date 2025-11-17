@@ -400,6 +400,44 @@
         }
       }
     },
+    "/Dashboard": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/GetGlobalMetricsQuery"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetGlobalMetricsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetGlobalMetricsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetGlobalMetricsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/File/upload": {
       "post": {
         "tags": [
@@ -551,6 +589,48 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/File/{id}/meta": {
+      "patch": {
+        "tags": [
+          "File"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateFileMetaCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateFileMetaCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateFileMetaCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -2032,6 +2112,71 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/VoucherUsageStatsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Statistics/vouchers-expiring-soon": {
+      "get": {
+        "tags": [
+          "Statistics"
+        ],
+        "parameters": [
+          {
+            "name": "brandId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "days",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 30
+            }
+          },
+          {
+            "name": "includeInactive",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VoucherStatisticsItemsResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VoucherStatisticsItemsResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VoucherStatisticsItemsResponse"
+                  }
                 }
               }
             }
@@ -4259,6 +4404,32 @@
         },
         "additionalProperties": false
       },
+      "GetGlobalMetricsQuery": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "GetGlobalMetricsResponse": {
+        "type": "object",
+        "properties": {
+          "usersCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activeVouchers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "soldToday": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "revenueToday": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "GetLoginAuditsQuery": {
         "type": "object",
         "properties": {
@@ -5183,6 +5354,27 @@
         },
         "additionalProperties": false
       },
+      "UpdateFileMetaCommand": {
+        "type": "object",
+        "properties": {
+          "fileId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileType": {
+            "$ref": "#/components/schemas/FileType"
+          },
+          "mainImage": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UploadBrandLogoCommand": {
         "type": "object",
         "properties": {
@@ -5342,7 +5534,7 @@
         "type": "integer",
         "format": "int32"
       },
-      "VoucherStatItem": {
+      "VoucherStatisticsItemsResponse": {
         "type": "object",
         "properties": {
           "voucherId": {
@@ -5397,21 +5589,21 @@
           "topSold": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/VoucherStatItem"
+              "$ref": "#/components/schemas/VoucherStatisticsItemsResponse"
             },
             "nullable": true
           },
           "lowStock": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/VoucherStatItem"
+              "$ref": "#/components/schemas/VoucherStatisticsItemsResponse"
             },
             "nullable": true
           },
           "expiringSoon": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/VoucherStatItem"
+              "$ref": "#/components/schemas/VoucherStatisticsItemsResponse"
             },
             "nullable": true
           },
