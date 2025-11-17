@@ -43,7 +43,7 @@ namespace GiftApi.Infrastructure.Repositories
             var vouchers = await _db.Vouchers
                 .Include(v => v.Brand)
                 .ThenInclude(b => b.Category)
-                .Where(v => v.IsActive)
+                .Where(v => v.IsActive && !v.IsDeleted)
                 .ToListAsync();
 
             foreach (var v in vouchers)
@@ -165,6 +165,66 @@ namespace GiftApi.Infrastructure.Repositories
             voucher.UpdateDate = DateTime.UtcNow.AddHours(4);
             _db.Vouchers.Update(voucher);
             return true;
+        }
+
+        public async Task<List<Voucher>> SearchAsync(int? brandId, int? categoryId, decimal? minAmount, decimal? maxAmount, string? term)
+        {
+            var query = _db.Vouchers
+                .Include(v => v.Brand)
+                .ThenInclude(b => b.Category)
+                .Where(v => v.IsActive && !v.IsDeleted)
+                .AsQueryable();
+
+            if (brandId.HasValue)
+                query = query.Where(v => v.BrandId == brandId.Value);
+
+            if (categoryId.HasValue)
+                query = query.Where(v => v.Brand != null && v.Brand.CategoryId == categoryId.Value);
+
+            if (minAmount.HasValue)
+                query = query.Where(v => v.Amount >= minAmount.Value);
+
+            if (maxAmount.HasValue)
+                query = query.Where(v => v.Amount <= maxAmount.Value);
+
+            if (!string.IsNullOrWhiteSpace(term))
+            {
+                var t = term.Trim().ToLower();
+                query = query.Where(v =>
+                    v.Title.ToLower().Contains(t) ||
+                    v.Description.ToLower().Contains(t) ||
+                    (v.Brand != null && v.Brand.Name.ToLower().Contains(t)) ||
+                    (v.Brand != null && v.Brand.Category != null && v.Brand.Category.Name.ToLower().Contains(t))
+                );
+            }
+            var list = await query.ToListAsync();
+
+            int ExtractTrailingNumber(string title)
+            {
+                if (string.IsNullOrWhiteSpace(title)) return int.MaxValue;
+                var parts = title.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                var last = parts.Last();
+                return int.TryParse(last, out var n) ? n : int.MaxValue;
+            }
+
+            list = list
+                .OrderBy(v => ExtractTrailingNumber(v.Title))
+                .ThenBy(v => v.Title)
+                .ToList();
+
+            foreach (var v in list)
+            {
+                if (v.Brand != null && v.Brand.IsDeleted)
+                {
+                    v.Brand = null;
+                }
+                else if (v.Brand?.Category != null && v.Brand.Category.IsDeleted)
+                {
+                    v.Brand.Category = null;
+                }
+            }
+
+            return list;
         }
 
         //Bulk-ისთვის:

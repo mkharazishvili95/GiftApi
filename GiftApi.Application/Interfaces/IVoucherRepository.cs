@@ -14,6 +14,7 @@ namespace GiftApi.Application.Interfaces
         Task<List<VoucherDeliveryInfo>> GetDeliveryInfosBySenderAsync(Guid senderId, bool includeVoucher, bool? isUsedFilter, int page, int pageSize);
         Task<bool> Delete(Guid id);
         Task<bool> Restore(Guid id);
+        Task<List<Voucher>> SearchAsync(int? brandId, int? categoryId, decimal? minAmount, decimal? maxAmount, string? term);
 
         //Bulk-ისთვის:
         Task<List<Voucher>> GetByIdsAsync(IEnumerable<Guid> ids);

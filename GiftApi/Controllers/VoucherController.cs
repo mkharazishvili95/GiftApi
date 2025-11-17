@@ -1,6 +1,7 @@
 ﻿using GiftApi.Application.Features.Voucher.Commands.Buy;
 using GiftApi.Application.Features.Voucher.Queries.Get;
 using GiftApi.Application.Features.Voucher.Queries.GetAll;
+using GiftApi.Application.Features.Voucher.Queries.Search;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,5 +25,7 @@ namespace GiftApi.Controllers
 
         [HttpPost("buy")]
         public async Task<BuyVoucherResponse> Buy([FromBody] BuyVoucherCommand command) => await _mediator.Send(command);
+        [HttpGet("search")]
+        public async Task<SearchVouchersResponse> Search([FromQuery] SearchVouchersQuery query) => await _mediator.Send(query);
     }
 }
