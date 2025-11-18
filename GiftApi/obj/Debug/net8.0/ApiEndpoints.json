@@ -1154,6 +1154,63 @@
   },
   {
     "ContainingType": "GiftApi.Controllers.StatisticsController",
+    "Method": "GetBrandLeaderboard",
+    "RelativePath": "api/Statistics/brand-redemption-leaderboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "top",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Voucher.Queries.Statistics.BrandRedemptionLeaderboardResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.StatisticsController",
+    "Method": "GetUsageTrend",
+    "RelativePath": "api/Statistics/usage-trend",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "brandId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "days",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GiftApi.Application.Features.Manage.Voucher.Queries.Statistics.VoucherUsageTrendResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GiftApi.Controllers.StatisticsController",
     "Method": "GetVoucherUsage",
     "RelativePath": "api/Statistics/voucher-usage",
     "HttpMethod": "GET",

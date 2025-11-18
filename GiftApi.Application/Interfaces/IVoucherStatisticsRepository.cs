@@ -28,5 +28,15 @@ namespace GiftApi.Application.Interfaces
             int days,
             bool includeInactive,
             CancellationToken cancellationToken);
+
+        Task<IReadOnlyList<DailyUsageRow>> GetDailyUsageAsync(int? brandId, int days, CancellationToken ct);
+        Task<List<BrandRedemptionLeaderboardItem>> GetBrandRedemptionLeaderboardAsync(int top, CancellationToken ct);
+    }
+
+    public sealed class DailyUsageRow
+    {
+        public DateTime Day { get; set; }
+        public int Sold { get; set; }
+        public int Redeemed { get; set; }
     }
 }

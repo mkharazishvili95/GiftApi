@@ -20,7 +20,8 @@ namespace GiftApi.Controllers
             [FromQuery] string? search,
             [FromQuery] bool includeInactive = false,
             [FromQuery] string? orderBy = null,
-            [FromQuery] bool desc = true)
+            [FromQuery] bool desc = true,
+            CancellationToken ct = default)
         {
             var query = new VoucherUsageStatsQuery
             {
@@ -30,15 +31,12 @@ namespace GiftApi.Controllers
                 OrderBy = orderBy,
                 Desc = desc
             };
-            var result = await _mediator.Send(query);
+            var result = await _mediator.Send(query, ct);
             return Ok(result);
         }
 
         [HttpGet("vouchers-expiring-soon")]
-        public async Task<ActionResult<List<VoucherStatisticsItemsResponse>>> GetExpiringSoon(
-            [FromQuery] int? brandId,
-            [FromQuery] int days = 30,
-            [FromQuery] bool includeInactive = false)
+        public async Task<ActionResult<List<VoucherStatisticsItemsResponse>>> GetExpiringSoon( [FromQuery] int? brandId, [FromQuery] int days = 30, [FromQuery] bool includeInactive = false, CancellationToken ct = default)
         {
             var query = new ExpiringSoonVouchersQuery
             {
@@ -46,7 +44,21 @@ namespace GiftApi.Controllers
                 Days = days,
                 IncludeInactive = includeInactive
             };
-            var result = await _mediator.Send(query);
+            var result = await _mediator.Send(query, ct);
+            return Ok(result);
+        }
+
+        [HttpGet("usage-trend")]
+        public async Task<ActionResult<VoucherUsageTrendResponse>> GetUsageTrend( [FromQuery] int? brandId, [FromQuery] int days = 30, CancellationToken ct = default)
+        {
+            var result = await _mediator.Send(new VoucherUsageTrendQuery(brandId, days), ct);
+            return Ok(result);
+        }
+
+        [HttpGet("brand-redemption-leaderboard")]
+        public async Task<ActionResult<BrandRedemptionLeaderboardResponse>> GetBrandLeaderboard(  [FromQuery] int top = 10, CancellationToken ct = default)
+        {
+            var result = await _mediator.Send(new BrandRedemptionLeaderboardQuery(top), ct);
             return Ok(result);
         }
     }

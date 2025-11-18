@@ -196,5 +196,87 @@ namespace GiftApi.Infrastructure.Repositories
                 .OrderBy(x => x.ExpiryDate)
                 .ToListAsync(cancellationToken);
         }
+
+        public async Task<IReadOnlyList<DailyUsageRow>> GetDailyUsageAsync(int? brandId, int days, CancellationToken ct)
+        {
+            if (days <= 0) days = 1;
+
+            var todayUtc = DateTime.UtcNow.Date;
+            var sinceInclusive = todayUtc.AddDays(-days + 1);
+
+            var vouchersQuery = _db.Vouchers
+                .Where(v => !v.IsDeleted);
+
+            if (brandId.HasValue)
+                vouchersQuery = vouchersQuery.Where(v => v.BrandId == brandId.Value);
+
+            var soldGrouped = await _db.VoucherDeliveryInfos
+                .Where(d => d.CreateDate != null && d.CreateDate!.Value.Date >= sinceInclusive)
+                .Join(vouchersQuery,
+                    d => d.VoucherId,
+                    v => v.Id,
+                    (d, v) => new { Day = d.CreateDate!.Value.Date, Qty = d.Quantity ?? 1 })
+                .GroupBy(x => x.Day)
+                .Select(g => new { Day = g.Key, Sold = g.Sum(x => x.Qty) })
+                .ToListAsync(ct);
+
+            var redeemedGrouped = await _db.VoucherRedeemAudits
+                .Where(r => r.PerformedAt.Date >= sinceInclusive)
+                .Join(vouchersQuery,
+                    r => r.VoucherId,
+                    v => v.Id,
+                    (r, v) => new { Day = r.PerformedAt.Date, Qty = r.Quantity })
+                .GroupBy(x => x.Day)
+                .Select(g => new { Day = g.Key, Redeemed = g.Sum(x => x.Qty) })
+                .ToListAsync(ct);
+
+            var allDays = Enumerable.Range(0, days)
+                .Select(i => sinceInclusive.AddDays(i))
+                .ToList();
+
+            var rows = allDays.Select(day =>
+            {
+                var sold = soldGrouped.FirstOrDefault(x => x.Day == day)?.Sold ?? 0;
+                var redeemed = redeemedGrouped.FirstOrDefault(x => x.Day == day)?.Redeemed ?? 0;
+                return new DailyUsageRow
+                {
+                    Day = day,
+                    Sold = sold,
+                    Redeemed = redeemed
+                };
+            }).ToList();
+
+            return rows;
+        }
+
+        public async Task<List<BrandRedemptionLeaderboardItem>> GetBrandRedemptionLeaderboardAsync(int top, CancellationToken ct)
+        {
+            if (top <= 0) top = 10;
+
+            var data = await _db.Vouchers
+                .Include(v => v.Brand)
+                .Where(v => !v.IsDeleted && v.Brand != null)
+                .GroupBy(v => new { v.BrandId, v.Brand!.Name })
+                .Select(g => new BrandRedemptionLeaderboardItem
+                {
+                    BrandId = g.Key.BrandId.GetValueOrDefault(),
+                    BrandName = g.Key.Name,
+                    Sold = g.Sum(v => v.SoldCount ?? 0),
+                    Redeemed = g.Sum(v => v.Redeemed),
+                    Remaining = g.Sum(v => v.Unlimited
+                        ? Math.Max((v.SoldCount ?? 0) - v.Redeemed, 0)
+                        : Math.Max(v.Quantity - v.Redeemed, 0))
+                })
+                .ToListAsync(ct);
+
+            var ordered = data
+                .OrderByDescending(x => x.RedemptionRate)
+                .ThenByDescending(x => x.Redeemed)
+                .ThenBy(x => x.BrandName)
+                .Take(top)
+                .ToList();
+
+            return ordered;
+        }
     }
 }
