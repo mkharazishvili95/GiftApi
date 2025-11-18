@@ -109,5 +109,14 @@ namespace GiftApi.Infrastructure.Repositories
             await _db.SaveChangesAsync();
             return true;
         }
+
+        public async Task<List<VoucherRedeemAudit>> GetVoucherRedeemAuditsAsync(Guid voucherId)
+        {
+            return await _db.VoucherRedeemAudits
+                .AsNoTracking()
+                .Where(a => a.VoucherId == voucherId)
+                .OrderByDescending(a => a.PerformedAt)
+                .ToListAsync();
+        }
     }
 }

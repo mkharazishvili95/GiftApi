@@ -9,5 +9,6 @@ namespace GiftApi.Application.Interfaces
         Task<List<VoucherDeliveryInfo>?> GetAll();
         Task<bool> RedeemAsync(Guid deliveryInfoId, Guid performedByUserId);
         Task<bool> UndoRedeemAsync(Guid deliveryInfoId, Guid performedByUserId);
+        Task<List<VoucherRedeemAudit>> GetVoucherRedeemAuditsAsync(Guid voucherId);
     }
 }

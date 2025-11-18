@@ -23,6 +23,7 @@ using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Commands.UndoRedee
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Export;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.Get;
 using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.GetAll;
+using GiftApi.Application.Features.Manage.VoucherDeliveryInfo.Queries.RedeemAudits;
 using GiftApi.Domain.Enums.User;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -142,6 +143,13 @@ namespace GiftApi.Controllers
         {
             var result = await _mediator.Send(command);
             return StatusCode(result.StatusCode ?? 500, result);
+        }
+
+        [HttpGet("voucher/{id:guid}/redeem-audits")]
+        public async Task<GetVoucherRedeemAuditsResponse> GetVoucherRedeemAudits(Guid id, [FromQuery] int? take = null)
+        {
+            var query = new GetVoucherRedeemAuditsQuery { VoucherId = id, Take = take };
+            return await _mediator.Send(query);
         }
     }
 }
