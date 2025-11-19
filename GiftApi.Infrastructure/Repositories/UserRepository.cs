@@ -3,6 +3,8 @@ using GiftApi.Domain.Entities;
 using GiftApi.Domain.Enums.User;
 using GiftApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace GiftApi.Infrastructure.Repositories
 {
@@ -20,6 +22,8 @@ namespace GiftApi.Infrastructure.Repositories
                 .AsNoTracking()
                 .FirstOrDefaultAsync(u => u.Id == id);
         }
+
+        public async Task<User?> GetByEmailAsync(string email) => await _db.Users.FirstOrDefaultAsync(u => u.Email.ToUpper() == email.ToUpper());
 
         public async Task<User?> GetCurrentUserAsync(Guid userId)
         {
@@ -174,9 +178,93 @@ namespace GiftApi.Infrastructure.Repositories
 
         public async Task UpdatePasswordAsync(User user, string newHashedPassword)
         {
-            user.Password = newHashedPassword;
-            _db.Users.Update(user);
+            var tracked = await _db.Users.FindAsync(user.Id);
+            if (tracked == null) return;
+            tracked.Password = newHashedPassword;
             await _db.SaveChangesAsync();
+        }
+
+        public async Task RevokeRefreshTokenAsync(User user)
+        {
+            var tracked = await _db.Users.FindAsync(user.Id);
+            if (tracked == null) return;
+            tracked.RefreshToken = null;
+            tracked.RefreshTokenExpiry = null;
+            await _db.SaveChangesAsync();
+        }
+
+        public async Task<PasswordResetToken> CreatePasswordResetTokenAsync(Guid userId, string rawToken, TimeSpan lifetime)
+        {
+            var entity = new PasswordResetToken
+            {
+                Id = Guid.NewGuid(),
+                UserId = userId,
+                TokenHash = Hash(rawToken),
+                CreatedUtc = DateTime.UtcNow,
+                ExpiresUtc = DateTime.UtcNow.Add(lifetime),
+                Used = false
+            };
+            _db.PasswordResetTokens.Add(entity);
+            await _db.SaveChangesAsync();
+            return entity;
+        }
+
+        public async Task<PasswordResetToken?> GetPasswordResetTokenAsync(string rawToken)
+        {
+            var hash = Hash(rawToken);
+            return await _db.PasswordResetTokens.FirstOrDefaultAsync(x => x.TokenHash == hash);
+        }
+
+        public async Task MarkPasswordResetTokenUsedAsync(PasswordResetToken token)
+        {
+            var tracked = await _db.PasswordResetTokens.FindAsync(token.Id);
+            if (tracked == null) return;
+            tracked.Used = true;
+            await _db.SaveChangesAsync();
+        }
+
+        public async Task<EmailVerificationToken> CreateEmailVerificationTokenAsync(Guid userId, string rawToken, TimeSpan lifetime)
+        {
+            var entity = new EmailVerificationToken
+            {
+                Id = Guid.NewGuid(),
+                UserId = userId,
+                TokenHash = Hash(rawToken),
+                CreatedUtc = DateTime.UtcNow,
+                ExpiresUtc = DateTime.UtcNow.Add(lifetime),
+                Used = false
+            };
+            _db.EmailVerificationTokens.Add(entity);
+            await _db.SaveChangesAsync();
+            return entity;
+        }
+
+        public async Task<EmailVerificationToken?> GetEmailVerificationTokenAsync(string rawToken)
+        {
+            var hash = Hash(rawToken);
+            return await _db.EmailVerificationTokens.FirstOrDefaultAsync(x => x.TokenHash == hash);
+        }
+
+        public async Task MarkEmailVerifiedAsync(User user)
+        {
+            var tracked = await _db.Users.FindAsync(user.Id);
+            if (tracked == null) return;
+            tracked.EmailVerified = true;
+            await _db.SaveChangesAsync();
+        }
+
+        public async Task MarkEmailVerificationTokenUsedAsync(EmailVerificationToken token)
+        {
+            var tracked = await _db.EmailVerificationTokens.FindAsync(token.Id);
+            if (tracked == null) return;
+            tracked.Used = true;
+            await _db.SaveChangesAsync();
+        }
+
+        static string Hash(string value)
+        {
+            using var sha = SHA256.Create();
+            return Convert.ToHexString(sha.ComputeHash(Encoding.UTF8.GetBytes(value)));
         }
     }
 }

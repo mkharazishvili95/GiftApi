@@ -19,5 +19,16 @@ namespace GiftApi.Application.Interfaces
         Task<LoginAudit?> SaveLog(Guid userId);
         Task<(List<LoginAudit> Items, int TotalCount)> GetLoginAuditsAsync(Guid? userId, DateTime? fromUtc, DateTime? toUtc, int page, int pageSize, CancellationToken cancellationToken);
         Task UpdatePasswordAsync(User user, string newHashedPassword);
+
+        // ავტორიზაციისთვის:
+        Task RevokeRefreshTokenAsync(User user);
+        Task<User?> GetByEmailAsync(string email);
+        Task<PasswordResetToken> CreatePasswordResetTokenAsync(Guid userId, string rawToken, TimeSpan lifetime);
+        Task<PasswordResetToken?> GetPasswordResetTokenAsync(string rawToken);
+        Task MarkPasswordResetTokenUsedAsync(PasswordResetToken token);
+        Task<EmailVerificationToken> CreateEmailVerificationTokenAsync(Guid userId, string rawToken, TimeSpan lifetime);
+        Task<EmailVerificationToken?> GetEmailVerificationTokenAsync(string rawToken);
+        Task MarkEmailVerifiedAsync(User user);
+        Task MarkEmailVerificationTokenUsedAsync(EmailVerificationToken token);
     }
 }

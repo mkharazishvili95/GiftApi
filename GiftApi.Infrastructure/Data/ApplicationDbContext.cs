@@ -28,5 +28,7 @@ namespace GiftApi.Infrastructure.Data
         public DbSet<VoucherDeliveryInfo> VoucherDeliveryInfos { get; set; }
         public DbSet<LoginAudit> LoginAudits { get; set; }
         public DbSet<VoucherRedeemAudit> VoucherRedeemAudits { get; set; }
+        public DbSet<PasswordResetToken> PasswordResetTokens { get; set; }
+        public DbSet<EmailVerificationToken> EmailVerificationTokens { get; set; }
     }
 }

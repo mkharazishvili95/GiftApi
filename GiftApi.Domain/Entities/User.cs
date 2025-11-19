@@ -19,5 +19,6 @@ namespace GiftApi.Domain.Entities
         public DateTime RegisterDate { get; set; }
         public string? RefreshToken { get; set; }
         public DateTime? RefreshTokenExpiry { get; set; }
+        public bool? EmailVerified { get; set; }
     }
 }

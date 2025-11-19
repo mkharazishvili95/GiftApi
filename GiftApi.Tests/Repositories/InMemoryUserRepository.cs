@@ -82,5 +82,50 @@ namespace GiftApi.Tests.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public Task RevokeRefreshTokenAsync(Domain.Entities.User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Domain.Entities.User?> GetByEmailAsync(string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<PasswordResetToken> CreatePasswordResetTokenAsync(Guid userId, string rawToken, TimeSpan lifetime)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<PasswordResetToken?> GetPasswordResetTokenAsync(string rawToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task MarkPasswordResetTokenUsedAsync(PasswordResetToken token)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<EmailVerificationToken> CreateEmailVerificationTokenAsync(Guid userId, string rawToken, TimeSpan lifetime)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<EmailVerificationToken?> GetEmailVerificationTokenAsync(string rawToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task MarkEmailVerifiedAsync(Domain.Entities.User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task MarkEmailVerificationTokenUsedAsync(EmailVerificationToken token)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
