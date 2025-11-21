@@ -112,7 +112,7 @@ SQL Server (local or cloud)
 
 ▶️ Setup Instructions
 1. Clone the repository
-git clone https://github.com/yourusername/GiftApi.git
+git clone https://github.com/mkharazishvili95/GiftApi.git
 
 2. Navigate to the WebApi project
 cd GiftApi/WebApi
